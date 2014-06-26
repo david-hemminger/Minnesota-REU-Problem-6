@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  26 JUN 2014 00:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  26 JUN 2014 16:06
 entering extended mode
 **Choosing*R3*Relations.tex
 ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.tex"
@@ -563,33 +563,37 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks36
+)
 \c@thm=\count124
 
 ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -601,46 +605,60 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 \scratchbox=\box38
 \nofMPsegments=\count126
 \nofMParguments=\count127
-\everyMPshowfont=\toks36
+\everyMPshowfont=\toks37
 \MPscratchCnt=\count128
 \MPscratchDim=\dimen162
 \MPnumerator=\count129
 \makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks37
+\everyMPtoPDFconversion=\toks38
 ) ABD: EveryShipout initializing macros
 ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.tdo")
 \tf@tdo=\write4
  [1{C:/Users/jahaley11/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (62.20522pt too wide) detected at line 55
+Overfull \hbox (62.20522pt too wide) detected at line 56
 \OML/cmm/m/it/10.95 s[]s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/it/10.95 s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/
 it/10.95 s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/it/10.95 
 s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]
  []
 
-[2] [3] ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.aux") ) 
+[2]
+Overfull \hbox (41.52417pt too wide) detected at line 116
+\OML/cmm/m/it/10.95 t[]t[]t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]
+ \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/i
+t/10.95 t[]t[]t[]t[]t[]t[]:
+ []
+
+[3]
+Overfull \hbox (31.0542pt too wide) detected at line 124
+\OML/cmm/m/it/10.95 t[]t[]t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]
+ \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/i
+t/10.95 t[]t[]t[]t[]t[]t[]:
+ []
+
+[4] ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.aux") ) 
 Here is how much of TeX's memory you used:
- 12980 strings out of 494045
- 231552 string characters out of 3148374
- 253433 words of memory out of 3000000
- 15860 multiletter control sequences out of 15000+200000
+ 13000 strings out of 494045
+ 231836 string characters out of 3148374
+ 253799 words of memory out of 3000000
+ 15878 multiletter control sequences out of 15000+200000
  18551 words of font info for 65 fonts, out of 3000000 for 9000
  876 hyphenation exceptions out of 8191
- 63i,9n,57p,467b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/jahaley11/A
-ppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/en
-c/dvips/mnsymbol/MnSymbolD.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}<C:
-/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol10.pfb><C:/Users/jahaley11/AppData/Roami
-ng/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol6.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/publi
-c/mnsymbol/MnSymbol8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbo
-ls/msam10.pfb>
-Output written on "Choosing R3 Relations.pdf" (3 pages, 149614 bytes).
+ 63i,9n,57p,691b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/jahaley11/AppDa
+ta/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dv
+ips/mnsymbol/MnSymbolD.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}<C:/Use
+rs/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol10.pfb><C:/Users/jahaley11/AppData/Roaming/M
+iKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol6.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mn
+symbol/MnSymbol8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb>
+Output written on "Choosing R3 Relations.pdf" (4 pages, 174215 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

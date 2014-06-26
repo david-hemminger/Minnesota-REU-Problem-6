@@ -18,6 +18,7 @@
 \def\ltgreen{green!20!white}
 
 \usepackage{amsmath,amssymb,amsthm, MnSymbol}
+\usepackage{enumerate}
 
 
 \newtheorem{thm}{Theorem}[section]
@@ -69,7 +70,7 @@ We then have
 An R3 that seems promising:
 
 \begin{defn}
-Using the notation as in Barot - Marsh, given a chordless cycle C in $\gamma$ so that all edges in C have weight 1, we define $r(a, a+1) = s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a}$.
+Using the notation as in Barot - Marsh, given a chordless cycle C in $\Gamma$ so that all edges in C have weight 1, we define $r(a, a+1) = s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a}$.
 \end{defn}
 
 \begin{lem}
@@ -92,7 +93,38 @@ As in Barot-Marsh, it suffices to prove that the relation r(0, 1) implies the re
 as required. Note that line 3 is equal to 4 and line 7 is equal to line 8 since the cycle is chordless, meaning that $s_{d-1}$ commutes with every element except $s_{0}$ and $s_{d-2}$.
 \end{proof}
 
+\begin{defn} Let $\Gamma$ be a weighted diagram of finite type, and suppose $\Gamma$' = $\mu_{k}(\Gamma)$. If $s_1$, \dots, $s_n$ are the generators in W$_{\Gamma}$, define: 
+$$t_{i} =
+\begin{cases}
+s_{k}s_{i}s_{k}^{-1} & \text{if there is arrow from i to k} \\
+s_{i} & \text{otherwise}
+\end{cases}$$
+\end{defn}
 
+\begin{lem} (Generalized Lemma 5.1) Let i and j be vertices of $\Gamma$.
+\begin{enumerate}[(a)]
+\item If i = k or j = k, then ($t_{i}t_{j})^{m_{ij}'/2}$ = ($t_{j}t_{i})^{m_{ij}'/2}$.
+\item If at most one of i,j is connected to k, then ($t_{i}t_{j})^{m_{ij}'/2}$ = ($t_{j}t_{i})^{m_{ij}'/2}$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+We begin with case (a). Suppose that i=k. As in Barot-Marsh, we have that $m_{ij}$ = $m_{ij}'$, and the only nontrivial case is when there is an arrow from j to k. Note that $m_{ij}$ cannot be 2 in this case since there is an arrow from j to k, so suppose $m_{ij}$ = 3. Then we have $$s_{j}s_{k}s_{j} = s_{k}s_{j}s_{k},$$ and so $$s_{k}s_{k}s_{j}s_{k} = s_{j}s_{k}s_{j}s_{k}.$$ Multiplying both sides on the right by $s_{k}^{-1}$, we then obtain that $$s_{k}s_{k}s_{j} = s_{k}s_{j}s_{k}s_{j}s_{k}^{-1},$$ and so we find that $$t_{i}t_{j}t_{i} = s_{k}s_{k}s_{j}s_{k}^{-1}s_{k} = s_{k}s_{j}s_{k}^{-1}s_{k}s_{k}s_{j}s_{k}^{-1} = t_{j}t_{i}t_{j}.$$
+
+Now suppose $m_{ij}$ = 4. Then $$s_{k}s_{j}s_{k}s_{j} = s_{j}s_{k}s_{j}s_{k}$$ which means that $$s_{k}s_{k}s_{j}s_{k}s_{j} = s_{k}s_{j}s_{k}s_{j}s_{k}.$$ This then gives us that $$s_{k}s_{k}s_{j}s_{k}s_{j}s_{k}^{-1} = s_{k}s_{j}s_{k}s_{j},$$ and so $$t_{i}t_{j}t_{i}t_{j} = s_{k}s_{k}s_{j}s_{k}^{-1}s_{k}s_{k}s_{j}s_{k}^{-1} = s_{k}s_{j}s_{k}^{-1}s_{k}s_{k}s_{j}s_{k}^{-1}s_{k} = t_{j}t_{i}t_{j}t_{i}.$$
+
+Finally, suppose $m_{ij}$ = 6. Then we know $$s_{k}s_{j}s_{k}s_{j}s_{k}s_{j} = s_{j}s_{k}s_{j}s_{k}s_{j}s_{k},$$ and so $$s_{k}s_{k}s_{j}s_{k}s_{j}s_{k}s_{j} = s_{k}s_{j}s_{k}s_{j}s_{k}s_{j}s_{k}.$$ Then $$s_{k}s_{k}s_{j}s_{k}s_{j}s_{k}s_{j}m_{k}^{-1} = s_{k}s_{j}s_{k}s_{j}s_{k}s_{j},$$ and so $$t_{i}t_{j}t_{i}t_{j}t_{i}t_{j} = s_{k}s_{k}s_{j}s_{k}^{-1}s_{k}s_{k}s_{j}s_{k}^{-1}s_{k}s_{k}s_{j}s_{k}^{-1} = s_{k}s_{j}s_{k}^{-1}s_{k}s_{k}s_{j}s_{k}^{-1}s_{k}s_{k}s_{j}s_{k}^{-1}s_{k} = t_{j}t_{i}t_{j}t_{i}t_{j}t_{i}.$$ A similar argument holds when j=k. This concludes (a).
+
+Now considering case (b), suppose i is connected to k. We once again have $m_{ij}$ = $m_{ij}'$, and the only nontrivial case is when the arrow points from i to k. Suppose $m_{ij}$ = 2. Then we have $$s_{i}s_{j} = s_{j}s_{i},$$ and so we have $$s_{k}s_{i}s_{j} = s_{k}s_{j}s_{i} = s_{j}s_{k}s_{i}$$ since j is not connected to k by assumption. But then $$t_{i}t_{j} = s_{k}s_{i}s_{k}^{-1}s_{j} = s_{k}s_{i}s_{j}s_{k}^{-1} = s_{j}s_{k}s_{i}s_{k}^{-1} = t_{j}t_{i}.$$
+
+If $m_{ij}$ = 3, then we have $s_{j}s_{k} = s_{k}s_{j}$, and so we have $s_{k}^{-1}s_{j}s_{k} = s_{j}.$ This means that $$s_{i}s_{k}^{-1}s_{j}s_{k}s_{i} = s_{i}s_{j}s_{i} = s_{j}s_{i}s_{j},$$ and we then have that $$t_{i}t_{j}t_{i} = s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1} = s_{k}s_{j}s_{i}s_{j}s_{k}^{-1} = s_{j}s_{k}s_{i}s_{k}^{-1}s_{j} = t_{j}t_{i}t_{j}.$$
+
+If $m_{ij}$ = 4, we have $s_{i}s_{j}s_{i}s_{j} = s_{j}s_{i}s_{j}s_{i}$. Then $$s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{j} = s_{i}s_{k}^{-1}s_{k}s_{j}s_{i}s_{j} = s_{j}s_{i}s_{k}^{-1}s_{k}s_{j}s_{i} = s_{j}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}.$$ But then conjugating the right and left sides by $s_{k}$, we find that $$s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{j}s_{k}^{-1} = s_{k}s_{j}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1},$$ and thus by the commutativity of $s_{j}$ and $s_{k}$, we have $$t_{i}t_{j}t_{i}t_{j} = s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1}s_{j} = s_{j}s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1} = t_{j}t_{i}t_{j}t_{i}.$$
+
+Finally, if $m_{ij}$ = 6, we have $s_{i}s_{j}s_{i}s_{j}s_{i}s_{j} = s_{j}s_{i}s_{j}s_{i}s_{j}s_{i}$. Thus conjugating by $s_{k}$ and using the commutativity of  $s_{k}$ and s$_{j}$, we find that $$s_{k}s_{i}s_{j}s_{i}s_{j}s_{i}s_{k}^{-1}s_{j} = s_{j}s_{k}s_{i}s_{j}s_{i}s_{j}s_{i}s_{k}^{-1}.$$ But this occurs if and only if $$t_{i}t_{j}t_{i}t_{j}t_{i}t_{j} = s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1}s_{j} = s_{j}s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1}s_{j}s_{k}s_{i}s_{k}^{-1} = t_{j}t_{i}t_{j}t_{i}t_{j}t_{i}.$$ 
+
+A similar argument holds when j is connected to k, so we are done.
+\end{proof} 
 
 
 
