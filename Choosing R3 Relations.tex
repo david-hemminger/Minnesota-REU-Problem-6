@@ -101,7 +101,7 @@ s_{i} & \text{otherwise}
 \end{cases}$$
 \end{defn}
 
-\begin{lem} (Generalized Lemma 5.1) Let i and j be vertices of $\Gamma$.
+\begin{lem}[Generalized Lemma 5.1]\label{lem:one_connected_to_k} Let i and j be vertices of $\Gamma$.
 \begin{enumerate}[(a)]
 \item If i = k or j = k, then ($t_{i}t_{j})^{m_{ij}'/2}$ = ($t_{j}t_{i})^{m_{ij}'/2}$.
 \item If at most one of i,j is connected to k, then ($t_{i}t_{j})^{m_{ij}'/2}$ = ($t_{j}t_{i})^{m_{ij}'/2}$
@@ -125,6 +125,55 @@ Finally, if $m_{ij}$ = 6, we have $s_{i}s_{j}s_{i}s_{j}s_{i}s_{j} = s_{j}s_{i}s_
 
 A similar argument holds when j is connected to k, so we are done.
 \end{proof} 
+
+
+\begin{lem}[Proposition 5.2 Analog] The elements $t_i$, for $i$ a vertex of $\Gamma$, satisfy the relations $(R2)$ and $(R3)$.
+\end{lem}
+
+After Lemma \ref{lem:one_connected_to_k} we have left to check the relations $(R2)$ when both $i$ and $j$ are connected to $k$ and the relations $(R3)$.
+
+
+Beginning with the relations $(R2)$, and following cases a-f from Corollary 2.3 in Barot and Marsh:
+
+
+\begin{enumerate}[a)]
+\item
+\begin{enumerate}[i)]
+\item $$t_it_j = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = t_jt_i$$
+\item $$t_it_j = s_is_j = s_js_i = t_jt_i$$
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item
+\begin{align*}
+t_it_jt_i &= s_ks_is_k^{-1}s_js_ks_is_k^{-1}\\
+&= s_ks_is_js_ks_j^{-1}s_is_k^{-1}\\
+&= s_ks_js_is_ks_is_j^{-1}s_k^{-1}\\
+&= s_ks_js_ks_is_ks_j^{-1}s_k^{-1}\\
+&= s_js_ks_js_is_j^{-1}s_k^{-1}s_j\\
+&= s_js_ks_is_k^{-1}s_j\\
+&= t_it_jt_i
+\end{align*}
+\item $$t_it_j = s_is_ks_js_k^{-1} = s_is_j^{-1}s_ks_j = s_j^{-1}s_ks_js_i = s_ks_js_k^{-1}s_i = t_jt_i$$
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item $$t_it_j = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = t_jt_i$$
+\item $$t_it_j = s_is_j = s_js_i = t_jt_i$$
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item
+\begin{align*}
+t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1} &= s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_i^{-1}s_k^{-1}s_j^{-1}s_ks_i^{-1}s_k^{-1}s_j^{-1}\\
+&=s_ks_is_k^{-1}s_js_ks_is_js_ks_j^{-1}s_i^{-1}s_js_k^{-1}s_j^{-1}s_i^{-1}s_k^{-1}s_j^{-1}\\
+&=s_ks_is_k^{-1}s_ks_js_ks_is_ks_i^{-1}s_k^{-1}s_j^{-1}s_i^{-1}s_k^{-1}s_j^{-1}\\
+&=s_ks_js_is_ks_is_ks_i^{-1}s_k^{-1}s_i^{-1}s_k^{-1}s_j^{-1}s_k^{-1}\\
+&= e
+\end{align*}
+\end{enumerate}
+\end{enumerate}
+
 
 
 
