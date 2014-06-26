@@ -66,6 +66,32 @@ We then have
 
 ...so I don't think this direction is going to work from here, simply because I don't see a way to flip all of the generators in the middle to their inverses.
 
+An R3 that seems promising:
+
+\begin{defn}
+Using the notation as in Barot - Marsh, given a chordless cycle C in $\gamma$ so that all edges in C have weight 1, we define $r(a, a+1) = s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a}$.
+\end{defn}
+
+\begin{lem}
+The relation r(a,a+1) for some vertex a $\in$ C implies the relation r(b, b+1) for all b $\in$ C.
+\end{lem}
+\begin{proof}
+As in Barot-Marsh, it suffices to prove that the relation r(0, 1) implies the relation r(d-1, 0). So suppose $W_{\gamma}$ satisfies the relation r(0, 1). Then we have 
+\begin{align*}
+& s_{d-1}s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_1s_0 \\
+&= s_{0}^{-1}s_{0}s_{d-1}s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{d-1}^{-1}s_{d-1}s_{0} \\
+&= s_{0}^{-1}s_{d-1}^{-1}s_{0}s_{d-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{d-1}^{-1}s_{d-1}s_{0} \\
+&= s_{0}^{-1}s_{d-1}^{-1}s_{0}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-1}s_{d-2}s_{d-1}^{-1}s_{d-3}\dots s_{1}s_{d-1}s_{0} \\
+&= s_{0}^{-1}s_{d-1}^{-1}(s_{0}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}^{-1}s_{d-1}s_{d-2}s_{d-3}\dots s_{1})s_{d-1}s_{0} \\
+&= s_{0}^{-1}s_{d-1}^{-1}(s_{1}^{-1} \dots s_{d-2}^{-1}s_{d-1}s_{d-2}s_{d-3}\dots s_{0})s_{d-1}s_{0} \\
+&= s_{0}^{-1}s_{d-1}^{-1}(s_{1}^{-1} \dots s_{d-3}^{-1}s_{d-1}s_{d-2}s_{d-1}^{-1}s_{d-3}\dots s_{0})s_{d-1}s_{0} \\
+&= s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{d-1}^{-1}s_{0}s_{d-1}s_{0} \\
+&= s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{0}s_{d-1}s_{0}^{-1}s_{0} \\
+&= s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{0}s_{d-1} 
+\end{align*}
+as required. Note that line 3 is equal to 4 and line 7 is equal to line 8 since the cycle is chordless, meaning that $s_{d-1}$ commutes with every element except $s_{0}$ and $s_{d-2}$.
+\end{proof}
+
 
 
 
