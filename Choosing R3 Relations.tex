@@ -188,8 +188,14 @@ t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1} &= s_ks_is_k^{-1}s_js_ks_is_k^{-1}s
 
 \section{Relations for 2,2,1 triangle, talk to Aaron if you think there's an error}
 
+\begin{rem}
+I am proposing to add the additonal $s_as_as_b = s_bs_as_a$ whenever there is a 2 edge pointing to $a$, a 1 edge pointing from $a$ to $b$, and a 2 edge pointing out of $b.$ I'm not sure whether this helps the rest of the problem, but it allows us to deduce the analog for $R3(b).$ We can also note that this relation would definitely not show up in the coexeter groups because $s_a^2 = e.$
+\end{rem}
+
+
+
 \begin{lem}
-The two relations $s_{1}^{-1}s_2^{-1}s_3^{-1}s_2s_1s_2^{-1}s_3s_2 = e$ and $\twi\tri\oni\tr\twi\tri\on\tr =e$ are equivalent and they imply $\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on=e. $
+Assuming the additional relation $\tw\tr\tr = \tr\tr\tw.$ The two relations $s_{1}^{-1}s_2^{-1}s_3^{-1}s_2s_1s_2^{-1}s_3s_2 = e$ and $\twi\tri\oni\tr\tw\tri\on\tr =e$ are equivalent and they imply $\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on=e. $
 \end{lem}
 \begin{proof}
 
@@ -214,8 +220,9 @@ We only have to show the first two imply the third. We can use the first two ide
 	&= \tw\tr(\on\tr\on\tri\oni\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
 \end{align*}
 
-Next,I claim $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ NOTE: I FIGURED OUT HOW TO DO THIS BEFORE, BUT IM TOO TIRED NOW, AND I COULD HAVE MADE A MISTAKE, SO SOMEONE ELSE SHOULD CHECK, IF ITS WRONG THIS IS ALL WRONG.
-This should be easy to verify by manipulating the equation $\twi\tri\oni\tr\twi\tri\on\tr =e.$ Plugging this in yields
+Next,I claim $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ This should be easy to verify by manipulating the equation $\twi\tri\oni\tr\tw\tri\on\tr =e,$ if we can use the relation $\tw\tr\tr = \tr\tr\tw,$ we can obtain $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ 
+
+ Plugging this in yields
 \begin{align*}
 	e &= (\oni\tr\on\tr\on\tw\tri\oni)(\on\tr\on\tri\oni\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
 	\\
