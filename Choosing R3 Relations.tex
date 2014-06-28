@@ -31,6 +31,8 @@
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}
 \newtheorem{rem}[thm]{Remark}
+\newcommand\fri{s_4^{-1}}
+\newcommand\fr{s_4}
 \newcommand\tri{s_3^{-1}}
 \newcommand\tr{s_3}
 \newcommand\twi{s_2^{-1}}
@@ -45,10 +47,15 @@
 \makeatother
 
 
+\usepackage{amsmath}
 \begin{document}
 
 %This adds the list of todos to the first page.
 \listoftodos
+\begin{enumerate}
+	\item Verify ~\ref{square_mutation_preserved}
+	\item Verify that the relations (a),(b) are equivalent in ~\ref{4.2_analog} and ~\ref{4.4_analog}
+	\end{enumerate}
 \newpage
 
 It's not immediately obvious which relations analogous to the original R3 relations we want to choose.  Here we try out several possible relations, in each case trying to prove an analogous lemma to Lemma 4.1 in Barot and Marsh's paper.
@@ -84,6 +91,10 @@ An R3 that seems promising:
 
 \begin{defn}
 Using the notation as in Barot - Marsh, given a chordless cycle C in $\Gamma$ so that all edges in C have weight 1, we define $r(a, a+1) = s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a}$.
+
+An equivlent relation is as follows
+
+$s_a^{-1} s_{a+1}^{-1}\cdots s_{a-1}^{-1}s_{a-2}\cdots s_a s_{a+1}^{-1}\cdots s_{a-2}^{-1} s_{a-1}\cdots s_{a+1}$
 \end{defn}
 
 \begin{lem}
@@ -140,7 +151,9 @@ A similar argument holds when j is connected to k, so we are done.
 \end{proof} 
 
 
-\begin{lem}[Proposition 5.2 Analog] The elements $t_i$, for $i$ a vertex of $\Gamma$, satisfy the relations $(R2)$ and $(R3)$.
+\begin{lem}
+\label{5.2 analog}
+[Proposition 5.2 Analog] The elements $t_i$, for $i$ a vertex of $\Gamma$, satisfy the relations $(R2)$ and $(R3)$.
 \end{lem}
 
 After Lemma \ref{lem:one_connected_to_k} we have left to check the relations $(R2)$ when both $i$ and $j$ are connected to $k$ and the relations $(R3)$.
@@ -200,15 +213,13 @@ Include $s_is_{i+1}^2 = s_{i+1}^2s_i,$ and $s_is_{i-1}^2 = s_{i-1}^2s_i,$ for al
 
 
 
-\begin{lem} (4.2 Analog)
+\begin{lem} 
+\label{4.2_analog}
+(4.2 Analog)
 Assuming the additional relation $\tw\tr\tr = \tr\tr\tw$ from ~\ref{even_more_relations}, the two relations $s_{1}^{-1}s_2^{-1}s_3^{-1}s_2s_1s_2^{-1}s_3s_2 = e$ and $\twi\tri\oni\tr\tw\tri\on\tr =e$ are equivalent and they imply $\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on=e. $
 \end{lem}
 \begin{proof}
 
-To show the first, equivalence, note
-\begin{align*}
-	s_{1}^{-1}s_2^{-1}s_3^{-1}s_2s_1s_2^{-1}s_3s_2 &=
-\end{align*}
 
 We only have to show the first two imply the third. We can use the first two identities to deduce $\tw\tri = \tri\on\tr\tw\tri\oni,\twi\tri=\tri\oni\tr\twi\tri\on.$ Indeed, we can see
 
@@ -226,7 +237,17 @@ We only have to show the first two imply the third. We can use the first two ide
 	&= \tw\tr(\on\tr\on\tri\oni\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
 \end{align*}
 
-Next,I claim $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ This should be easy to verify by manipulating the equation $\twi\tri\oni\tr\tw\tri\on\tr =e,$ if we can use the relation $\tw\tr\tr = \tr\tr\tw,$ we can obtain $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ 
+Next,I claim $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ This should be easy to verify by manipulating the equation $\twi\tri\oni\tr\tw\tri\on\tr =e,$ if we can use the relation $\tw\tr\tr = \tr\tr\tw.$
+To verify this, note:
+\begin{align*}
+	e &= \twi\tri\oni\tr\tw\tri\on\tr \iff \\
+	e &= \twi\tri\oni\tri\tw\tr\on\tr \iff \\
+	e &= \tri\oni\tri\twi\tr\on\tr\tw \iff \\
+	e &= \tri\twi\tr\on\tr\tw\tri\oni \iff \\
+	\tw\tr &= \tr\on\tr\on\tw\tri\oni \iff \\
+	 \tw\tr &= \oni\tr\on\tr\on\on\tw\tri\oni \iff \\
+\end{align*} 
+Where an equivalent form of $\tw\tr\tr = \tr\tr\tw.$ is used in going from the first line to the second in the above computation.
 
  Plugging this in yields
 \begin{align*}
@@ -242,6 +263,87 @@ Next,I claim $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ This should be easy to veri
 \end{align*}
 
 So, since $e = \oni\tr\on\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on\oni\tri\on,$ cancelling three terms from both sides, we get $e =\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on,$ as claimed.
+\end{proof}
+
+\begin{prop}
+\label{commuting_triples}
+For the case of the (2,1,2,1) square, we have $\twi\tri\tw\fri\oni\fr = \fri\oni\fr\twi\tri\tw.$
+By inverting both sides of this relation, we also obtain
+$\fri\on\fr\twi\tr\tw = \tri\tr\tw\fri\on\fr.$
+\end{prop}
+\begin{proof}
+Using the cyclic $r(1,2)$ relation we have
+\begin{align*}
+	e &= \oni\twi\tri\fri\tr\tw\on\twi\tri\fr\tr\tw\\
+	&= \oni\twi\fr\tri\fri\tw\on\twi\fr\tr\fri\tw \\
+	&= \oni\fr\twi\tri\tw\fri\on\fr\twi\tr\tw\fri \iff \\
+	e &= \fri\oni\fr\twi\tri\tw\fri\on\fr\twi\tr\tw \iff \\
+	\twi\tri\tw\fri\oni\fr &= \fri\oni\fr\twi\tri\tw
+\end{align*}
+\end{proof}
+
+
+
+\begin{lem}
+\label{4.4_analog} (Analog of 4.4) For the case of the (2,1,2,1) square, assuming the relations from ~\ref{even_more_relations} we get that the analogs of $r(1,2)^2 = e,r(3,4)^2 = e$ are equivalent, and they imply the following relation, which is an analog of R3b:
+
+$$\twi\tr\fri\on\fr\tr\tw\tri\fri\on\fr\tri\twi\tri\fri\oni\fr\tr=e.$$
+\end{lem}
+\begin{proof}
+Hailee said she showed that the analogs of $r(1,2),r(3,4)$ are equivalent. 
+
+So, I will only show that these relations imply the analog of $R3b.$
+
+\begin{align*}
+	e &=\twi\tr\fri\on\fr\tr\tw\tri\fri\on\fr\tri\twi\tri\fri\oni\fr\tr \iff
+	\\
+	e &= (\twi\tr\fri\on\fr\tr)(\tw\tri\fri\on\fr\tri)(\twi\tri\fri\oni\fr\tr) \iff
+	\\
+	e &= \tr(\twi\tr\fri\on\fr\tr)\tri\tr(\tw\tri\fri\on\fr\tri)\tri\tr(\twi\tri\fri\oni\fr\tr)\tri
+	\\
+	&= (\tr\twi\tr\fri\on\fr)(\tr\tw\tri\fri\on\fr)(\tr\twi\tri\fri\oni\fr)
+\end{align*}
+
+Now observe that $$\twi\tr\tw\tri\twi = \tr\tw\twi\twi = \tr\twi\tr,$$ by ~\ref{even_more_relations} in the second equality.
+Also, $$\tw\tri\twi\tr\tw = \twi\tri\tw\tr\tw = \tr\tw\tri$$ again using ~\ref{even_more_relations} in the first equality.
+And finally,
+$$\twi\tri\twi\tri\tw = \tri\twi\tri.$$
+So, substituting these three equations in the above, we have 
+\begin{align*}
+	e &= \tr(\twi\tr\fri\on\fr\tr)\tri\tr(\tw\tri\fri\on\fr\tri)\tri\tr(\twi\tri\fri\oni\fr\tr)\tri
+	\\
+	&= ((\tr\twi\tr)\fri\on\fr)((\tr\tw\tri)\fri\on\fr)((\tr\twi\tri)\fri\oni\fr)
+	\\
+	&=((\twi\tr\tw\tr\twi)\fri\on\fr)((\tw\tri\twi\tr\tw)\fri\on\fr)((\twi\tri\twi\tr\tw)\fri\oni\fr)
+\end{align*}
+Now, using ~\ref{commuting_triples} three times, we have
+
+\begin{align*}
+	&((\twi\tr\tw\tr\twi)\fri\on\fr)((\tw\tri\twi\tr\tw)\fri\on\fr)((\twi\tri\twi\tr\tw)\fri\oni\fr)\\
+	&= (\twi\tr(\fri\on\fr\tw\tr\twi))(\twi\tr(\fri\on\fr\twi\tr\tw))(\twi\tri(\fri\oni\fr\twi\tri\tw))
+	&=
+	(\twi\tr\fri\on\tw\fr\tr\twi)(\twi\tr\fri\on\twi\fr\tr\tw)(\twi\tri\fri\oni\twi\fr\tri\tw)
+	\\
+	&= \twi\tr\fri \on\tw\on\twi\oni\twi\fr\tri\tw
+\end{align*}
+
+Therefore,
+
+\begin{align*}
+	e &= \twi\tr\fri \on\tw\on\twi\oni\twi\fr\tri\tw \iff \\
+	e &=  \on\tw\on\twi\oni\twi
+\end{align*}
+Which if of course one of our basic R2 relations.
+\end{proof}
+
+
+
+\begin{thm}
+\label{square_mutation_preserved}
+The relations described in ~\ref{even_more_relations} are permuted (and hence preserved) after mutation at any vertex.
+\end{thm}
+\begin{proof}
+This is what additionally needs to be checked in ~\ref{5.2 analog} by adding ~\ref{even_more_relations} in the cases corresponding to cycles with edges of weight 2 in the paper. I.e. it has to be checked in cases (b,c,d,e,f,g,h). It seems like a lot of casework, but there's a fair amount of symmetry to make it a bit easier, and I checked this in a few cases, and it seemed to work out. 
 \end{proof}
 
 
