@@ -30,7 +30,12 @@
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}
 \newtheorem{rem}[thm]{Remark}
-
+\newcommand\tri{s_3^{-1}}
+\newcommand\tr{s_3}
+\newcommand\twi{s_2^{-1}}
+\newcommand\tw{s_2}
+\newcommand\oni{s_1^{-1}}
+\newcommand\on{s_1}
 
 \makeatletter
 \providecommand\@dotsep{5}
@@ -181,6 +186,50 @@ t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1} &= s_ks_is_k^{-1}s_js_ks_is_k^{-1}s
 \end{enumerate}
 \end{enumerate}
 
+\section{Relations for 2,2,1 triangle, talk to Aaron if you think there's an error}
+
+\begin{lem}
+The two relations $s_{1}^{-1}s_2^{-1}s_3^{-1}s_2s_1s_2^{-1}s_3s_2 = e$ and $\twi\tri\oni\tr\twi\tri\on\tr =e$ are equivalent and they imply $\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on=e. $
+\end{lem}
+\begin{proof}
+
+To show the first, equivalence, note
+\begin{align*}
+	s_{1}^{-1}s_2^{-1}s_3^{-1}s_2s_1s_2^{-1}s_3s_2 &=
+\end{align*}
+
+We only have to show the first two imply the third. We can use the first two identities to deduce $\tw\tri = \tri\on\tr\tw\tri\oni,\twi\tri=\tri\oni\tr\twi\tri\on.$ Indeed, we can see
+
+\begin{align*}
+	e &= \tw\tr\tw\tri\twi\tri
+	\\
+	&= \tw\tr(\tri\on\tr\tw\tri\oni)(\tri\oni\tr\twi\tri\on)
+	\\
+	&= \tw\tr(\tri\on\tr\tw\tri\oni)(\tri\oni\tr\twi\on\oni\tri\on)
+	\\
+	&= \tw\tr(\tri\on\tr\tw\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
+	\\
+	&= \tw\tr(\tri\on\tr\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
+	\\
+	&= \tw\tr(\on\tr\on\tri\oni\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
+\end{align*}
+
+Next,I claim $\tw\tr = \oni\tr\on\tr\on\tw\tri\oni.$ NOTE: I FIGURED OUT HOW TO DO THIS BEFORE, BUT IM TOO TIRED NOW, AND I COULD HAVE MADE A MISTAKE, SO SOMEONE ELSE SHOULD CHECK, IF ITS WRONG THIS IS ALL WRONG.
+This should be easy to verify by manipulating the equation $\twi\tri\oni\tr\twi\tri\on\tr =e.$ Plugging this in yields
+\begin{align*}
+	e &= (\oni\tr\on\tr\on\tw\tri\oni)(\on\tr\on\tri\oni\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
+	\\
+	&= (\oni\tr\on\tr\on\tw\on\oni\tri\oni)(\on\tr\on\tri\oni\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
+	\\
+	&= (\oni\tr\on\tr\on\tw\on)(\tri\oni\tw\oni\on\tri\oni)(\on\tr\oni\tri\oni\twi\on\oni\tri\on)
+	\\
+	&= (\oni\tr\on\tr\on\tw\on)(\tri\oni\tw\oni)(\tri\oni\twi\on\oni\tri\on)
+	\\
+	&= (\oni\tr\on\tr\on\tw\on)(\tri\oni\tw\oni)(\tri\oni\twi\on\oni\tri\on)
+\end{align*}
+
+So, since $e = \oni\tr\on\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on\oni\tri\on,$ cancelling three terms from both sides, we get $e =\tr\on\tw\on\tri\oni\tw\oni\tri\oni\twi\on,$ as claimed.
+\end{proof}
 
 
 
