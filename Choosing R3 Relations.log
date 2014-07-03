@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  29 JUN 2014 17:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  3 JUL 2014 11:57
 entering extended mode
 **Choosing*R3*Relations.tex
 ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.tex"
@@ -567,283 +567,40 @@ LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks36
 )
-\c@thm=\count124
- ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.tex" Bootstrap'ing: catcodes, docmode,
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex")
+(C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-cd\tikz-cd.sty
+Package: tikz-cd 2014/03/08 v0.9b Commutative diagrams with tikz
 
- Xy-pic version 3.8.6 <2011/05/27>
- Copyright (c) 1991-2011 by Kristoffer H. Rose <krisrose@tug.org>
- Xy-pic is free software: see the User's Guide for details.
 
-Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen161
-\Y@c=\dimen162
-\U@c=\dimen163
-\D@c=\dimen164
-\L@c=\dimen165
-\R@c=\dimen166
-\Edge@c=\toks37
-\X@p=\dimen167
-\Y@p=\dimen168
-\U@p=\dimen169
-\D@p=\dimen170
-\L@p=\dimen171
-\R@p=\dimen172
-\Edge@p=\toks38
-\X@origin=\dimen173
-\Y@origin=\dimen174
-\X@xbase=\dimen175
-\Y@xbase=\dimen176
-\X@ybase=\dimen177
-\Y@ybase=\dimen178
-\X@min=\dimen179
-\Y@min=\dimen180
-\X@max=\dimen181
-\Y@max=\dimen182
-\lastobjectbox@=\box38
-\zerodotbox@=\box39
-\almostz@=\dimen183
- direction,
-\d@X=\dimen184
-\d@Y=\dimen185
-\K@=\count125
-\KK@=\count126
-\Direction=\count127
-\K@dXdY=\dimen186
-\K@dYdX=\dimen187
-\xyread@=\read2
-\xywrite@=\write4
-\csp@=\count128
-\quotPTK@=\dimen188
- utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks39
-\connectobjectbox@@=\box40
- objects,
-\styletoks@=\toks40
+LaTeX Warning: You have requested, on input line 17, version
+               `2013/12/13' of package tikz,
+               but only version
+               `2010/10/13 v2.10 (rcs-revision 1.76)'
+               is available.
 
-decorations; kernel objects: directionals, circles, text; options; algorithms: directions, edges, connections;
- Xy-pic loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\tikz-cd\tikzlibrarycd.code.tex
+(C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2008/06/18 v2.10 (rcs-revision 1.2)
 )
-Package: xy 2011/05/27 Xy-pic version 3.8.6
+! I can't find file `tikzlibraryquotes.code.tex'.
+<argument> ...nput tikzlibrary\pgf@temp .code.tex 
+                                                  \catcode `\@ =\csname tikz...
+l.18 \usetikzlibrary{matrix,quotes,arrows.meta}
+                                               
+Please type another input file name
+! Emergency stop.
+<argument> ...nput tikzlibrary\pgf@temp .code.tex 
+                                                  \catcode `\@ =\csname tikz...
+l.18 \usetikzlibrary{matrix,quotes,arrows.meta}
+                                               
+*** (job aborted, file error in nonstop mode)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyall.tex"  Xy-pic option: All features v.3.8
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycurve.tex"  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count129
-\crvpts@=\toks41
-\splinebox@=\box41
-\splineval@=\dimen189
-\splinedepth@=\dimen190
-\splinetol@=\dimen191
-\splinelength@=\dimen192
-
-circles,
-\L@=\dimen193
- loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyframe.tex"
- Xy-pic option: Frame and Bracket extension v.3.13 loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex"
- Xy-pic option: Computer Modern tip extension v.3.7 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xytips.tex"
- Xy-pic option: More Tips extension v.3.9 loaded) loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyline.tex"
- Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen194
- loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex"
- Xy-pic option: Rotate and Scale extension v.3.8 loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycolor.tex"
- Xy-pic option: Colour extension v.3.11 loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex"
- Xy-pic option: Matrix feature v.3.14
-\Row=\count130
-\Col=\count131
-\queue@=\toks42
-\queue@@=\toks43
-\qcount@=\count132
-\qcount@@=\count133
-\matrixsize@=\count134
- loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"
- Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xygraph.tex"  Xy-pic option: Graph feature v.3.11 loaded) loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf.tex"  Xy-pic option: PDF driver v.1.7
-Xy-pic pdf driver: `color' extension support ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-co.tex" loaded)
-Xy-pic pdf driver: `curve' extension support ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.tex" loaded)
-Xy-pic pdf driver: `frame' extension support ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-fr.tex" loaded)
-Xy-pic pdf driver: `line' extension support ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-li.tex" loaded)
-Xy-pic pdf driver: `rotate' extension support ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-ro.tex" loaded)
-loaded)) ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-(C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
-\scratchdimen=\dimen195
-\scratchbox=\box42
-\nofMPsegments=\count136
-\nofMParguments=\count137
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count138
-\MPscratchDim=\dimen196
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
-\everyMPtoPDFconversion=\toks45
-) ABD: EveryShipout initializing macros
-Package xypdf Info: Line width: 0.49248pt on input line 51.
-
-("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.tdo")
-\tf@tdo=\write5
-
-
-LaTeX Warning: Reference `square_mutation_preserved' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Reference `4.2_analog' on page 1 undefined on input line 57.
-
-
-LaTeX Warning: Reference `4.4_analog' on page 1 undefined on input line 57.
-
-[1{C:/Users/jahaley11/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (62.20522pt too wide) detected at line 69
-\OML/cmm/m/it/10.95 s[]s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/it/10.95 s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/
-it/10.95 s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/it/10.95 
-s[]s[]s[]\U/MnSymbolC/m/n/10.95 \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3] [4]
-Overfull \hbox (41.52417pt too wide) detected at line 173
-\OML/cmm/m/it/10.95 t[]t[]t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]
- \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/i
-t/10.95 t[]t[]t[]t[]t[]t[]:
- []
-
-[5]
-Overfull \hbox (31.0542pt too wide) detected at line 181
-\OML/cmm/m/it/10.95 t[]t[]t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]
- \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/i
-t/10.95 t[]t[]t[]t[]t[]t[]:
- []
-
-[6] <xymatrix 3x1 96> <xymatrix 3x1 96>
-
-LaTeX Warning: Reference `even_more_relations' on page 7 undefined on input line 252.
-
-
-Overfull \hbox (9.69398pt too wide) in paragraph at lines 251--253
-\OT1/cmr/m/it/10.95 from [], the two re-la-tions $\OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   
-\OML/cmm/m/it/10.95 e$ \OT1/cmr/m/it/10.95 and $\OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95  
- []
-
-
-Overfull \hbox (13.55527pt too wide) in paragraph at lines 257--258
-\OT1/cmr/m/n/10.95 first two iden-ti-ties to de-duce $\OML/cmm/m/it/10.95 s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/
-10.95 s[]s[]s[]s[]s[]s[]; s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]:$
- []
-
-[7]
-Overfull \hbox (58.18495pt too wide) in paragraph at lines 296--296
-[] 
- []
-
-
-Overfull \hbox (25.96375pt too wide) in paragraph at lines 303--306
-[]\OT1/cmr/bx/n/10.95 Proposition 2.3. []\OT1/cmr/m/it/10.95 For the case of the (2,1,2,1) square, we have $\OML/cmm/m/i
-t/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95  
- []
-
-[8]
-
-LaTeX Warning: Reference `even_more_relations' on page 9 undefined on input line 321.
-
-
-LaTeX Warning: Reference `even_more_relations' on page 9 undefined on input line 340.
-
-
-LaTeX Warning: Reference `even_more_relations' on page 9 undefined on input line 341.
-
-
-Overfull \hbox (7.80464pt too wide) in paragraph at lines 351--351
-[] 
- []
-
-
-LaTeX Warning: Reference `commuting_triples' on page 9 undefined on input line 352.
-
-
-Overfull \hbox (353.65416pt too wide) in paragraph at lines 361--361
-[] 
- []
-
-[9]
-
-LaTeX Warning: Reference `even_more_relations' on page 10 undefined on input line 376.
-
-
-LaTeX Warning: Reference `5.2 analog' on page 10 undefined on input line 379.
-
-
-LaTeX Warning: Reference `even_more_relations' on page 10 undefined on input line 379.
-
-[10] ("C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Choosing R3 Relations.aux")
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 15754 strings out of 494045
- 266158 string characters out of 3148374
- 338130 words of memory out of 3000000
- 18558 multiletter control sequences out of 15000+200000
- 19976 words of font info for 74 fonts, out of 3000000 for 9000
+ 12583 strings out of 494045
+ 226665 string characters out of 3148374
+ 243678 words of memory out of 3000000
+ 15516 multiletter control sequences out of 15000+200000
+ 3940 words of font info for 15 fonts, out of 3000000 for 9000
  876 hyphenation exceptions out of 8191
- 63i,13n,76p,3257b,835s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{C:/Users/jahaley11/AppData/Roam
-ing/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mns
-ymbol/MnSymbolD.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}<C:/Users/jaha
-ley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol10.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2
-.9/fonts/type1/public/mnsymbol/MnSymbol6.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/
-MnSymbol8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on "Choosing R3 Relations.pdf" (10 pages, 218510 bytes).
-PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 63i,0n,57p,467b,63s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
