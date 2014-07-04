@@ -1,0 +1,163 @@
+\documentclass[11pt]{amsart}
+
+
+%The package below let's us add todos to the document in a way that will stand out at a glance.  It will also list all of the current things to do, with their respective page numbers on the first page of the document.  You can add a todo like this:
+%
+%		Text text text \todo{change this text to something useful!}
+%
+%Among other things, you can edit the color of a todo:
+%
+%		\todo[color=\ltblue]{this todo will have a light blue background!}
+%
+%And you can include the todo as a line in the text, rather than in the margins:
+%
+%		\todo[inline]{this will appear in the middle of the page}
+
+\usepackage[colorinlistoftodos, textsize=tiny]{todonotes}
+\def\ltblue{blue!20!white}
+\def\ltgreen{green!20!white}
+
+\usepackage{amsmath,amssymb,amsthm, MnSymbol}
+\usepackage{enumerate}
+
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+
+\usepackage[all]{xy}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\newcommand\fri{s_4^{-1}}
+\newcommand\fr{s_4}
+\newcommand\tri{s_3^{-1}}
+\newcommand\tr{s_3}
+\newcommand\twi{s_2^{-1}}
+\newcommand\tw{s_2}
+\newcommand\oni{s_1^{-1}}
+\newcommand\on{s_1}
+
+\makeatletter
+\providecommand\@dotsep{5}
+\def\listtodoname{List of Todos}
+\def\listoftodos{\@starttoc{tdo}\listtodoname}
+\makeatother
+
+
+\usepackage{amsmath}
+\begin{document}
+
+%This adds the list of todos to the first page.
+\listoftodos
+
+\begin{lem}
+\label{5.2 analog}
+[Proposition 5.2 Analog] The elements $t_i$, for $i$ a vertex of $\Gamma$, satisfy the relations $(R2)$ and $(R3)$.
+\end{lem}
+
+After Lemma \ref{lem:one_connected_to_k} we have left to check the relations $(R2)$ when both $i$ and $j$ are connected to $k$ and the relations $(R3)$.  Beginning with the relations $(R2)$, and following cases a-f from Corollary 2.3 in Barot and Marsh:
+
+
+\begin{enumerate}[a)]
+\item
+\begin{enumerate}[i)]
+\item $$t_it_j = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = t_jt_i$$
+\item $$t_it_j = s_is_j = s_js_i = t_jt_i$$
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item
+\begin{align*}
+t_it_jt_i &= s_ks_is_k^{-1}s_js_ks_is_k^{-1}\\
+&= s_ks_is_js_ks_j^{-1}s_is_k^{-1}\\
+&= s_ks_js_is_ks_is_j^{-1}s_k^{-1}\\
+&= s_ks_js_ks_is_ks_j^{-1}s_k^{-1}\\
+&= s_js_ks_js_is_j^{-1}s_k^{-1}s_j\\
+&= s_js_ks_is_k^{-1}s_j\\
+&= t_it_jt_i
+\end{align*}
+
+\begin{align*}
+t_jt_k^{-1}t_it_k &= s_js_k^{-1}s_ks_is_k^{-1}s_k\\
+&= s_js_i\\
+&= s_is_j\\
+&= t_k^{-1}t_it_kt_j\\
+\end{align*}
+
+\item $$t_it_j = s_is_ks_js_k^{-1} = s_is_j^{-1}s_ks_j = s_j^{-1}s_ks_js_i = s_ks_js_k^{-1}s_i = t_jt_i$$
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item $$t_it_j = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = t_jt_i$$
+\item $$t_it_j = s_is_j = s_js_i = t_jt_i$$
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item
+\begin{align*}
+t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1} &= s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_i^{-1}s_k^{-1}s_j^{-1}s_ks_i^{-1}s_k^{-1}s_j^{-1}\\
+&=s_ks_is_k^{-1}s_js_ks_is_js_ks_j^{-1}s_i^{-1}s_js_k^{-1}s_j^{-1}s_i^{-1}s_k^{-1}s_j^{-1}\\
+&=s_ks_is_k^{-1}s_ks_js_ks_is_ks_i^{-1}s_k^{-1}s_j^{-1}s_i^{-1}s_k^{-1}s_j^{-1}\\
+&=s_ks_js_is_ks_is_ks_i^{-1}s_k^{-1}s_i^{-1}s_k^{-1}s_j^{-1}s_k^{-1}\\
+&= e
+\end{align*}
+
+We also have
+$$t_jt_k^{-1}t_it_k = s_js_k^{-1}s_ks_is_k^{-1}s_k = s_is_j = t_k^{-1}t_it_kt_j$$ 
+
+\item
+\begin{align*}
+t_it_j &= s_is_ks_js_k^{-1}\\
+&= s_is_j^{-1}s_ks_j\\
+&= s_j^{-1}s_ks_js_i\\
+&= s_ks_js_k^{-1}s_i\\
+&= t_jt_i
+\end{align*}
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item
+\begin{align*}
+t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1} &= s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_i^{-1}s_k^{-1}s_j^{-1}s_ks_i^{-1}s_k^{-1}s_j^{-1}\\
+&= s_i^{-1}s_ks_is_js_i^{-1}s_ks_is_js_i^{-1}s_k^{-1}s_is_j^{-1}s_i^{-1}s_k^{-1}s_is_j^{-1}\\
+&= s_i^{-1}s_ks_js_ks_js_k^{-1}s_j^{-1}s_k^{-1}s_j^{-1}s_i\\
+&= e
+\end{align*}
+We also have
+$$ t_jt_k^{-1}t_it_k = s_js_k^{-1}s_ks_is_k^{-1}s_k = s_js_i = s_is_j = t_it_j$$
+
+\item
+\begin{align*}
+s_k^{-1}t_it_jt_i^{-1}t_j^{-1}s_k &= s_k^{-1}s_is_ks_js_k^{-1}s_i^{-1}s_ks_j^{-1}\\
+&= s_is_ks_i^{-1}s_js_is_k^{-1}s_i^{-1}s_j^{-1}\\
+&= e
+\end{align*}
+
+\end{enumerate}
+\item
+\begin{enumerate}[i)]
+\item
+\begin{align*}
+s_k^{-1}t_it_jt_it_j^{-1}t_i^{-1}t_j^{-1} &= s_is_k^{-1}s_js_ks_is_k^{-1}s_j^{-1}s_ks_i^{-1}s_k^{-1}s_j^{-1}s_k\\
+&= e
+\end{align*}
+
+\begin{align*}
+t_it_j^{-1}t_kt_jt_i^{-1}t_j^{-1}s_k^{-1}t_j &= s_ks_is_k^{-1}s_j^{-1}s_ks_js_ks_i^{-1}s_k^{-1}s_j^{-1}s_k^{-1}s_j\\
+&= s_ks_is_js_ks_j^{-1}s_k^{-1}s_ks_i^{-1}s_k^{-1}s_j^{-1}s_k^{-1}s_j\\
+&= s_ks_is_js_ks_j^{-1}s_i^{-1}s_k^{-1}s_j^{-1}s_k^{-1}s_j\\
+&= s_ks_is_js_ks_j^{-1}s_i^{-1}s_js_k^{-1}s_j^{-1}s_k^{-1}\\
+&= s_ks_js_ks_j^{-1}s_is_i^{-1}s_js_k^{-1}s_j^{-1}s_k\\
+&= e\\
+\end{align*}
+
+\item This follows from part (i) by symmetry
+\end{enumerate}
+\end{enumerate}
+
+
+
+'\end{document}
