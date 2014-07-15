@@ -439,8 +439,711 @@ The relations described in ~\ref{even_more_relations} are permuted (and hence pr
 This is what additionally needs to be checked in ~\ref{5.2 analog} by adding ~\ref{even_more_relations} in the cases corresponding to cycles with edges of weight 2 in the paper. I.e. it has to be checked in cases (b,c,d,e,f,g,h). It seems like a lot of casework, but there's a fair amount of symmetry to make it a bit easier, and I checked this in a few cases, and it seemed to work out. d
 \end{proof}
 
-\section{Diagrams}
-picure e
+\section{Diagrams of Finite Type}
+
+In this section, we shall review the structure of diagrams of finite type, and how their cycles are effected by mutation. This section is simply a recap of \cite[Section 2]{barot}.
+
+\begin{defn}
+A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \subset G$ such that the number of vertices in $H$ is equal to the number of edges in $H,$ and the edges in $H$ form a single cycle.  
+\end{defn}
+
+\begin{prop}
+Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a triangle with two edges of weight 2 and one of weight 1, or a square with two opposite edges of weight 2 and two opposite edges of weight 1, as pictured below.
+
+\begin{tikzpicture}[baseline=-0.5ex]
+ \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & &|[name = ul]|\circ& |[name = ur]|\circ&\\
+    %
+    &|[name=lu]| \circ &&&|[name=ru]| \circ \\
+     & |[name = ld]|\circ&&& |[name = rd]|\circ\\
+    %
+    &&|[name=dl]| \circ &|[name=dr]| \circ &\\
+  };
+\draw
+  (ul) -- node[above] {1} (ur)
+  ;
+  \draw
+  (ul) -- node[left]{1}(lu)
+  ;
+  \draw
+  (dr) -- node[right]{1}(rd)
+  ;
+  \draw
+  (lu) -- node[left]{1}(ld)
+  ;
+  \draw
+  (ru) -- node[right]{1}(rd)
+  ;
+  \draw
+  (ur) -- node[right]{1}(ru)
+  ;
+  \draw
+  (dl) -- node[left]{1}(ld)
+  ;
+  \draw[dotted]
+  (dl) -- (dr)
+  ; 
+ \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    & |[name = ul]|\circ& |[name = ur]|\circ\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw
+  (ul) -- node[above] {1} (ur)
+  ;
+  \draw
+  (dl) -- node[left]{2}(ul)
+  ;
+  \draw
+  (dr) -- node[below]{1}(dl)
+  ;
+  \draw
+  (ur) -- node[right]{2} (dr)
+  ; 
+   \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (10,0)
+  {
+    && |[name = u]|\circ& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw
+  (u) -- node[right] {2} (dr)
+  ;
+  \draw
+  (dl) -- node[left]{2}(u)
+  ;
+  \draw
+  (dr) -- node[below]{1}(dl)
+  ;
+  
+   \end{tikzpicture}
+
+\end{prop}
+\begin{proof}
+See \cite[Proposition 2.1]{barot}.
+\end{proof}
+
+\begin{lem}
+Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k.$ Below, we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. Every chordless cycle in $\Gamma'$ is of one of these types.
+
+\begin{enumerate}[(a)]
+\item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {1} (u)
+  ;
+  \draw[->]
+  (u) to node[left]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {1} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{1}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+   \end{tikzpicture}
+   \item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {1} (u)
+  ;
+  \draw[->]
+  (u) to node[left]{2}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {1} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{2}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+   \end{tikzpicture}
+   \item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {2} (u)
+  ;
+  \draw[->]
+  (u) to node[left]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {2} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{1}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{2}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+   \end{tikzpicture}
+	\item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {2} (u)
+  ;
+  \draw[->]
+  (u) to node[left]{2}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{1}(dr)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {2} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+   \end{tikzpicture}
+	\item 
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & |[name = ul]|\bullet& |[name = ur]|\circ\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ur) to node[above] {1} (ul)
+  ;
+  \draw[->]
+  (ul) to node[left]{2}(dl)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ur) to node[right]{2} (dr)
+  ;
+\draw[->]
+  (dl) to node[above]{2} (ur)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    & |[name = ul]|\bullet& |[name = ur]|\circ\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ul) to node[above] {1} (ur)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(ul)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ur) to node[right]{2} (dr)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+ 
+   \end{tikzpicture}
+   
+\item \begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & |[name = ul]|\circ& |[name = ur]|\bullet\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ur) to node[above] {1} (ul)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(ul)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (dr) to node[right]{2} (ur)
+  ;
+\draw[->]
+  (ul) to node[above]{2} (dr)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    & |[name = ul]|\circ& |[name = ur]|\bullet\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ul) to node[above] {1} (ur)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(ul)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ur) to node[right]{2} (dr)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+ 
+   \end{tikzpicture}
+
+   \item  
+   \begin{tikzpicture}[baseline=-0.5ex]
+
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & |[name = ul]|\bullet& |[name = ur]|\circ\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ul) to node[above] {1} (ur)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(ul)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ur) to node[right]{2} (dr)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+ 
+   \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    & |[name = ul]|\bullet& |[name = ur]|\circ\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ur) to node[above] {1} (ul)
+  ;
+  \draw[->]
+  (ul) to node[left]{2}(dl)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ur) to node[right]{2} (dr)
+  ;
+\draw[->]
+  (dl) to node[above]{2} (ur)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+    \end{tikzpicture}
+    
+    
+   \item  
+   \begin{tikzpicture}[baseline=-0.5ex]
+
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & |[name = ul]|\circ& |[name = ur]|\bullet\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ul) to node[above] {1} (ur)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(ul)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ur) to node[right]{2} (dr)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+ 
+   \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    & |[name = ul]|\circ & |[name = ur]|\bullet\\
+    %
+    &|[name=dl]| \circ &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (ur) to node[above] {1} (ul)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(ul)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (dr) to node[right]{2} (ur)
+  ;
+\draw[->]
+  (ul) to node[above]{2} (dr)
+  ;
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+    \end{tikzpicture}
+    
+   \item
+   \begin{tikzpicture}[baseline=-0.5ex]
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={25pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & |[name = ul]|\circ& |[name = um]|\circ & |[name = ur]|\circ&\\
+    %
+    |[name = ml]|\bullet& &&& |[name = mr]|\vdots \\
+    %
+    & |[name = dl]|\circ& |[name = dm]|\circ & |[name = dr]|\circ&\\
+  };
+\draw[->]
+  (ml) to node[above] {1} (ul)
+  ;
+  \draw[->]
+  (ul) to node[above]{1}(um)
+  ;
+  \draw[->]
+  (um) to node[above]{1}(ur)
+  ;
+  \draw[->]
+  (ur) [bend left] to (mr)
+  ;
+  \draw[->]
+  (mr) [bend left] to (dr)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dm)
+  ;
+  \draw[->]
+  (dm) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{1}(ml)
+  ;
+    \node at (ml.west){$k$};
+    \node at (ul.north){1};
+    \node at (um.north){2};
+    \node at (dm.south){$h-1$};
+    \node at (dl.south){$h$};
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={25pt,between origins},nodes={asymmetrical rectangle}] at (8,0)
+  {
+    & |[name = ul]|\circ& |[name = um]|\circ & |[name = ur]|\circ&\\
+    %
+    |[name = ml]|\bullet& &&& |[name = mr]|\vdots \\
+    %
+    & |[name = dl]|\circ& |[name = dm]|\circ & |[name = dr]|\circ&\\
+  };
+\draw[->]
+  (ul) to node[above] {1} (ml)
+  ;
+  \draw[->]
+  (ul) to node[above]{1}(um)
+  ;
+  \draw[->]
+  (um) to node[above]{1}(ur)
+  ;
+  \draw[->]
+  (ur) [bend left] to (mr)
+  ;
+  \draw[->]
+  (mr) [bend left] to (dr)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dm)
+  ;
+  \draw[->]
+  (dm) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ml) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (dl) to node[right]{1}(ul)
+  ;
+    \node at (ml.west){$k$};
+    \node at (ul.north){1};
+    \node at (um.north){2};
+    \node at (dm.south){$h-1$};
+    \node at (dl.south){$h$};
+    \end{tikzpicture}
+   
+   \item
+   \begin{tikzpicture}[baseline=-0.5ex]
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={25pt,between origins},nodes={asymmetrical rectangle}] at (8,0)
+  {
+    & |[name = ul]|\circ& |[name = um]|\circ & |[name = ur]|\circ&\\
+    %
+    |[name = ml]|\bullet& &&& |[name = mr]|\vdots \\
+    %
+    & |[name = dl]|\circ& |[name = dm]|\circ & |[name = dr]|\circ&\\
+  };
+\draw[->]
+  (ml) to node[above] {1} (ul)
+  ;
+  \draw[->]
+  (ul) to node[above]{1}(um)
+  ;
+  \draw[->]
+  (um) to node[above]{1}(ur)
+  ;
+  \draw[->]
+  (ur) [bend left] to (mr)
+  ;
+  \draw[->]
+  (mr) [bend left] to (dr)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dm)
+  ;
+  \draw[->]
+  (dm) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{1}(ml)
+  ;
+    \node at (ml.west){$k$};
+    \node at (ul.north){1};
+    \node at (um.north){2};
+    \node at (dm.south){$h-1$};
+    \node at (dl.south){$h$};
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={25pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & |[name = ul]|\circ& |[name = um]|\circ & |[name = ur]|\circ&\\
+    %
+    |[name = ml]|\bullet& &&& |[name = mr]|\vdots \\
+    %
+    & |[name = dl]|\circ& |[name = dm]|\circ & |[name = dr]|\circ&\\
+  };
+\draw[->]
+  (ul) to node[above] {1} (ml)
+  ;
+  \draw[->]
+  (ul) to node[above]{1}(um)
+  ;
+  \draw[->]
+  (um) to node[above]{1}(ur)
+  ;
+  \draw[->]
+  (ur) [bend left] to (mr)
+  ;
+  \draw[->]
+  (mr) [bend left] to (dr)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dm)
+  ;
+  \draw[->]
+  (dm) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (ml) to node[below]{1}(dl)
+  ;
+  \draw[->]
+  (dl) to node[right]{1}(ul)
+  ;
+    \node at (ml.west){$k$};
+    \node at (ul.north){1};
+    \node at (um.north){2};
+    \node at (dm.south){$h-1$};
+    \node at (dl.south){$h$};
+    \end{tikzpicture}
+    
+    \item $C$ is an oriented cycle in $\Gamma$ not connected to $k$ and $C'$ is the corresponding cycle in $\Gamma'.$
+    
+    \item $C$ is an oriented cycle in $\Gamma$ with exactly one vertex in $C$ connected to $k$ by an edge of either weight 1 or 2. Then, $C'$ is the corresponding cycle in $\Gamma'.$  
+\end{enumerate}
+
+\end{lem}
+\begin{proof}
+See \cite[Lemma 2.5]{barot}.
+\end{proof}
+
+\section{The Group of a Diagram in an Artin Group}
+
+\begin{defn}
+For $\Gamma$ a diagram of finite type, we define the associated Artin Group as follows. The associated artin group $W_\Gamma$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the relations
+\begin{itemize}
+	\item[(R2')] For all $i \neq j,$ we add the relations
+	\\
+$	\begin{cases}
+	s_is_j=s_js_i, &\text{ if there is no edge between $i$ and $j$}\\
+	s_is_js_i = s_js_is_j &\text{ if there is an edge of weight 1 between $i$ and $j.$}\\
+	s_is_js_is_j = s_js_is_js_i &\text{ if there is an edge of weight 2 between $i$ and $j$.}\\
+	s_is_js_is_js_is_j = s_js_is_js_is_js_i &\text{ if there is an edge of weight 3 between $i$ and $j$.}
+\end{cases}$
+\item[(R3')(a)] For every chordless cycle of the form
+
+\begin{tikzcd}
+i_0 \arrow{r} & i_1 \arrow{r} & \cdots \arrow{r} & i_{d-1} \arrow{r} & i_0
+\end{tikzcd}
+
+such that all edges have weight 1, for all $i,$ with $0 \leq a \leq d-1,$ we include the relation 
+\begin{align*}
+	s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a}.
+\end{align*}
+Where subscripts are taken $\pmod d.$ 
+
+\item[(R3')(a)] For every chordless cycle of the form \begin{tikzpicture}[baseline=-0.5ex]
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {1} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{2}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){i};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){k};
+   \end{tikzpicture}
+   we include the three relations
+   \begin{enumerate}[(1)]
+\item $s_{i}s_{j}^{-1}s_{k}s_{j} = s_{j}^{-1}s_{k}s_{j}s_{i}$
+\item $s_{j}s_{k}^{-1}s_{i}s_{k} = s_{k}^{-1}s_{i}s_{k}s_{j}$
+\item $s_{k}^{-1}s_{i}^{-1}s_{j}s_{i}s_{k}s_{i}^{-1}s_{j}s_{i}s_{k}^{-1}s_{i}^{-1}s_{j}^{-1}s_{i} = e.$
+\end{enumerate}
+\end{itemize}
+\end{defn}
+
+\begin{rem}
+Note that if $\Gamma$ is the graph associated to a dynikin diagram, then $W_\Gamma$ as we have defined it is precisely the corresponding Artin group corresponding to that dynkin diagram. This is the case since in this case we have no cycles in $\Gamma,$ and so we only have relation of the form $(R2'),$ which define the Artin Group.
+\end{rem}
+
+
+
+
+\section{Additional Pictures}
 \begin{tikzpicture}[baseline=-0.5ex]
 \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
@@ -712,4 +1415,11 @@ Picture g
     \node at (dm.south){$h-1$};
     \node at (dl.south){$h$};
     \end{tikzpicture}
+    
+ \begin{thebibliography}{70}
+
+\bibitem{barot}
+Barot and Marsh -- CITE THIS CORRECTLY LATER
+
+\end{thebibliography}
 \end{document}

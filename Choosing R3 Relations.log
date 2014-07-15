@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  3 JUL 2014 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 JUL 2014 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,43 +972,44 @@ Overfull \hbox (243.89914pt too wide) in paragraph at lines 421--421
 [] 
  []
 
-
-Overfull \hbox (173.10954pt too wide) in paragraph at lines 443--632
-[]\OT1/cmr/m/n/10.95 picure e [] Pic-ture g []
+[9] [10] [11]
+Overfull \hbox (134.14575pt too wide) in paragraph at lines 1198--1335
+[][] \OT1/cmr/m/n/10.95 Pic-ture g []
  []
 
-[9] (./Choosing R3 Relations.aux) ) 
+[12] (./Choosing R3 Relations.aux) ) 
 Here is how much of TeX's memory you used:
- 19834 strings out of 493117
- 370071 string characters out of 6135433
- 480391 words of memory out of 5000000
- 22711 multiletter control sequences out of 15000+600000
+ 20091 strings out of 493117
+ 375282 string characters out of 6135433
+ 492369 words of memory out of 5000000
+ 22968 multiletter control sequences out of 15000+600000
  20530 words of font info for 79 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 62i,15n,82p,3259b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/en
-c/dvips/mnsymbol/MnSymbolA.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dv
-ips/mnsymbol/MnSymbolE.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/
-mnsymbol/MnSymbolD.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/mnsy
-mbol/MnSymbolC.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/mnsym
-bol/MnSymbol10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/mnsym
-bol/MnSymbol6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/mnsymb
-ol/MnSymbol8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmcsc10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on "Choosing R3 Relations.pdf" (9 pages, 199261 bytes).
+ 62i,15n,82p,3259b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/e
+nc/dvips/mnsymbol/MnSymbolA.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/d
+vips/mnsymbol/MnSymbolE.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips
+/mnsymbol/MnSymbolD.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/mns
+ymbol/MnSymbolC.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/mnsy
+mbol/MnSymbol10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/mnsy
+mbol/MnSymbol6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/mnsym
+bol/MnSymbol8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmcsc10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on "Choosing R3 Relations.pdf" (12 pages, 229527 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 122 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
