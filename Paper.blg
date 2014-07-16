@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Paper.aux
 The style file: alpha.bst
 Database file #1: References.bib
-You've used 1 entry,
+Warning--I didn't find a database entry for "Barot"
+You've used 4 entries,
             2543 wiz_defined-function locations,
-            564 strings with 4562 characters,
-and the built_in function-call counts, 317 in all, are:
-= -- 31
-> -- 19
-< -- 0
-+ -- 6
-- -- 6
-* -- 19
-:= -- 68
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 9
-empty$ -- 15
-format.name$ -- 7
-if$ -- 57
+            588 strings with 4841 characters,
+and the built_in function-call counts, 1607 in all, are:
+= -- 165
+> -- 76
+< -- 1
++ -- 25
+- -- 24
+* -- 105
+:= -- 278
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 24
+chr.to.int$ -- 4
+cite$ -- 4
+duplicate$ -- 60
+empty$ -- 107
+format.name$ -- 28
+if$ -- 331
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 2
+missing$ -- 3
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 13
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 28
 quote$ -- 0
-skip$ -- 12
+skip$ -- 61
 stack$ -- 0
-substring$ -- 7
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 96
+swap$ -- 12
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 32
 warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 14
+while$ -- 16
+width$ -- 7
+write$ -- 53
+(There was 1 warning)

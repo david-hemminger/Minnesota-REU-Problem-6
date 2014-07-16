@@ -5,4 +5,19 @@ Michael Barot and Robert~J. Marsh.
 \newblock Reflection group presentations arising from cluster algebras.
 \newblock arXiv: 1112.2300v2, 2013.
 
+\bibitem[FN61]{FN61}
+R.~Fox and L.~Neuwirth.
+\newblock The braid groups.
+\newblock {\em Mathematica Scandinavica}, pages 119--126, 1961.
+
+\bibitem[FZ02]{FZ02}
+Sergey Fomin and Andrei Zelevinsky.
+\newblock Cluster algebras i: Foundations.
+\newblock {\em J. Amer. Math. Soc.}, 15:497--529, 2002.
+
+\bibitem[FZ03]{FZ03}
+Sergey Fomin and Andrei Zelevinsky.
+\newblock Cluster algebras ii: Finite type classification.
+\newblock {\em Invent. Math.}, 154:63--121, 2003.
+
 \end{thebibliography}
