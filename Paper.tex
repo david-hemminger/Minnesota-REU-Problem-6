@@ -1046,8 +1046,48 @@ Thus $\psi\circ\varphi$ is the identity map on $A(\Gamma^{\prime})$.  By a simil
 
 
 
+
+
+
+
+
+
+
+
+
 \begin{proof}[Proof of Proposition \ref{prop:ti_relations}]
-After Lemma \ref{lem:one_connected_to_k} we have left to check the relations $(R2)$ when both $i$ and $j$ are connected to $k$ and the relations $(R3)$.  Beginning with the relations $(R2)$, and following cases a-f from Corollary 2.3 in Barot and Marsh:
+First we check the $(R2)'$ relation for $t_i$ and $t_j$ in the case when $i=k$ or $j=k$.  Without loss of generality suppose that $i=k$.  Note that $m_{ij}^\prime = m_{ij}$.  The only nontrivial case is when there is an arrow $j\rightarrow k =i$.  Since $i$ and $j$ are connected in this case, $m_{ij}$ is one of 3,4, or 6.  Suppose $m_{ij} = 3$.  Then $s_js_is_j = s_is_js_i$, so $s_is_j = s_js_is_js_i^{-1}$, and we have
+
+$$t_it_jt_i = s_is_is_js_i^{-1}s_i = s_is_is_j = s_is_js_is_js_i^{-1} = t_jt_it_j$$
+
+\noindent If $m_{ij} = 4$, then $s_is_js_is_j = s_js_is_js_i$, so $s_is_is_js_is_js_i^{-1} = s_is_js_is_j$ and therefore
+
+$$t_it_jt_it_j = s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_js_i^{1-}s_is_is_js_i^{-1}s_i = t_jt_it_jt_i$$
+
+\noindent If $m_{ij} = 6$, then $s_is_is_js_is_js_is_js_i^{-1} = s_is_js_is_js_is_j$, so 
+
+$$t_it_jt_it_jt_it_j = s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_i = t_jt_it_jt_it_jt_i$$
+
+Next we check the $(R2)'$ relation for $t_i$ and $t_j$ in the case when at most one of $i$ and $j$ is connected to $k$.  The only nontrivial case is when there is an arrow $i\rightarrow k$ or $j\rightarrow k$.  Without loss of generality, suppose there is an arrow $i\rightarrow k$.  Since $j$ is not connected to $k$, we know that $s_js_k = s_ks_j$.  Suppose $m_{ij} = 2$.  Then $s_is_j = s_js_i$, so we have that
+
+$$t_it_j = s_ks_is_k^{-1}s_j = s_js_ks_is_k^{-1} = t_jt_i$$
+
+\noindent If $m_{ij} = 3$, then $s_is_js_i = s_js_is_j$, so we have that 
+
+$$t_it_jt_i = s_ks_is_k^{-1}s_js_ks_is_k^{-1} = s_ks_is_js_is_k^{-1} = s_ks_js_is_js_k^{-1} = s_js_ks_is_k^{-1}s_j = t_jt_it_j$$
+
+\noindent If $m_{ij} = 4$, then $s_is_js_is_j = s_js_is_js_i$, so we have that
+
+$$t_it_jt_it_j = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_k^{-1} = s_ks_js_is_js_is_k^{-1} = s_js_ks_is_k^{-1}s_js_ks_is_k^{-1} = s_js_is_js_i$$
+
+\noindent Finally if $m_{ij} = 6$, then $s_is_js_is_js_is_j = s_js_is_js_is_js_i$, so we have that
+
+$$t_it_jt_it_jt_it_j = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_is_js_k^{-1} = s_ks_js_is_js_is_js_is_k^{-1} = t_jt_it_jt_it_jt_i$$
+
+
+
+
+The remaining $(R2)'$ relations that need to be check are the relations for $t_i$ and $t_j$ when both $i$ and $j$ are connected to $k$.  The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in \todo{where are they enumerated?}.  We show that $t_i$ and $t_j$ satisfy the $(R2^\prime)$ relations by checking each case.  We also check that the corresponding $(R3^\prime)$ relations hold in cases (b), (d), (e), and (f).
 
 
 \begin{enumerate}[a)]
