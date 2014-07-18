@@ -1,6 +1,7 @@
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ let's add the statement of the main theorem to the introduction - David}{1}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ use section labels rather than explicit numbers}{1}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ for example}{2}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ we should pick notation for this}{9}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ add relevant lemma references}{11}
-\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ insert diagrams}{11}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ The first sentence seems to be run on, and I'm very confused by it}{1}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Say what this way is?}{3}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ Maybe it's worth presenting definition 2.4 before this, and then saying it is equivalent to removing certain the (R3)(b) relations. Don't they actually present the definition you refer to in Definition 2.4 as the presentation? You say it is an alteration there, but I think it's the original definition}{3}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ we should pick notation for this}{10}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ where are they enumerated?}{11}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ add relevant lemma references}{13}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ insert diagrams}{13}
