@@ -36,6 +36,7 @@
 %\usepackage[all]{xy}
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}
+\newtheorem{note}[thm]{Notation}
 \newtheorem{rem}[thm]{Remark}
 \newcommand\fri{s_4^{-1}}
 \newcommand\fr{s_4}
@@ -60,6 +61,7 @@
 
 
 
+
 \title{Artin Group Presentations of Reflection Groups}
 \author{Jacob Haley, David Hemminger, Aaron Landesman, Hailee Peck}
 \address{you can put addresses for authors\\
@@ -79,19 +81,25 @@ In 2003, Fomin and Zelevinsky proved that finite-type cluster algebras can be cl
 \label{sec:Intro}
 
 
-In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster algebras. This introductory paper focused on structural features of cluster algebras, specifically that, in a given cluster, when any cluster variable is viewed as a rational function in the variables of the given cluster, this cluster variable is a Laurent polynomial. Fomin and Zelevinsky initially defined this type of commutative ring in order to make further strides in the areas of representation theory, Lie theory, and total positivity. Since then, the study of cluster algebras has provided a motivation for applications in various other areas of mathematics, including quiver representations. Of particular interest were \textit{finite-type} cluster algebras; that is, cluster algebras whose variables are generated through mutation on a finite number of \textit{seeds}. In the 2003 sequel to their introductory paper (\cite{FZ03}), Fomin and Zelevinsky introduce the concept of \textit{mutation equivalence} between diagrams, proving that a connected graph is mutation equivalent to an oriented Dynkin diagram if and only if all mutation equivalent graphs have edge weights not exceeding 3. In particular, this proves that finite-type cluster algebras can be classified by Dynkin diagrams. \\
+In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster algebras. This introductory paper focused on structural features of cluster algebras, specifically that, in a given cluster, when any cluster variable is viewed as a rational function in the variables of the given cluster, this cluster variable is a Laurent polynomial. \todo{The first sentence seems to be run on, and I'm very confused by it} Fomin and Zelevinsky defined cluster algebras in order to make further strides in the areas of representation theory, Lie theory, and total positivity. Since then, the study of cluster algebras has provided a motivation for applications in various other areas of mathematics, including quiver representations. Of particular interest were \textit{finite-type} cluster algebras, that is, cluster algebras whose variables are generated through mutation on a finite number of \textit{seeds}. In the sequel to their introductory paper (\cite{FZ03}), Fomin and Zelevinsky introduce the concept of \textit{mutation equivalence} between diagrams, proving that a connected graph is mutation equivalent to an oriented Dynkin diagram if and only if all mutation equivalent graphs have edge weights not exceeding 3. In particular, this proves that finite-type cluster algebras can be classified by Dynkin diagrams. \\
 \indent Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite-type cluster algebra. They also proved that this group presentation is invariant up to isomorphism under the mutation equivalence relation.
 
-\begin{theorem}\cite[Theorem 5.4]{BM13}
+
+\todo{Fix mathscr on Hailee's first theorem which is commented out}
+
+\iffalse
+\begin{thm}\cite[Theorem 5.4]{BM13}
 \begin{enumerate}
 \item Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
 \item Let $\mathscr{A}$ be a cluster algebra of finite type. Then the groups $W_{\Gamma}$ associated to the diagrams $\Gamma$ arising from the seeds of $\mathscr{A}$ are all isomorphic (to the reflection group associated to the Dynkin diagram associated to $\mathscr{A}$).
 \end{enumerate}
-\end{theorem}
+\end{thm}
+\fi
+
 
 That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively. \\
 
-\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to provide motivation for our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup} we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies a relation for each case of the chordless cycles which suffices to show all the other relations in the group presentation hold. Finally, Section \todo{for example}\ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
+\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \todo{for example}\ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
 
 \section{Definitions and Notation}
 \label{sec:main_definitions}
@@ -121,12 +129,13 @@ Let $B$ be a 2-finite skew-symmetrisable matrix. Then $\Gamma(\mu_k(B))$ is uniq
 \item Reverse the orientations of all edges in $\Gamma(B)$ incident with $k$ (leaving the weights unchanged)
 \item For any path in $\Gamma(B)$ of form $i \xrightarrow{a} k \xrightarrow{b} j$ (i.e. with $a,b$ positive), let $c$ be the weight on the edge $j \rightarrow i$, taken to be zero if there is no such arrow. Let $c'$ be determined by $c'\geq 0$ and 
 $c+c' =$ max$(a,b)$. 
-Then $\Gamma(B)$ changes in a predetermined way, taking the case $c' = 0$ to mean no arrow between $i$ and $j$.
+Then $\Gamma(B)$ changes in a predetermined way, \todo{Say what this way is?} taking the case $c' = 0$ to mean no arrow between $i$ and $j$.
 \end{itemize}
 \end{prop}
 
+\begin{note}
 We notate this mutation of $\Gamma(B)$ at vertex $k$ by $\mu_k(\Gamma)$. \\
-
+\end{note}
 
 
 \indent Given a diagram $\Gamma$, Barot and Marsh define for $i, j \in \V$,
@@ -150,6 +159,7 @@ and all of the weights $w_k$ are $1$ or $w_0 = 2$, we have
 \begin{displaymath}
 (s_{i_0}s_{i_1}\cdots s_{i_{d-2}}s_{i_{d-1}}s_{i_{d-2}}\cdots s_{i_1})^2 =e.
 \end{displaymath}
+\todo{Maybe it's worth presenting definition 2.4 before this, and then saying it is equivalent to removing certain the (R3)(b) relations. Don't they actually present the definition you refer to in Definition 2.4 as the presentation? You say it is an alteration there, but I think it's the original definition}
 \end{enumerate}
 
 Using this group presentation, Barot and Marsh state the following result:
@@ -175,12 +185,12 @@ Then we have the following relations:
 \end{itemize}
 \end{defn}
 
-Defining the group $W_{\Gamma}$ with relations as shown above allows them to prove certain characteristics about the interaction between the relations in this group for the chordless cycles underlying the diagrams in question. In particular, they prove the following result, which we include as our main goal was to define analogous relations for an Artin group that would satisfy the same result.
+Defining the group $W_{\Gamma}$ with relations as shown above allows them to prove certain characteristics about the interaction between the relations in this group for the chordless cycles underlying the diagrams in question. In particular, they prove the following result.
 \begin{thm}\cite[Theorem 5.4a]{BM13}
 Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
 \end{thm}
 
-The rest of the paper will be devoted to building up our relations and Artin group structure in order to prove this result in the case of Artin groups. 
+The rest of the paper will be devoted to building up analogous relations, defined in ~\ref{grp def} to prove a similar result in the case of Artin groups.
 
 
 \section{Diagrams of Finite Type}
@@ -272,6 +282,245 @@ Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unorien
 \begin{proof}
 See \cite[Proposition 2.1]{BM13}.
 \end{proof}
+
+\begin{cor}
+Let $\Gamma$ be the a graph of finite type and suppose there are three vertices, labeled $i,j,k$ with both $i,j$ connected to $k.$ Then mutation at $k$ on the induced subdiagram appear as in one of the following figures, either from left to right or right to left, up to switching $i$ and $j,$
+
+\begin{enumerate}[(a)]
+\item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {1} (u)
+  ;
+  \draw[->]
+  (dl)to node[left]{1}(u) 
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+   (u)to node[right] {1} (dr)
+  ;
+  \draw[->]
+  (u) to node[left]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+   \end{tikzpicture}
+	\item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {1} (dr)
+  ;
+  \draw[->]
+  (dl)to node[left]{1}(u) 
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {1}(u) 
+  ;
+  \draw[->]
+  (u) to node[left]{1}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{1}(dr)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+   \end{tikzpicture}
+
+\item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {2} (u)
+  ;
+  \draw[->]
+  (dl)to node[left]{1}(u) 
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+   (u)to node[right] {2} (dr)
+  ;
+  \draw[->]
+  (u) to node[left]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+   \end{tikzpicture}
+   \item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {1} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(u)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr)to node[right] {1} (u) 
+  ;
+  \draw[->]
+  (u) to node[left]{2}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{2}(dr)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+   \end{tikzpicture}
+   \item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (u) to node[right] {2} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{1}(u)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {2} (u)
+  ;
+  \draw[->]
+  (u) to node[left]{1}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{2}(dr)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+   \end{tikzpicture}
+	\item 	
+	\begin{tikzpicture}[baseline=-0.5ex]
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+   (u) to node[right] {2}(dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+  (dr) to node[right] {2} (u)
+  ;
+  \draw[->]
+  (u) to node[left]{2}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{1}(dr)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+   \end{tikzpicture}
+\end{enumerate}
+
+\end{cor}
+\begin{proof}
+See \cite[Corollary 2.3]{BM13}.
+\end{proof}
+
+
 
 \begin{lem}\label{lem:chordless_cycles}
 Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k.$ Below, we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. Every chordless cycle in $\Gamma'$ is of one of these types.
