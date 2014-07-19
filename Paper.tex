@@ -37,6 +37,7 @@
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}
 \newtheorem{note}[thm]{Notation}
+\newtheorem{ex}[thm]{Example}
 \newtheorem{rem}[thm]{Remark}
 \newcommand\fri{s_4^{-1}}
 \newcommand\fr{s_4}
@@ -140,6 +141,7 @@ We notate this mutation of $\Gamma(B)$ at vertex $k$ by $\mu_k(\Gamma)$. \\
 
 \indent Given a diagram $\Gamma$, Barot and Marsh define for $i, j \in \V$,
 \begin{displaymath}
+\label{mij_defn}
 m_{ij} = \begin{cases}    2 & \mbox{if } i \mbox{ and } j \mbox{ are not connected;} \\
 																	3 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 1;\\
 																	4 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 2;\\
@@ -196,13 +198,14 @@ The rest of the paper will be devoted to building up analogous relations, define
 \section{Diagrams of Finite Type}
 \label{sec:finite-type_diagrams}
 
-In this section, we shall review the structure of diagrams of finite type, and how their cycles are affected by mutation. This section is simply a recap of \cite[Section 2]{BM13}.
+In this section, we shall review the structure of diagrams of finite type, and how their cycles are affected by mutation. This section is simply a recap of \cite[Section 2]{BM13}. First, in Proposition ~\ref{cycle_types}, all types of chordless cycles in diagrams of finite type are classified. Second, in Corollary ~\ref{local_three_picture} all possible local pictures between a mutated vertex and two adjacent vertices are drawn. Finally, in ~\ref{lem:chordless_cycles}, all chordless cycles introduced from a mutation are drawn. These three lemmas will be crucial in proving the main result Theorem ~\ref{thm:main}, as they will allow us to inspect precisely which relations are added and removed after mutating at a prescribed vertex.
 
 \begin{defn}
 A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \subset G$ such that the number of vertices in $H$ is equal to the number of edges in $H,$ and the edges in $H$ form a single cycle.  
 \end{defn}
 
 \begin{prop}
+\label{cycle_types}
 Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a triangle with two edges of weight 2 and one of weight 1, or a square with two opposite edges of weight 2 and two opposite edges of weight 1, as pictured below.
 
 \begin{tikzpicture}[baseline=-0.5ex]
@@ -284,6 +287,7 @@ See \cite[Proposition 2.1]{BM13}.
 \end{proof}
 
 \begin{cor}
+\label{local_three_picture}
 Let $\Gamma$ be the a graph of finite type and suppose there are three vertices, labeled $i,j,k$ with both $i,j$ connected to $k.$ Then mutation at $k$ on the induced subdiagram appear as in one of the following figures, either from left to right or right to left, up to switching $i$ and $j,$
 
 \begin{enumerate}[(a)]
@@ -306,7 +310,7 @@ Let $\Gamma$ be the a graph of finite type and suppose there are three vertices,
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -341,7 +345,7 @@ Let $\Gamma$ be the a graph of finite type and suppose there are three vertices,
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -380,7 +384,7 @@ Let $\Gamma$ be the a graph of finite type and suppose there are three vertices,
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -415,7 +419,7 @@ Let $\Gamma$ be the a graph of finite type and suppose there are three vertices,
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -453,7 +457,7 @@ Let $\Gamma$ be the a graph of finite type and suppose there are three vertices,
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -494,7 +498,7 @@ Let $\Gamma$ be the a graph of finite type and suppose there are three vertices,
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -545,7 +549,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -563,6 +567,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   \node [yshift = .4 cm] at (u){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
    \item 	
 	\begin{tikzpicture}[baseline=-0.5ex]
@@ -583,7 +588,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -601,6 +606,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   \node [yshift = .4 cm] at (u){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
    \item 	
 	\begin{tikzpicture}[baseline=-0.5ex]
@@ -621,7 +627,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -639,6 +645,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   \node [yshift = .4 cm] at (u){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
 	\item 	
 	\begin{tikzpicture}[baseline=-0.5ex]
@@ -662,7 +669,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     && |[name = u]|\bullet& \\
     %
@@ -680,6 +687,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   \node [yshift = .4 cm] at (u){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
+    \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
 	\item 
 \begin{tikzpicture}[baseline=-0.5ex]
@@ -710,7 +718,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     & |[name = ul]|\bullet& |[name = ur]|\circ\\
     %
@@ -732,7 +740,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
    \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
- 
+ 	\node [yshift = -.7 cm,xshift = .7 cm] at (ul){$C'$};
    \end{tikzpicture}
    
 \item \begin{tikzpicture}[baseline=-0.5ex]
@@ -763,7 +771,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     & |[name = ul]|\circ& |[name = ur]|\bullet\\
     %
@@ -785,7 +793,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
    \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
- 
+ 	\node [yshift = -.7 cm,xshift = .7 cm] at (ul){$C'$};
    \end{tikzpicture}
 
    \item  
@@ -816,7 +824,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
  
    \matrix[matrix of math nodes,column sep={40pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     & |[name = ul]|\bullet& |[name = ur]|\circ\\
     %
@@ -841,6 +849,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
    \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+ 	\node [yshift = -.95 cm,xshift = .95 cm] at (ul){$C'$};
     \end{tikzpicture}
     
     
@@ -872,7 +881,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
  
    \matrix[matrix of math nodes,column sep={40pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
   {
     & |[name = ul]|\circ & |[name = ur]|\bullet\\
     %
@@ -897,6 +906,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
    \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+ 	\node [yshift = -.95 cm,xshift = .3 	5 cm] at (ul){$C'$};
     \end{tikzpicture}
     
    \item
@@ -980,6 +990,8 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node at (um.north){2};
     \node at (dm.south){$h-1$};
     \node at (dl.south){$h$};
+    
+ 	\node [yshift = -.9 cm] at (um){$C'$};
     \end{tikzpicture}
    
    \item
@@ -1022,6 +1034,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node at (um.north){2};
     \node at (dm.south){$h-1$};
     \node at (dl.south){$h$};
+ 	\node [yshift = -.9 cm] at (um){$C'$};
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={25pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
@@ -1075,94 +1088,125 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
 See \cite[Lemma 2.5]{BM13}.
 \end{proof}
 
-\section{The Group of a Diagram in an Artin Group}
+\section{The Artin Group of a Diagram}
 \label{sec:defn_artingroup}
 
+In order to prove our main result, Theorem ~\ref{thm:main}, we must first define the Artin Group associated to a finite type diagram. This definition will be similar to that made in \cite{BM13} at the beginning of Section 3, except that we shall not require $s_i^2 = e.$ Since artin groups are very similar to coxeter groups, with the caveat that the generators are not involutions, we will be able to use these modified relations to great effect.
+
+\subsection{Artin Groups}
+
+\begin{note}
+Let 
+\begin{align*}
+	\langle x_i,x_j \rangle ^k = \begin{cases}
+	(x_ix_j)^{\frac{k}{2}}, &\text{ if }k \equiv 0 \pmod 2\\
+	(x_ix_j)^{\frac{k-1}{2}}x_i &\text{ if } k \equiv 1 \pmod 2
+\end{cases}
+\end{align*}
+That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and $x_j$ of length $k.$
+
+\end{note}
+\begin{defn}
+For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a matrix which whose entries can take values in the real numbers or infinity, satisfying $m_{i,j} = m_{j,i}$ we define the associated {\it Artin Group} in terms of generators and relations by
+\begin{align*}
+	A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}}\forall i,j \text{ with } m_{i,j}<\infty \rangle,
+\end{align*}
+\end{defn}
+
+\begin{rem}
+Each Artin group has an associated Coxeter Group defined by adding in the additional relations $s_i^2 = 1$ for all $i.$ An Artin group is said to be of {\it finite type} if its associated Coxeter group is of finite type. To each Artin group of finite type we can assign it the same dynkin diagram which is assigned to the coxeter group associated to the Artin group.
+\end{rem}
+
+\subsection{The Group associated to Diagram}
+
+
 \begin{defn} \label{grp def}
-For $\Gamma$ a diagram of finite type, we define the associated Artin Group as follows. The associated artin group $W_\Gamma$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the relations
+
+For $\Gamma$ a diagram of finite type, we define the associated Artin Group as follows. The associated artin group $W_\Gamma$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the following relations
 \begin{itemize}
-	\item[(R2')] For all $i \neq j,$ we add the relations
-	\\
-$	\begin{cases}
-	s_is_j=s_js_i, &\text{ if there is no edge between $i$ and $j$}\\
-	s_is_js_i = s_js_is_j &\text{ if there is an edge of weight 1 between $i$ and $j.$}\\
-	s_is_js_is_j = s_js_is_js_i &\text{ if there is an edge of weight 2 between $i$ and $j$.}\\
-	s_is_js_is_js_is_j = s_js_is_js_is_js_i &\text{ if there is an edge of weight 3 between $i$ and $j$.}
-\end{cases}$
-\item[(R3')(a)] For every chordless cycle of the form
+	\item[(R2)] With $m_{ij}$ as defined in ~\ref{mij_defn}, for all $i \neq j,$ we add the relations
+	$\langle s_i,s_j \rangle^{m_{ij}}= \langle s_j,s_i \rangle^{m_{ij}}.$
+	
+\item[(R3)] For every ordered chordless cycle of the form
 
 \begin{tikzcd}
 i_0 \arrow{r} & i_1 \arrow{r} & \cdots \arrow{r} & i_{d-1} \arrow{r} & i_0
 \end{tikzcd}
 
-such that all edges have weight 1, for all $i,$ with $0 \leq a \leq d-1,$ we include the relation 
+such that either
+\begin{enumerate}
+	\item All edges in the chordless cycle are of weight 1 or 2 and the edge $i_{d-1}\rightarrow i_0$ has weight 2.
+	\item All edges in the chordless cycle have weight $1.$
+\end{enumerate}
+we include the relation
 \begin{align*}
 	s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a}.
 \end{align*}
 Where subscripts are taken $\pmod d.$ 
+\end{itemize}
+\end{defn}
 
-\item[(R3')(b)] For every chordless cycle of the form \begin{tikzpicture}[baseline=-0.5ex]
-    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\begin{rem}
+In the above definition, the chordless cycle is ordered, which means that two cycles are considered different if they are cyclic rotations of eachother.
+\end{rem}
+
+\begin{rem}
+We purposely include relations $(R2),(R3)$ but not $(R1)$ in order to make our relation labeling analagous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(R1)$ as defined at the beginning of Section 3 of \cite{BM13}. Namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma,$ then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of section 3 in \cite{BM13}.
+\end{rem}
+
+\begin{rem}
+Throughout the remainder of the paper, we shall frequently discuss relations on one diagram of finite type, $\Gamma,$ and another diagram of finite type $\Gamma^\prime.$ In order to distinguish the relations in these two groups, we shall refer to the relations on $\Gamma$ as $(R2),(R3)$ and the relations on $\Gamma^\prime$ as $(R2^\prime),(R3^\prime).$
+\end{rem}
+
+
+
+\begin{ex}
+The relations $(R2),(R3)$ in that $\Gamma$ is a square with all edges of weight 1 are as follows:
+\[\Gamma =\begin{tikzpicture}[baseline=-0.5ex]
+ \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
   {
-    && |[name = u]|\circ& \\
-    %
-    &|[name=dl]| \circ & &|[name=dr]| \circ \\
-  };
-\draw[->]
-  (u) to node[right] {1} (dr)
-  ;
-  \draw[->]
-  (dl) to node[left]{2}(u)
-  ;
-  \draw[->]
-  (dr) to node[below]{2}(dl)
-  ;
-  \node [yshift = .4 cm] at (u){i};
-    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
-    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){k};
-   \end{tikzpicture}
-   we include the three relations
-   \begin{enumerate}[(1)]
-\item $s_{i}s_{j}^{-1}s_{k}s_{j} = s_{j}^{-1}s_{k}s_{j}s_{i}$
-\item $s_{k}s_{i}^{-1}s_{j}s_{i} = s_{i}^{-1}s_{j}s_{i}s_{k}$
-\item $s_{j}^{-1}s_{k}^{-1}s_{i}s_{k}s_{j}s_{k}^{-1}s_{i}s_{k}s_{j}^{-1}s_{k}^{-1}s_{i}^{-1}s_{k} = e.$
-\end{enumerate}
-\item[(R3')(c)] For every chordless cycle of the form
-\begin{tikzpicture}[baseline=-0.5ex]
-    \matrix[matrix of math nodes,column sep={40pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
-  {
-    & |[name = ul]|\circ & |[name = ur]|\circ\\
+    & |[name = ul]|\circ& |[name = ur]|\circ\\
     %
     &|[name=dl]| \circ &|[name=dr]| \circ \\
   };
-\draw[->]
-  (ul) to node[above] {1} (ur)
+\draw
+  (ul) -- node[above] {1} (ur)
   ;
-  \draw[->]
-  (dl) to node[left]{2}(ul)
+  \draw
+  (dl) -- node[left]{1}(ul)
   ;
-  \draw[->]
-  (dr) to node[below]{1}(dl)
+  \draw
+  (dr) -- node[below]{1}(dl)
   ;
-  \draw[->]
-  (ur) to node[right]{2} (dr)
-  ;
-    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){i};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){j};
-    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){k};
-    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){l};
- 
-   \end{tikzpicture}
-   
-   we include the two relations
-   \begin{enumerate}[(1)]
-\item $s_{i}s_{j}^{-1}s_{k}^{-1}s_ls_{k}s_j = s_{j}^{-1}s_{k}^{-1}s_ls_ks_{j}s_{i}$
-\item $s_{k}s_{l}^{-1}s_{i}^{-1}s_js_{i}s_l = s_{l}^{-1}s_{i}^{-1}s_js_is_{l}s_{k}$
+  \draw
+  (ur) -- node[right]{1} (dr)
+  ;  
+      \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
+   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+   \end{tikzpicture}\]
+   \begin{enumerate}
+	\item[(R2)]
+	\begin{itemize}
+	\item $\langle s_1,s_2 \rangle^3 = \langle s_2,s_21 \rangle^3$
+	\item $\langle s_2,s_3 \rangle^3 = \langle s_3,s_2 \rangle^3$
+	\item $\langle s_3,s_4 \rangle^3 = \langle s_4,s_3 \rangle^3$
+	\item $\langle s_4,s_1 \rangle^3 = \langle s_1,s_4 \rangle^3$
+\end{itemize} 
+	\item[(R3)]
+	\begin{itemize}
+	\item $s_{1}s_{2}^{-1}s_{3}^{-1}s_4s_{3}s_2 = s_{2}^{-1}s_{3}^{-1}s_4s_3s_{2}s_{1}$
+	\item $s_{2}s_{3}^{-1}s_{4}^{-1}s_1s_{4}s_3 = s_{3}^{-1}s_{4}^{-1}s_1s_4s_{3}s_{2}$
+	\item $s_{3}s_{4}^{-1}s_{1}^{-1}s_2s_{1}s_4 = s_{4}^{-1}s_{1}^{-1}s_2s_1s_{4}s_{3}$
+	\item $s_{4}s_{1}^{-1}s_{2}^{-1}s_3s_{2}s_1 = s_{1}^{-1}s_{2}^{-1}s_3s_2s_{1}s_{4}$
+\end{itemize} 
 \end{enumerate}
-\end{itemize}
-\end{defn}
+\end{ex}
+
+
+
 
 \begin{rem}
 Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the corresponding Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(R2'),$ which define the Artin Group.
