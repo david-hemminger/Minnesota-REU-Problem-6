@@ -20,6 +20,7 @@
 \usepackage{amsmath,amssymb,amsthm, MnSymbol}
 \usepackage{enumerate}
 \usepackage{natbib}
+\usepackage[mathscr]{euscript}
 
 \usepackage{tikz}
 \usepackage{tikz-cd}
@@ -86,21 +87,18 @@ In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster alg
 \indent Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite-type cluster algebra. They also proved that this group presentation is invariant up to isomorphism under the mutation equivalence relation.
 
 
-\todo{Fix mathscr on Hailee's first theorem which is commented out}
-
-\iffalse
 \begin{thm}\cite[Theorem 5.4]{BM13}
 \begin{enumerate}
 \item Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
 \item Let $\mathscr{A}$ be a cluster algebra of finite type. Then the groups $W_{\Gamma}$ associated to the diagrams $\Gamma$ arising from the seeds of $\mathscr{A}$ are all isomorphic (to the reflection group associated to the Dynkin diagram associated to $\mathscr{A}$).
 \end{enumerate}
 \end{thm}
-\fi
+
 
 
 That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively. \\
 
-\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \todo{for example}\ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
+\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
 
 \section{Definitions and Notation}
 \label{sec:main_definitions}
