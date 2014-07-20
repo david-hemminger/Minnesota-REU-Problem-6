@@ -83,24 +83,28 @@ In 2003, Fomin and Zelevinsky proved that finite-type cluster algebras can be cl
 \label{sec:Intro}
 
 
-In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster algebras. This introductory paper focused on structural features of cluster algebras, specifically that, in a given cluster, when any cluster variable is viewed as a rational function in the variables of the given cluster, this cluster variable is a Laurent polynomial. \todo{The first sentence seems to be run on, and I'm very confused by it} Fomin and Zelevinsky defined cluster algebras in order to make further strides in the areas of representation theory, Lie theory, and total positivity. Since then, the study of cluster algebras has provided a motivation for applications in various other areas of mathematics, including quiver representations. Of particular interest were \textit{finite-type} cluster algebras, that is, cluster algebras whose variables are generated through mutation on a finite number of \textit{seeds}. In the sequel to their introductory paper (\cite{FZ03}), Fomin and Zelevinsky introduce the concept of \textit{mutation equivalence} between diagrams, proving that a connected graph is mutation equivalent to an oriented Dynkin diagram if and only if all mutation equivalent graphs have edge weights not exceeding 3. In particular, this proves that finite-type cluster algebras can be classified by Dynkin diagrams. \\
-\indent Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite-type cluster algebra. They also proved that this group presentation is invariant up to isomorphism under the mutation equivalence relation.
+In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster algebras in order to make further strides in the areas of representation theory, Lie theory, and total positivity. Since then, the study of cluster algebras has provided a motivation for applications in various other areas of mathematics, including quiver representations. Of particular interest were \textit{finite-type} cluster algebras, that is, cluster algebras whose variables are generated through mutation on a finite number of \textit{seeds}. In the sequel to their introductory paper (\cite{FZ03}), Fomin and Zelevinsky introduce the concept of \textit{mutation equivalence} between diagrams, proving that a connected graph is mutation equivalent to an oriented Dynkin diagram if and only if all mutation equivalent graphs have edge weights not exceeding 3. In particular, this proves that finite-type cluster algebras can be classified by Dynkin diagrams. \\
+\indent Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite-type cluster algebra. They also proved that this group presentation is invariant up to isomorphism under the mutation equivalence relation.That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively. 
 
 
-\begin{thm}\cite[Theorem 5.4]{BM13}
-\begin{enumerate}
-\item Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
-\item Let $\mathscr{A}$ be a cluster algebra of finite type. Then the groups $W_{\Gamma}$ associated to the diagrams $\Gamma$ arising from the seeds of $\mathscr{A}$ are all isomorphic (to the reflection group associated to the Dynkin diagram associated to $\mathscr{A}$).
-\end{enumerate}
+%%\begin{thm}\cite[Theorem 5.4]{BM13}
+%\begin{enumerate}
+%\item Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
+%\item Let $\mathscr{A}$ be a cluster algebra of finite type. Then the groups $W_{\Gamma}$ associated to the diagrams $\Gamma$ arising from the seeds of $\mathscr{A}$ are all isomorphic (to the reflection group associated to the Dynkin diagram associated to $\mathscr{A}$).
+%\end{enumerate}
+%\end{thm}
+
+
+In our paper, we define $A_{\Gamma}$ to be the Artin group presentation arising from a cluster algebra, where $\Gamma$ is the diagram associated to the cluster algebra. We provide the necessary relations for the generators of the group, and show that these relations hold under mutations of chordless cycles in a diagram. Our main result is to show that this Artin group presentation is invariant up to isomorphism under the mutation equivalence relation. We state the result here, but present the detailed proof in Section \ref{sec:proof_of_main}.
+
+\begin{thm}[Theorem \ref{thm:main}]
+Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$.  Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$.
 \end{thm}
 
 
-
-That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively. \\
-
 \indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
 
-\section{Definitions and Notation}
+\section{Background}
 \label{sec:main_definitions}
 
 We begin by introducing some preliminary notations and definitions which will aid the reader in understanding the results in the following sections. For further references on cluster algebras, we refer the reader to \cite{FZ02} and \cite{FZ03} and for a more detailed description of Artin group presentations, we direct attention to \cite{FN61}. We also provide references to several lemmas and propositions from \cite{BM13} which were helpful in formulating our own results. \\
@@ -128,10 +132,57 @@ Let $B$ be a 2-finite skew-symmetrisable matrix. Then $\Gamma(\mu_k(B))$ is uniq
 \item Reverse the orientations of all edges in $\Gamma(B)$ incident with $k$ (leaving the weights unchanged)
 \item For any path in $\Gamma(B)$ of form $i \xrightarrow{a} k \xrightarrow{b} j$ (i.e. with $a,b$ positive), let $c$ be the weight on the edge $j \rightarrow i$, taken to be zero if there is no such arrow. Let $c'$ be determined by $c'\geq 0$ and 
 $c+c' =$ max$(a,b)$. 
-Then $\Gamma(B)$ changes in a predetermined way, \todo{Say what this way is?} taking the case $c' = 0$ to mean no arrow between $i$ and $j$.
+Then $\Gamma(B)$ changes as in Figure \ref{mutation}, taking the case $c' = 0$ to mean no arrow between $i$ and $j$.
 \end{itemize}
 \end{prop}
 
+\begin{center}
+\begin{tikzpicture}[baseline=-0.5ex]
+\label{mutation}
+
+
+	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \bullet & &|[name=dr]| \bullet \\
+  };
+\draw[->]
+  (u) to node[right] {b} (dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{a}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{c}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+    \matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (4,0)
+  {
+    && |[name = u]|\bullet& \\
+    %
+    &|[name=dl]| \bullet & &|[name=dr]| \bullet \\
+  };
+\draw[->]
+  (dr)to node[right] {b} (u) 
+  ;
+  \draw[->]
+  (u) to node[left]{a}(dl)
+  ;
+  \draw[->]
+  (dl) to node[below]{c'}(dr)
+  ;
+  \node [yshift = .4 cm] at (u){k};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
+ 
+   \end{tikzpicture}
+   \end{center}
+   
 \begin{note}
 We notate this mutation of $\Gamma(B)$ at vertex $k$ by $\mu_k(\Gamma)$. \\
 \end{note}
@@ -190,8 +241,35 @@ Defining the group $W_{\Gamma}$ with relations as shown above allows them to pro
 Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
 \end{thm}
 
-The rest of the paper will be devoted to building up analogous relations, defined in ~\ref{grp def} to prove a similar result in the case of Artin groups.
+The rest of the paper will be devoted to building up analogous relations, defined in ~\ref{grp def} to prove a similar result in the case of Artin groups. For $\Gamma$ a diagram of finite type, we define the associated Artin Group as follows. 
 
+\begin{defn}
+
+The associated Artin group $A_\Gamma$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the following relations
+\begin{itemize}
+	\item[(R2)] With $m_{ij}$ as defined in ~\ref{mij_defn}, for all $i \neq j,$ we add the relations
+	$\langle s_i,s_j \rangle^{m_{ij}}= \langle s_j,s_i \rangle^{m_{ij}}.$
+	
+\item[(R3)] For every ordered chordless cycle of the form
+
+\begin{tikzcd}
+i_0 \arrow{r} & i_1 \arrow{r} & \cdots \arrow{r} & i_{d-1} \arrow{r} & i_0
+\end{tikzcd}
+
+such that either
+\begin{enumerate}
+	\item All edges in the chordless cycle are of weight 1 or 2 and the edge $i_{d-1}\rightarrow i_0$ has weight 2.
+	\item All edges in the chordless cycle have weight $1.$
+\end{enumerate}
+we include the relation
+\begin{align*}
+	s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a},
+\end{align*}
+where subscripts are taken $\pmod d.$ We will denote this relation by r(a, a+1). 
+\end{itemize}
+\end{defn}
+ 
+ We will use these group relations to prove the mutation invariance of $A_{\Gamma}$ in Section \ref{sec:proof_of_main}
 
 \section{Diagrams of Finite Type}
 \label{sec:finite-type_diagrams}
@@ -1112,7 +1190,7 @@ For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a matrix which whose entries c
 \end{defn}
 
 \begin{rem}
-Each Artin group has an associated Coxeter Group defined by adding in the additional relations $s_i^2 = 1$ for all $i.$ An Artin group is said to be of {\it finite type} if its associated Coxeter group is of finite type. To each Artin group of finite type we can assign it the same dynkin diagram which is assigned to the coxeter group associated to the Artin group.
+Each Artin group has an associated Coxeter Group defined by adding in the additional relations $s_i^2 = 1$ for all $i.$ An Artin group is said to be of {\it finite type} if its associated Coxeter group is of finite type. To each Artin group of finite type we can assign it the same Dynkin diagram which is assigned to the Coxeter group associated to the Artin group.
 \end{rem}
 
 \subsection{The Group associated to Diagram}
@@ -1120,7 +1198,7 @@ Each Artin group has an associated Coxeter Group defined by adding in the additi
 
 \begin{defn} \label{grp def}
 
-For $\Gamma$ a diagram of finite type, we define the associated Artin Group as follows. The associated Artin group $W_\Gamma$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the following relations
+Recall from Section \ref{sec:main_definitions} that for $\Gamma$ a diagram of finite type, we define the associated Artin Group as follows. The associated Artin group $A_\Gamma$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the following relations
 \begin{itemize}
 	\item[(R2)] With $m_{ij}$ as defined in ~\ref{mij_defn}, for all $i \neq j,$ we add the relations
 	$\langle s_i,s_j \rangle^{m_{ij}}= \langle s_j,s_i \rangle^{m_{ij}}.$
@@ -1145,11 +1223,11 @@ where subscripts are taken $\pmod d.$ We will denote this relation by r(a, a+1).
 \end{defn}
 
 \begin{rem}
-In the above definition, the chordless cycle is ordered, which means that two cycles are considered different if they are cyclic rotations of eachother.
+In the above definition, the chordless cycle is ordered, which means that two cycles are considered different if they are cyclic rotations of each other.
 \end{rem}
 
 \begin{rem}
-We purposely include relations $(R2),(R3)$ but not $(R1)$ in order to make our relation labeling analagous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(R1)$ as defined at the beginning of Section 3 of \cite{BM13}. Namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma,$ then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of section 3 in \cite{BM13}.
+We purposely include relations $(R2),(R3)$ but not $(R1)$ in order to make our relation labeling analogous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(R1)$ as defined at the beginning of Section 3 of \cite{BM13} (namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma$), then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of section 3 in \cite{BM13}.
 \end{rem}
 
 \begin{rem}
