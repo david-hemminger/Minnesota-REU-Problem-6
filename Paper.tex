@@ -1,17 +1,17 @@
 \documentclass[11pt]{amsart}
 
 
-%The package below let's us add todos to the document in a way that will stand out at a glance.  It will also list all of the current things to do, with their respective page numbers on the first page of the document.  You can add a todo like this:
+%The package below let's us add todos to the document in a way that will stand out at a glance. It will also list all of the current things to do, with their respective page numbers on the first page of the document. You can add a todo like this:
 %
-%		Text text text \todo{change this text to something useful!}
+% Text text text \todo{change this text to something useful!}
 %
 %Among other things, you can edit the color of a todo:
 %
-%		\todo[color=\ltblue]{this todo will have a light blue background!}
+% \todo[color=\ltblue]{this todo will have a light blue background!}
 %
 %And you can include the todo as a line in the text, rather than in the margins:
 %
-%		\todo[inline]{this will appear in the middle of the page}
+% \todo[inline]{this will appear in the middle of the page}
 
 \usepackage[colorinlistoftodos, textsize=tiny]{todonotes}
 %\def\ltblue{blue!20!white}
@@ -33,6 +33,7 @@
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{conj}[thm]{Conjecture}
+\newtheorem{longfig}[thm]{Figure}
 
 %\usepackage[all]{xy}
 \theoremstyle{definition}
@@ -84,7 +85,7 @@ In 2003, Fomin and Zelevinsky proved that finite type cluster algebras can be cl
 
 
 In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster algebras in order to make further strides in the areas of representation theory, Lie theory, and total positivity. Since then, the study of cluster algebras has provided a motivation for applications in various other areas of mathematics, including quiver representations. Of particular interest were \textit{finite type} cluster algebras, that is, cluster algebras whose variables are generated through mutation on a finite number of \textit{seeds}. In the sequel to their introductory paper (\cite{FZ03}), Fomin and Zelevinsky introduce the concept of \textit{mutation equivalence} between diagrams, proving that a connected graph is mutation equivalent to an oriented Dynkin diagram if and only if all mutation equivalent graphs have edge weights not exceeding 3. In particular, this proves that finite type cluster algebras can be classified by Dynkin diagrams. \\
-\indent Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite type cluster algebra. They also proved that this group presentation is invariant up to isomorphism under the mutation equivalence relation.That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively. 
+\indent Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite type cluster algebra. They also proved that this group presentation is invariant up to isomorphism under the mutation equivalence relation.That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively.
 
 
 %%\begin{thm}\cite[Theorem 5.4]{BM13}
@@ -98,11 +99,11 @@ In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster alg
 In our paper, we define $A_{\Gamma}$ to be the Artin group presentation arising from a cluster algebra, where $\Gamma$ is the diagram associated to the cluster algebra. We provide the necessary relations for the generators of the group, and show that these relations hold under mutations of chordless cycles in a diagram. Our main result is to show that this Artin group presentation is invariant up to isomorphism under the mutation equivalence relation. We state the result here, but present the detailed proof in Section \ref{sec:proof_of_main}.
 
 \begin{thm}[Theorem \ref{thm:main}]
-Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$.  Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$.
+Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$. Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$.
 \end{thm}
 
 
-\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
+\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams} will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
 
 \section{Background}
 \label{sec:main_definitions}
@@ -117,21 +118,21 @@ x_k^{\prime}x_k = \prod_{B_{ik} > 0}{x_i^{B_{ik}}} + \prod_{B_{ik} < 0}{x_i^{-B_
 Then, given an initial seed $(\textbf{x}, B)$ and $k \in {1,2,\ldots,n}$, we can define a \textit{mutation} of the seed at $k$, denoted $\mu_k(\boldsymbol{x}, B) = (\textbf{x}^{\prime}, B^{\prime})$ where:
 \begin{displaymath}
 B_{ij}^{\prime} = \begin{cases} - B_{ij} & \mbox{ if } i = k \mbox{ or } j = k;\\
-																B_{ij} + \frac{|B_{ik}|B_{kj} + B_{ik}|B_{kj}|}{2} & \mbox{ otherwise. }\\
-									\end{cases}
+B_{ij} + \frac{|B_{ik}|B_{kj} + B_{ik}|B_{kj}|}{2} & \mbox{ otherwise. }\\
+\end{cases}
 \end{displaymath}
-and $\textbf{x}^{\prime} = \left{ x_1, x_2, \ldots, x_{k-1}, x_k^{\prime}, x_{k+1}, \ldots, x_n \right}$. 
+and $\textbf{x}^{\prime} = \left{ x_1, x_2, \ldots, x_{k-1}, x_k^{\prime}, x_{k+1}, \ldots, x_n \right}$.
 Such a mutation or a sequence of such mutations generate \textit{seeds} which in turn generate all cluster variables in that, for each $\textbf{x} = \left{ x_1, \ldots, x_n \right}$ corresponding to a seed of the cluster algebra, the entries $x_i$ are the cluster variables. \\
 
- A cluster algebra is said to be of \textit{finite type} if the number of cluster variables that generate it is finite (if it has finitely many seeds). For each finite type cluster algebra, we can associate to its corresponding skew-symmetrisable matrix an edge-weighted, oriented graph, called a \textit{diagram}. We will often denote this diagram by $\Gamma$, and the vertex set of $\Gamma$ by $\V$. We will denote two connected vertices by $i \rightarrow j$, or by $i\--\ j$ if the orientation is not specified. The diagram is determined by, for $i, j \in \V$, $i \xrightarrow{w} j$ if and only if $B_{ij} > 0$ and $w = |B_{ij}B_{ji}|$ is the weight of the edge. A skew-symmetrisable matrix $B$ is \textit{2-finite} if $|B_{ij}B_{ji}| \leq 3$ for $i, j \in \left{ 1, \ldots, n \right}$.  By \cite[7.5]{FZ02}, we have that if $B$ is 2-finite, all 3-cycles in the unoriented graph underlying our diagram must be oriented cyclically. \\
+ A cluster algebra is said to be of \textit{finite type} if the number of cluster variables that generate it is finite (if it has finitely many seeds). For each finite type cluster algebra, we can associate to its corresponding skew-symmetrisable matrix an edge-weighted, oriented graph, called a \textit{diagram}. We will often denote this diagram by $\Gamma$, and the vertex set of $\Gamma$ by $\V$. We will denote two connected vertices by $i \rightarrow j$, or by $i\--\ j$ if the orientation is not specified. The diagram is determined by, for $i, j \in \V$, $i \xrightarrow{w} j$ if and only if $B_{ij} > 0$ and $w = |B_{ij}B_{ji}|$ is the weight of the edge. A skew-symmetrisable matrix $B$ is \textit{2-finite} if $|B_{ij}B_{ji}| \leq 3$ for $i, j \in \left{ 1, \ldots, n \right}$. By \cite[7.5]{FZ02}, we have that if $B$ is 2-finite, all 3-cycles in the unoriented graph underlying our diagram must be oriented cyclically. \\
 
 Just as we can define mutations of the seeds of a cluster variable, we can also define mutations of a diagram associated to a cluster algebra of finite type by the following set of rules:
 \begin{prop}\cite[Proposition 1.4]{BM13}
-Let $B$ be a 2-finite skew-symmetrisable matrix. Then $\Gamma(\mu_k(B))$ is uniquely determined by $\Gamma(B)$ as follows: 
+Let $B$ be a 2-finite skew-symmetrisable matrix. Then $\Gamma(\mu_k(B))$ is uniquely determined by $\Gamma(B)$ as follows:
 \begin{itemize}
 \item Reverse the orientations of all edges in $\Gamma(B)$ incident to $k$ (leaving the weights unchanged)
-\item For any path in $\Gamma(B)$ of form $i \xrightarrow{a} k \xrightarrow{b} j$ (i.e. with $a,b$ positive), let $c$ be the weight on the edge $j \rightarrow i$, taken to be zero if there is no such arrow. Let $c'$ be determined by $c'\geq 0$ and 
-$c+c' =$ max$(a,b)$. 
+\item For any path in $\Gamma(B)$ of form $i \xrightarrow{a} k \xrightarrow{b} j$ (i.e. with $a,b$ positive), let $c$ be the weight on the edge $j \rightarrow i$, taken to be zero if there is no such arrow. Let $c'$ be determined by $c'\geq 0$ and
+$c+c' =$ max$(a,b)$.
 Then $\Gamma(B)$ changes as in Figure \ref{mutation}, taking the case $c' = 0$ to mean no arrow between $i$ and $j$.
 \end{itemize}
 \end{prop}
@@ -141,7 +142,7 @@ Then $\Gamma(B)$ changes as in Figure \ref{mutation}, taking the case $c' = 0$ t
 \label{mutation}
 
 
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -168,7 +169,7 @@ Then $\Gamma(B)$ changes as in Figure \ref{mutation}, taking the case $c' = 0$ t
     &|[name=dl]| \bullet & &|[name=dr]| \bullet \\
   };
 \draw[->]
-  (dr)to node[right] {b} (u) 
+  (dr)to node[right] {b} (u)
   ;
   \draw[->]
   (u) to node[left]{a}(dl)
@@ -191,14 +192,14 @@ We notate this mutation of $\Gamma(B)$ at vertex $k$ by $\mu_k(\Gamma)$. \\
 \indent Given a diagram $\Gamma$, Barot and Marsh define for $i, j \in \V$,
 \begin{displaymath}
 \label{mij_defn}
-m_{ij} = \begin{cases}    2 & \mbox{if } i \mbox{ and } j \mbox{ are not connected;} \\
-																	3 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 1;\\
-																	4 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 2;\\
-																	6 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 3.\\
-					\end{cases}
+m_{ij} = \begin{cases} 2 & \mbox{if } i \mbox{ and } j \mbox{ are not connected;} \\
+3 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 1;\\
+4 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 2;\\
+6 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 3.\\
+\end{cases}
 \end{displaymath}	
 
-Then, they define $W(\Gamma)$ to be the group generated by $s_i$, for $i \in \V$, under the following relations. Note that $e$ will denote the identity element of $W(\Gamma)$. 
+Then, they define $W(\Gamma)$ to be the group generated by $s_i$, for $i \in \V$, under the following relations. Note that $e$ will denote the identity element of $W(\Gamma)$.
 \begin{enumerate}
 \item $s_i^2 = e$ for all $i$;
 \item $(s_is_j)^{m_{ij}} = e$ for all $i \neq j$;
@@ -218,7 +219,7 @@ Using this group presentation, Barot and Marsh state the following result:
 Let $\Gamma$ be the diagram associated to a seed in a cluster algebra of finite type. Then $W(\Gamma)$ is isomorphic to the corresponding reflection group.
 \end{thm}
 
-In Section 3 of \cite{BM13}, Barot and Marsh provide an alteration of the group $W(\Gamma)$ in order to extend the group definition to any diagram of finite type. The group they define is as follows: 
+In Section 3 of \cite{BM13}, Barot and Marsh provide an alteration of the group $W(\Gamma)$ in order to extend the group definition to any diagram of finite type. The group they define is as follows:
 
 \begin{defn}
 Let $W_{\Gamma}$ be the group with generators $s_i, i = 1,2,\ldots, n$, subject to the following relations:
@@ -250,13 +251,14 @@ In this section, we shall review the structure of diagrams of finite type, and h
 
 \begin{defn}
 \label{chordlesscycle}
-A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \subset G$ such that the number of vertices in $H$ is equal to the number of edges in $H,$ and the edges in $H$ form a single cycle.  
+A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \subset G$ such that the number of vertices in $H$ is equal to the number of edges in $H,$ and the edges in $H$ form a single cycle.
 \end{defn}
 
 \begin{prop}
 \label{cycle_types}
 \cite[Proposition 2.1]{BM13} Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a square with two opposite edges of weight 2 and two opposite edges of weight 1, as pictured below, or a triangle with two edges of weight 2 and one of weight 1.
-
+\\
+\hspace*{-1.2cm}
 \begin{tikzpicture}[baseline=-0.5ex]
  \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
@@ -291,9 +293,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   ;
   \draw[dotted]
   (dl) -- (dr)
-  ; 
+  ;
  \matrix[matrix of math nodes,column sep={40pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (5,0)
   {
     & |[name = ul]|\circ& |[name = ur]|\circ\\
     %
@@ -310,9 +312,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   ;
   \draw
   (ur) -- node[right]{2} (dr)
-  ; 
+  ;
    \matrix[matrix of math nodes,column sep={25pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (10,0)
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (9,0)
   {
     && |[name = u]|\circ& \\
     %
@@ -338,9 +340,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
 \cite[Corollary 2.3]{BM13} Let $\Gamma$ be a graph of finite type and suppose there are three vertices, labeled $i,j,k$ with both $i,j$ connected to $k.$ Then mutation at $k$ on the induced subdiagram appear as in one of the following figures, either from left to right or right to left, up to switching $i$ and $j,$
 
 \begin{enumerate}[(a)]
-\item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -351,7 +353,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   (dr) to node[right] {1} (u)
   ;
   \draw[->]
-  (dl)to node[left]{1}(u) 
+  (dl)to node[left]{1}(u)
   ;
   \node [yshift = .4 cm] at (u){k};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
@@ -373,9 +375,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
    \end{tikzpicture}
-	\item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -386,7 +388,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   (u) to node[right] {1} (dr)
   ;
   \draw[->]
-  (dl)to node[left]{1}(u) 
+  (dl)to node[left]{1}(u)
   ;
   \node [yshift = .4 cm] at (u){k};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
@@ -399,7 +401,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     &|[name=dl]| \circ & &|[name=dr]| \circ \\
   };
 \draw[->]
-  (dr) to node[right] {1}(u) 
+  (dr) to node[right] {1}(u)
   ;
   \draw[->]
   (u) to node[left]{1}(dl)
@@ -412,9 +414,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
    \end{tikzpicture}
 
-\item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -425,7 +427,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   (dr) to node[right] {2} (u)
   ;
   \draw[->]
-  (dl)to node[left]{1}(u) 
+  (dl)to node[left]{1}(u)
   ;
   \node [yshift = .4 cm] at (u){k};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
@@ -447,9 +449,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
    \end{tikzpicture}
-   \item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+   \item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -473,7 +475,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     &|[name=dl]| \circ & &|[name=dr]| \circ \\
   };
 \draw[->]
-  (dr)to node[right] {1} (u) 
+  (dr)to node[right] {1} (u)
   ;
   \draw[->]
   (u) to node[left]{2}(dl)
@@ -485,9 +487,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
    \end{tikzpicture}
-   \item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+   \item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -523,9 +525,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){j};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
    \end{tikzpicture}
-	\item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -568,15 +570,14 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
 
 \end{cor}
 
-
-\todo[inline]{directions of arrows within squares?}
-\begin{lem}\label{lem:chordless_cycles}
-Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k.$ Below, we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. Every chordless cycle in $\Gamma'$ is of one of these types.
+\begin{longfig}
+\label{fig:cycle_types}
+Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mutation of $\Gamma$ at vertex $k.$ Below, we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. 
 
 \begin{enumerate}[(a)]
-\item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -613,9 +614,9 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
-   \item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+   \item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -652,9 +653,9 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
-   \item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+   \item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -691,9 +692,9 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
-	\item 	
-	\begin{tikzpicture}[baseline=-0.5ex]
-	 \matrix[matrix of math nodes,column sep={25pt,between origins},row
+\item
+\begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
     && |[name = u]|\bullet& \\
@@ -733,7 +734,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){1};
     \node [yshift = -.9 cm] at (u){$C'$};
    \end{tikzpicture}
-	\item 
+\item
 \begin{tikzpicture}[baseline=-0.5ex]
 \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
@@ -758,7 +759,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (dl) to node[above]{2} (ur)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
@@ -781,10 +782,10 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (ur) to node[right]{2} (dr)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
- 	\node [yshift = -.7 cm,xshift = .7 cm] at (ul){$C'$};
+  \node [yshift = -.7 cm,xshift = .7 cm] at (ul){$C'$};
    \end{tikzpicture}
    
 \item \begin{tikzpicture}[baseline=-0.5ex]
@@ -811,7 +812,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (ul) to node[above]{2} (dr)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
@@ -834,13 +835,13 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (ur) to node[right]{2} (dr)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
- 	\node [yshift = -.7 cm,xshift = .7 cm] at (ul){$C'$};
+  \node [yshift = -.7 cm,xshift = .7 cm] at (ul){$C'$};
    \end{tikzpicture}
 
-   \item  
+   \item
    \begin{tikzpicture}[baseline=-0.5ex]
 
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
@@ -863,7 +864,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (ur) to node[right]{2} (dr)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
  
@@ -890,14 +891,14 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (dl) to node[above]{2} (ur)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k=1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
- 	\node [yshift = -.95 cm,xshift = .95 cm] at (ul){$C'$};
+  \node [yshift = -.95 cm,xshift = .95 cm] at (ul){$C'$};
     \end{tikzpicture}
     
     
-   \item  
+   \item
    \begin{tikzpicture}[baseline=-0.5ex]
 
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
@@ -920,7 +921,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (ur) to node[right]{2} (dr)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
  
@@ -947,10 +948,10 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   (ul) to node[above]{2} (dr)
   ;
     \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
+   \node [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
- 	\node [yshift = -.95 cm,xshift = .3 	5 cm] at (ul){$C'$};
+  \node [yshift = -.95 cm,xshift = .3 5 cm] at (ul){$C'$};
     \end{tikzpicture}
     
    \item
@@ -1035,7 +1036,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node at (dm.south){$h-1$};
     \node at (dl.south){$h$};
     
- 	\node [yshift = -.9 cm] at (um){$C'$};
+  \node [yshift = -.9 cm] at (um){$C'$};
     \end{tikzpicture}
    
    \item
@@ -1078,7 +1079,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     \node at (um.north){2};
     \node at (dm.south){$h-1$};
     \node at (dl.south){$h$};
- 	\node [yshift = -.9 cm] at (um){$C'$};
+  \node [yshift = -.9 cm] at (um){$C'$};
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={25pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
   {
@@ -1124,13 +1125,90 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
     
     \item $C$ is an oriented cycle in $\Gamma$ not connected to $k$ and $C'$ is the corresponding cycle in $\Gamma'.$
     
-    \item $C$ is an oriented cycle in $\Gamma$ with exactly one vertex in $C$ connected to $k$ by an edge of either weight 1 or 2. Then, $C'$ is the corresponding cycle in $\Gamma'.$  
+      \item
+   \begin{tikzpicture}[baseline=-0.5ex]
+    \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={25pt,between origins},nodes={asymmetrical rectangle}] at (8,0)
+  {
+    & & |[name = um]|\circ & |[name = ur]|\circ&\\
+    %
+    |[name = ml]|\bullet& |[name = mm]|\circ &&& |[name = mr]|\vdots \\
+    %
+    & & |[name = dm]|\circ & |[name = dr]|\circ&\\
+  };
+\draw[->]
+  (mm) to node[above] {1} (ml)
+  ;
+  \draw[->]
+  (mm) to node[above]{1}(um)
+  ;
+  \draw[->]
+  (um) to node[above]{1}(ur)
+  ;
+  \draw[->]
+  (ur) [bend left] to (mr)
+  ;
+  \draw[->]
+  (mr) [bend left] to (dr)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dm)
+  ;
+  \draw[->]
+  (dm) to node[below]{1}(mm)
+  ;
+    \node at (ml.west){$k$};
+    \node at (mm.north){h};
+    \node at (um.north){1};
+    \node at (ur.north){2};
+    \node at (dr.south){$h-2$};
+    \node at (dm.south){$h-1$};
+  \node [yshift = -.9 cm] at (ur){$C'$};
+   \matrix[matrix of math nodes,column sep={40pt,between origins},row
+    sep={25pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    & & |[name = um]|\circ & |[name = ur]|\circ&\\
+    %
+    |[name = ml]|\bullet& |[name = mm]|\circ &&& |[name = mr]|\vdots \\
+    %
+    & & |[name = dm]|\circ & |[name = dr]|\circ&\\
+  };
+\draw[->]
+  (ml) to node[above] {1} (mm)
+  ;
+  \draw[->]
+  (mm) to node[above]{1}(um)
+  ;
+  \draw[->]
+  (um) to node[above]{1}(ur)
+  ;
+  \draw[->]
+  (ur) [bend left] to (mr)
+  ;
+  \draw[->]
+  (mr) [bend left] to (dr)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dm)
+  ;
+  \draw[->]
+  (dm) to node[below]{1}(mm)
+  ;
+    \node at (ml.west){$k$};
+    \node at (mm.north){h};
+    \node at (um.north){1};
+    \node at (ur.north){2};
+    \node at (dr.south){$h-2$};
+    \node at (dm.south){$h-1$};
+  \node [yshift = -.9 cm] at (ur){$C'$};
+   \end{tikzpicture}
 \end{enumerate}
+\end{longfig}
 
+\begin{lem}\label{lem:chordless_cycles}
+\cite[Lemma 2.5]{BM13} Every chordless cycle in $\Gamma'$ is of one of the types listed in Figure ~\ref{fig:cycle_types}.
 \end{lem}
-\begin{proof}
-See \cite[Lemma 2.5]{BM13}.
-\end{proof}
+
 
 \section{The Artin Group of a Diagram}
 \label{sec:defn_artingroup}
@@ -1140,11 +1218,11 @@ In order to prove our main result, Theorem ~\ref{thm:main}, we must first define
 \subsection{Artin Groups}
 
 \begin{note}
-Let 
+Let
 \begin{align*}
-	\langle x_i,x_j \rangle ^k = \begin{cases}
-	(x_ix_j)^{\frac{k}{2}}, &\text{ if }k \equiv 0 \pmod 2\\
-	(x_ix_j)^{\frac{k-1}{2}}x_i &\text{ if } k \equiv 1 \pmod 2
+\langle x_i,x_j \rangle ^k = \begin{cases}
+(x_ix_j)^{\frac{k}{2}}, &\text{ if }k \equiv 0 \pmod 2\\
+(x_ix_j)^{\frac{k-1}{2}}x_i &\text{ if } k \equiv 1 \pmod 2
 \end{cases}
 \end{align*}
 That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and $x_j$ of length $k.$
@@ -1154,7 +1232,7 @@ That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and 
 \cite[Beginning of section 1.2]{artin} \todo{put reference for artin, found at the bottom, in bibliography, but I don't know how to use this bibliography format.}
 For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a matrix whose entries can take values in the real numbers or infinity, satisfying $M_{i,j} = M_{j,i}$ we define the associated {\it Artin group} in terms of generators and relations by
 \begin{align*}
-	A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}}\forall i,j \text{ with } m_{i,j}<\infty \rangle,
+A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}}\forall i,j \text{ with } m_{i,j}<\infty \rangle,
 \end{align*}
 \end{defn}
 
@@ -1169,19 +1247,19 @@ Each Artin group has an associated Coxeter group defined by adding in the additi
 
 Recall from Section \ref{sec:main_definitions} that for $\Gamma$ a diagram of finite type, we define the associated Artin group as follows. The associated Artin group $A_\Gamma$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the following relations
 \begin{itemize}
-	\item[(R2)] With $m_{ij}$ as defined in ~\ref{mij_defn}, for all $i \neq j,$ we add the relations
-	$\langle s_i,s_j \rangle^{m_{ij}}= \langle s_j,s_i \rangle^{m_{ij}}.$
+\item[(T2)] With $m_{ij}$ as defined in ~\ref{mij_defn}, for all $i \neq j,$ we add the relations
+$\langle s_i,s_j \rangle^{m_{ij}}= \langle s_j,s_i \rangle^{m_{ij}}.$
 
-\item[(R3)] Let $(i_0,i_1,\ldots,i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamma$ on the vertices $(i_0,\ldots, i_{d-1})$ is a chordless cycle, with edges of nonzero weight from $i_k$ to $i_{k+1},$ where subscripts $k$ are taken $\pmod d.$ If $(i_0,\ldots, i_{d-1})$ is such an ordered tuple, and additionally,
+\item[(T3)] Let $(i_0,i_1,\ldots,i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamma$ on the vertices $(i_0,\ldots, i_{d-1})$ is a chordless cycle, with edges of nonzero weight from $i_k$ to $i_{k+1},$ where subscripts $k$ are taken $\pmod d.$ If $(i_0,\ldots, i_{d-1})$ is such an ordered tuple, and additionally,
 \begin{enumerate}
-	\item All edges in the chordless cycle are of weight 1 or 2 and the edge $i_{d-1}\rightarrow i_0$ has weight 2.
-	\item All edges in the chordless cycle have weight $1.$
+\item All edges in the chordless cycle are of weight 1 or 2 and the edge $i_{d-1}\rightarrow i_0$ has weight 2.
+\item All edges in the chordless cycle have weight $1.$
 \end{enumerate}
 we include the relation
 \begin{align*}
-	s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} = s_{a+1}^{-1}\dots s_{a-3}^{-1}s_{a-2}^{-1}s_{a-1}s_{a-2}\dots s_{a+1}s_{a},
+s_{a}s_{a+1}^{-1}s_{a+2}^{-1}\dots s_{a-2}^{-1}s_{a-1}s_{a-2}s_{a-3}\dots s_{a+1} s_{a}^{-1}\dots s_{a-2}^{-1}s_{a-1}^{-1}s_{a-2}s_{a-3} \dots s_{a+1} = e
 \end{align*}
-where subscripts are taken $\pmod d.$ We will denote this relation by r(a, a+1). 
+where subscripts are taken $\pmod d.$ We will denote this relation by $t(a,a+1) = e$.
 \end{itemize}
 \end{defn}
 
@@ -1190,57 +1268,57 @@ In the above definition, the tuple cycle is ordered, and so we may have multiple
 \end{rem}
 
 \begin{rem}
-We purposely include relations $(R2),(R3)$ but not $(R1)$ in order to make our relation labeling analogous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(R1)$ as defined at the beginning of Section 3 of \cite{BM13} (namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma$), then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of rem 3 in \cite{BM13}.
+We purposely include relations $(T2),(T3)$ but not $(T1)$ in order to make our relation labeling analogous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(T1)$ as defined at the beginning of Section 3 of \cite{BM13} (namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma$), then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of rem 3 in \cite{BM13}.
 \end{rem}
 
 \begin{rem}
-Throughout the remainder of the paper, we shall frequently discuss relations on one diagram of finite type, $\Gamma,$ and another diagram of finite type $\Gamma^\prime.$ In order to distinguish the relations in these two groups, we shall refer to the relations on $\Gamma$ as $(R2),(R3)$ and the relations on $\Gamma^\prime$ as $(R2^\prime),(R3^\prime).$
+Throughout the remainder of the paper, we shall frequently discuss relations on one diagram of finite type, $\Gamma,$ and another diagram of finite type $\Gamma^\prime.$ In order to distinguish the relations in these two groups, we shall refer to the relations on $\Gamma$ as $(T2),(T3)$ and the relations on $\Gamma^\prime$ as $(T2^\prime),(T3^\prime).$
 \end{rem}
 
 
 
 \begin{ex}
-The relations $(R2),(R3)$ in that $\Gamma$ is a square with all edges of weight 1 are as follows:
+The relations $(T2),(T3)$ in that $\Gamma$ is a square with all edges of weight 1 are as follows:
 \[\Gamma =\begin{tikzpicture}[baseline=-0.5ex]
- \matrix[matrix of math nodes,column sep={40pt,between origins},row
-    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
-  {
-    & |[name = ul]|\circ& |[name = ur]|\circ\\
-    %
-    &|[name=dl]| \circ &|[name=dr]| \circ \\
-  };
+\matrix[matrix of math nodes,column sep={40pt,between origins},row
+sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
+{
+& |[name = ul]|\circ& |[name = ur]|\circ\\
+%
+&|[name=dl]| \circ &|[name=dr]| \circ \\
+};
 \draw
-  (ul) -- node[above] {1} (ur)
-  ;
-  \draw
-  (dl) -- node[left]{1}(ul)
-  ;
-  \draw
-  (dr) -- node[below]{1}(dl)
-  ;
-  \draw
-  (ur) -- node[right]{1} (dr)
-  ;  
-      \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
-   \node  [yshift = .4 cm,xshift = .4 cm] at (ur){2};
-    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
-    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
-   \end{tikzpicture}\]
+(ul) -- node[above] {1} (ur)
+;
+\draw
+(dl) -- node[left]{1}(ul)
+;
+\draw
+(dr) -- node[below]{1}(dl)
+;
+\draw
+(ur) -- node[right]{1} (dr)
+;
+\node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
+\node [yshift = .4 cm,xshift = .4 cm] at (ur){2};
+\node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
+\node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
+\end{tikzpicture}\]
    \begin{enumerate}
-	\item[(R2)]
-	\begin{itemize}
-	\item $\langle s_1,s_2 \rangle^3 = \langle s_2,s_21 \rangle^3$
-	\item $\langle s_2,s_3 \rangle^3 = \langle s_3,s_2 \rangle^3$
-	\item $\langle s_3,s_4 \rangle^3 = \langle s_4,s_3 \rangle^3$
-	\item $\langle s_4,s_1 \rangle^3 = \langle s_1,s_4 \rangle^3$
-\end{itemize} 
-	\item[(R3)]
-	\begin{itemize}
-	\item $s_{1}s_{2}^{-1}s_{3}^{-1}s_4s_{3}s_2 = s_{2}^{-1}s_{3}^{-1}s_4s_3s_{2}s_{1}$
-	\item $s_{2}s_{3}^{-1}s_{4}^{-1}s_1s_{4}s_3 = s_{3}^{-1}s_{4}^{-1}s_1s_4s_{3}s_{2}$
-	\item $s_{3}s_{4}^{-1}s_{1}^{-1}s_2s_{1}s_4 = s_{4}^{-1}s_{1}^{-1}s_2s_1s_{4}s_{3}$
-	\item $s_{4}s_{1}^{-1}s_{2}^{-1}s_3s_{2}s_1 = s_{1}^{-1}s_{2}^{-1}s_3s_2s_{1}s_{4}$
-\end{itemize} 
+\item[(T2)]
+\begin{itemize}
+\item $\langle s_1,s_2 \rangle^3 = \langle s_2,s_21 \rangle^3$
+\item $\langle s_2,s_3 \rangle^3 = \langle s_3,s_2 \rangle^3$
+\item $\langle s_3,s_4 \rangle^3 = \langle s_4,s_3 \rangle^3$
+\item $\langle s_4,s_1 \rangle^3 = \langle s_1,s_4 \rangle^3$
+\end{itemize}
+\item[(T3)]
+\begin{itemize}
+\item $s_{1}s_{2}^{-1}s_{3}^{-1}s_4s_{3}s_2s_1^{-1}s_2^{-1}s_3^{-1}s_4^{-1}s_3s_2 = e$
+\item $s_{2}s_{3}^{-1}s_{4}^{-1}s_1s_{4}s_3s_2^{-1}s_3^{-1}s_4^{-1}s_1^{-1}s_4s_3 = e$
+\item $s_{3}s_{4}^{-1}s_{1}^{-1}s_2s_{1}s_4s_3^{-1}s_4^{-1}s_1^{-1}s_2^{-1}s_1s_4 = e$
+\item $s_{4}s_{1}^{-1}s_{2}^{-1}s_3s_{2}s_1s_4^{-1}s_1^{-1}s_2^{-1}s_3^{-1}s_2s_1 = e$
+\end{itemize}
 \end{enumerate}
 \end{ex}
 
@@ -1248,7 +1326,7 @@ The relations $(R2),(R3)$ in that $\Gamma$ is a square with all edges of weight 
 
 
 \begin{rem}
-Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the corresponding Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(R2'),$ which define the Artin group.
+Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the corresponding Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(T2'),$ which define the Artin group.
 \end{rem}
 
 \section{Symmetry among (R3) Relations}
@@ -1269,7 +1347,7 @@ so that all edges have weight 1. Then if W is a group generated by $s_{1}, \dots
 \end{lem}
 
 \begin{proof}
-As in Barot-Marsh, it suffices to prove that the relation r(0, 1) implies the relation r(d-1, 0). So suppose $A_{\Gamma}$ satisfies the relation r(0, 1). Then we have 
+As in Barot-Marsh, it suffices to prove that the relation r(0, 1) implies the relation r(d-1, 0). So suppose $A_{\Gamma}$ satisfies the relation r(0, 1). Then we have
 \begin{align*}
 & s_{d-1}s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_1s_0 \\
 &= s_{0}^{-1}s_{0}s_{d-1}s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{d-1}^{-1}s_{d-1}s_{0} \\
@@ -1280,13 +1358,13 @@ As in Barot-Marsh, it suffices to prove that the relation r(0, 1) implies the re
 &= s_{0}^{-1}s_{d-1}^{-1}(s_{1}^{-1} \dots s_{d-3}^{-1}s_{d-1}s_{d-2}s_{d-1}^{-1}s_{d-3}\dots s_{0})s_{d-1}s_{0} \\
 &= s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{d-1}^{-1}s_{0}s_{d-1}s_{0} \\
 &= s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{0}s_{d-1}s_{0}^{-1}s_{0} \\
-&= s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{0}s_{d-1} 
+&= s_{0}^{-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{0}s_{d-1}
 \end{align*}
 as required. Note that line 3 is equal to 4 and line 7 is equal to line 8 since the cycle is chordless, meaning that $s_{d-1}$ commutes with every element except $s_{0}$ and $s_{d-2}$.
 \end{proof}
 Furthermore, we obtain similar results for cycles containing edges of weight 2.
 \begin{lem} \label{2tri}
-Let $\Gamma$ be a diagram of finite type containing the following 3-cycle: 
+Let $\Gamma$ be a diagram of finite type containing the following 3-cycle:
 
 \begin{tikzpicture}[baseline=-0.5ex]
    \matrix[matrix of math nodes,column sep={25pt,between origins},row
@@ -1322,13 +1400,13 @@ The lemma follows from the fact that
 In the setting of the previous lemma, we also obtain the following relation, which will play an important role in later proofs.
 
 \begin{lem}\label{lem:extra_square_relation}
-Suppose $\Gamma$ contains a 3-cycle with edges of weight 2, labeled as in ~\ref{2tri}, and suppose that A$_{\Gamma}$ is generated by $s_{1}, \dots s_{n}$. Then we have that 
+Suppose $\Gamma$ contains a 3-cycle with edges of weight 2, labeled as in ~\ref{2tri}, and suppose that A$_{\Gamma}$ is generated by $s_{1}, \dots s_{n}$. Then we have that
 $$s_{j}s_{k}^{-1}s_{i}s_{k}s_{j}s_{k}^{-1}s_{i}^{-1}s_{k}s_{j}^{-1}s_{k}^{-1}s_{i}^{-1}s_{k} = e.$$
 \end{lem}
 
 \begin{proof}
-We first show that 
-$$s_{j}^{-1}s_{k}^{-1}s_{i}s_{k}s_{j}s_{k}^{-1}s_{i}s_{k}s_{j}^{-1}s_{k}^{-1}s_{i}^{-1}s_{k} = e.$$ 
+We first show that
+$$s_{j}^{-1}s_{k}^{-1}s_{i}s_{k}s_{j}s_{k}^{-1}s_{i}s_{k}s_{j}^{-1}s_{k}^{-1}s_{i}^{-1}s_{k} = e.$$
 The result then follows by inverting the relation and conjugating by $s_{j}$. In the following computation, we will underline the terms being manipulated in each line for emphasis.
 
 \begin{align*}
@@ -1349,7 +1427,7 @@ The result then follows by inverting the relation and conjugating by $s_{j}$. In
 \end{proof}
 
 \begin{lem} \label{2sqr}
-Let $\Gamma$ be a diagram of finite type containing the following 4-cycle: 
+Let $\Gamma$ be a diagram of finite type containing the following 4-cycle:
 \begin{tikzpicture}[baseline=-0.5ex]
 \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
@@ -1369,7 +1447,7 @@ Let $\Gamma$ be a diagram of finite type containing the following 4-cycle:
   ;
   \draw[->]
   (ur) to node[right]{2} (dr)
-  ; 
+  ;
 \end{tikzpicture}
 and let A be the group with generators $s_{1}, \dots, s_{n}$ defined by $\Gamma$. Then the relations r(i, j) and r(k, l) are equivalent.
 \end{lem}
@@ -1390,11 +1468,11 @@ Finally, we conclude the section by establishing a relationship between the grou
 Let A$_{\Gamma}$ be generated by $s_{1}, \dots, s_{n}$. Then $s_{1}^{-1}, \dots, s_{n}^{-1}$ satisfy the relations (R2) and (R3) in A$_{\Gamma^{op}}$. In particular, A$_{\Gamma}$ $\cong$ A$_{\Gamma^{op}}$.
 \end{lem}
 \begin{proof}
-One can see that the inverse elements satisfy (R2) in A$_{\Gamma^{op}}$ by taking the inverse of both sides of the corresponding relation in A$_{\Gamma}$. To see that the elements satisfy (R3) in A$_{\Gamma^{op}}$, note that for a chordless cycle in $\Gamma$ with all weights equal to one, we have $$s_{0}^{-1}\dots s_{d-2}^{-1}s_{d-1}s_{d-2}\dots s_{0} = s_{1}^{-1}\dots s_{d-2}^{-1}s_{d-1}s_{d-2}\dots s_{1}$$ by the relation r(0,1) in (R3) in A$_{\Gamma}$. But then applying relations from (R2), we have that $$s_{0}^{-1}\dots s_{d-1}s_{d-2}s_{d-1}^{-1}\dots s_{0} = s_{1}^{-1}\dots s_{d-1}s_{d-2}s_{d-1}^{-1}\dots s_{1},$$ and since the cycle is chordless, we then have $$s_{0}^{-1}s_{d-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{d-1}^{-1}s_{0} = s_{d-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{d-1}^{-1}.$$ Repeating this process, we find that $$s_{0}^{-1}s_{d-1}s_{d-2}\dots s_{2}s_{1}s_{2}^{-1}\dots s_{d-2}^{-1}s_{d-1}^{-1}s_{0} = s_{d-1}s_{d-2}\dots s_{2}s_{1}s_{2}^{-1}\dots s_{d-2}^{-1}s_{d-1}^{-1}.$$ But this occurs if and only if $s_{1}^{-1}, \dots, s_{n}^{-1}$ satisfies the relation r(0, d-1) in A$_{\Gamma^{op}}.$ 
+One can see that the inverse elements satisfy (R2) in A$_{\Gamma^{op}}$ by taking the inverse of both sides of the corresponding relation in A$_{\Gamma}$. To see that the elements satisfy (R3) in A$_{\Gamma^{op}}$, note that for a chordless cycle in $\Gamma$ with all weights equal to one, we have $$s_{0}^{-1}\dots s_{d-2}^{-1}s_{d-1}s_{d-2}\dots s_{0} = s_{1}^{-1}\dots s_{d-2}^{-1}s_{d-1}s_{d-2}\dots s_{1}$$ by the relation r(0,1) in (R3) in A$_{\Gamma}$. But then applying relations from (R2), we have that $$s_{0}^{-1}\dots s_{d-1}s_{d-2}s_{d-1}^{-1}\dots s_{0} = s_{1}^{-1}\dots s_{d-1}s_{d-2}s_{d-1}^{-1}\dots s_{1},$$ and since the cycle is chordless, we then have $$s_{0}^{-1}s_{d-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{d-1}^{-1}s_{0} = s_{d-1}s_{1}^{-1}\dots s_{d-3}^{-1}s_{d-2}s_{d-3}\dots s_{1}s_{d-1}^{-1}.$$ Repeating this process, we find that $$s_{0}^{-1}s_{d-1}s_{d-2}\dots s_{2}s_{1}s_{2}^{-1}\dots s_{d-2}^{-1}s_{d-1}^{-1}s_{0} = s_{d-1}s_{d-2}\dots s_{2}s_{1}s_{2}^{-1}\dots s_{d-2}^{-1}s_{d-1}^{-1}.$$ But this occurs if and only if $s_{1}^{-1}, \dots, s_{n}^{-1}$ satisfies the relation r(0, d-1) in A$_{\Gamma^{op}}.$
 
 For a triangle labeled as in ~\ref{2tri}, by the relation r(k, i) we have $$s_{k}s_{i}^{-1}s_{j}s_{i}s_{k}^{-1} = s_{i}^{-1}s_{j}s_{i}.$$ Hence $$s_{k}s_{j}s_{i}s_{j}^{-1}s_{k}^{-1} = s_{j}s_{i}s_{j}^{-1}.$$ But as before, this can occur if and only if $s_{i}^{-1}, s_{j}^{-1}, s_{k}^{-1}$ satisfy the relation r(k, j) in A$_{\Gamma^{op}}$.
 
-Finally, given a square labeled as in ~\ref{2sqr} and the relations r(1, 2) and r(3, 4), we have 
+Finally, given a square labeled as in ~\ref{2sqr} and the relations r(1, 2) and r(3, 4), we have
 \begin{align*}
 & s_{j}s_{i}s_{l}s_{k}s_{l}^{-1}s_{i}^{-1} \\
 &= s_{i}s_{i}^{-1}s_{j}s_{i}s_{l}s_{k}s_{l}^{-1}s_{i}^{-1} \\
@@ -1414,19 +1492,19 @@ But this relation holds if and only if $s_{i}^{-1}, \dots, s_{l}^{-1}$ satisfy r
 
 
 \begin{thm}\label{thm:main}
-Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$.  Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$
+Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$. Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$
 \end{thm}
 
-Throughout this section we will fix a diagram of finite type $\Gamma$, a vertex $k$ of $\Gamma$, and write $\Gamma^{\prime} = \mu_k(\Gamma)$.  We will write $s_i$, $r_i$, $q_i$, and $u_i$ for the generators corresponding to vertex $i$ of $A_{\Gamma}$, $A_{\Gamma^\prime}$, $A_{\Gamma^{op}}$, and $A_{\left(\Gamma^\prime\right)^{op}}$, respectively.  We will also abuse notation and write $u_i$ for the generators of $A_{\left(\Gamma^{op}\right)^\prime}$ as well, making use of the fact that $\left(\Gamma^\prime\right)^{op} = \left(\Gamma^{op}\right)^\prime$.
+Throughout this section we will fix a diagram of finite type $\Gamma$, a vertex $k$ of $\Gamma$, and write $\Gamma^{\prime} = \mu_k(\Gamma)$. We will write $s_i$, $r_i$, $q_i$, and $u_i$ for the generators corresponding to vertex $i$ of $A_{\Gamma}$, $A_{\Gamma^\prime}$, $A_{\Gamma^{op}}$, and $A_{\left(\Gamma^\prime\right)^{op}}$, respectively. We will also abuse notation and write $u_i$ for the generators of $A_{\left(\Gamma^{op}\right)^\prime}$ as well, making use of the fact that $\left(\Gamma^\prime\right)^{op} = \left(\Gamma^{op}\right)^\prime$.
 
 In the proof of Theorem \ref{thm:main} we will use Lemma \ref{lem:op_homomorphism} along with the following proposition, whose proof we will defer until after the proof of Theorem \ref{thm:main} and then split into Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}.
 
 \begin{prop}\label{prop:ti_relations}
 The map $\varphi \colon A_{\Gamma^\prime}\rightarrow A_{\Gamma}$ defined by
 \begin{displaymath}
-\varphi(r_i) = \begin{cases}    s_ks_is_k^{-1} & \mbox{if there is a (possibly weighted) arrow } i \rightarrow k \mbox{ in } \Gamma\\
-				s_i & \mbox{otherwise}\\
-	\end{cases}
+\varphi(r_i) = \begin{cases} s_ks_is_k^{-1} & \mbox{if there is a (possibly weighted) arrow } i \rightarrow k \mbox{ in } \Gamma\\
+s_i & \mbox{otherwise}\\
+\end{cases}
 \end{displaymath}
 
 \noindent is a group homomorphism.
@@ -1435,23 +1513,23 @@ The map $\varphi \colon A_{\Gamma^\prime}\rightarrow A_{\Gamma}$ defined by
 \todo{do we define $m_{ij}'$ somewhere?}
 
 \begin{proof}[Proof of Theorem \ref{thm:main}]
-By Proposition \ref{prop:ti_relations} $\varphi\colon A_{\Gamma^\prime}\rightarrow A_\Gamma$ is a group homomorphism.  We also abuse notation and write $\varphi\colon A_{\Gamma^{op}}\rightarrow A_{\left(\Gamma^{op}\right)^\prime}$ by letting $\varphi(q_i)$ equal $u_ku_iu_k^{-1}$ if there is an arrow $i\rightarrow k$ in $\left(\Gamma^{op}\right)^\prime$, and $u_i$ otherwise, and this is a homomorphism by Proposition \ref{prop:ti_relations} as well.  By Lemma \ref{lem:op_homomorphism}, the homormorphism $\Delta$ that sends $s_i\in A(\Gamma)$ to $q_i^{-1}\in A(\Gamma^{op})$ and $u_i\in A_{\left(\Gamma^\prime\right)^{op}}$ to $r_i\in A_{\Gamma^\prime}$ is well-defined.  We then have a homomorphism 
+By Proposition \ref{prop:ti_relations} $\varphi\colon A_{\Gamma^\prime}\rightarrow A_\Gamma$ is a group homomorphism. We also abuse notation and write $\varphi\colon A_{\Gamma^{op}}\rightarrow A_{\left(\Gamma^{op}\right)^\prime}$ by letting $\varphi(q_i)$ equal $u_ku_iu_k^{-1}$ if there is an arrow $i\rightarrow k$ in $\left(\Gamma^{op}\right)^\prime$, and $u_i$ otherwise, and this is a homomorphism by Proposition \ref{prop:ti_relations} as well. By Lemma \ref{lem:op_homomorphism}, the homormorphism $\Delta$ that sends $s_i\in A(\Gamma)$ to $q_i^{-1}\in A(\Gamma^{op})$ and $u_i\in A_{\left(\Gamma^\prime\right)^{op}}$ to $r_i\in A_{\Gamma^\prime}$ is well-defined. We then have a homomorphism
 $$\psi = \Delta\circ\varphi\circ\Delta\colon A(\Gamma)\rightarrow A(\Gamma^{op})\rightarrow A(\left(\Gamma^{op}\right)^{\prime}) \rightarrow A(\Gamma^{\prime})$$
 
-Suppose that there is an arrow $i\rightarrow k$ in $\Gamma$.  Then there will be an arrow $k\rightarrow i$ in $\Gamma^{op}$ and hence an arrow $i\rightarrow k$ in $\left(\Gamma^{op}\right)^{\prime}$, so we have that
+Suppose that there is an arrow $i\rightarrow k$ in $\Gamma$. Then there will be an arrow $k\rightarrow i$ in $\Gamma^{op}$ and hence an arrow $i\rightarrow k$ in $\left(\Gamma^{op}\right)^{\prime}$, so we have that
 
 $$\psi\circ\varphi(r_i) = \Delta(\varphi(\Delta(\varphi(r_i)))) = \Delta(\varphi(\Delta(s_ks_is_k^{-1}))) = \Delta(\varphi(q_k^{-1}q_i^{-1}q_k)) = \Delta(u_i^{-1}) = r_i$$
 
-Similarly if there is an arrow $k\rightarrow i$ or no arrow between $i$ and $k$ in $\Gamma$ then there will be an arrow $k\rightarrow i$ or no arrow between $i$ and $k$ in $\left(\Gamma^{op}\right)^{\prime}$, respectively.  In each of these cases we have that
+Similarly if there is an arrow $k\rightarrow i$ or no arrow between $i$ and $k$ in $\Gamma$ then there will be an arrow $k\rightarrow i$ or no arrow between $i$ and $k$ in $\left(\Gamma^{op}\right)^{\prime}$, respectively. In each of these cases we have that
 
 $$\psi\circ\varphi(r_i) = \Delta(\varphi(\Delta(\varphi(r_i)))) = \Delta(\varphi(\Delta(s_i))) = \Delta(\varphi(q_i^{-1})) = \Delta(u_i^{-1}) = r_i$$
 
-Thus $\psi\circ\varphi$ is the identity map on $A(\Gamma^{\prime})$.  By a similar argument $\varphi\circ\psi$ is the identity map on $A(\Gamma)$, and hence $A(\Gamma)\cong A(\Gamma^{\prime}))$.
+Thus $\psi\circ\varphi$ is the identity map on $A(\Gamma^{\prime})$. By a similar argument $\varphi\circ\psi$ is the identity map on $A(\Gamma)$, and hence $A(\Gamma)\cong A(\Gamma^{\prime}))$.
 \end{proof}
 
 
 
-We prove Proposition \ref{prop:ti_relations} by showing that that the elements $\varphi(r_i)\in A_\Gamma$ satisfy the $(R2^\prime)$ and $(R3^\prime)$ relations in $A_{\Gamma^\prime}$.  Proofs that the $t_i$ satisfy these relations are divided among Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}.  Throughout the proofs we write $t_i = \varphi(r_i)$ for convenience.
+We prove Proposition \ref{prop:ti_relations} by showing that that the elements $\varphi(r_i)\in A_\Gamma$ satisfy the $(R2^\prime)$ and $(R3^\prime)$ relations in $A_{\Gamma^\prime}$. Proofs that the $t_i$ satisfy these relations are divided among Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}. Throughout the proofs we write $t_i = \varphi(r_i)$ for convenience.
 
 
 \begin{lem}\label{lem:r2a_relations}
@@ -1463,7 +1541,7 @@ Let $i,j$ be distinct vertices of $\Gamma$.
 \end{lem}
 
 \begin{proof}
-For case $(a)$, suppose without loss of generality that $i=k$.  Note that $m_{ij}^\prime = m_{ij}$. The only nontrivial case is when there is an arrow $j\rightarrow k =i$.  Since $i$ and $j$ are connected in this case, $m_{ij}$ is one of 3,4, or 6.
+For case $(a)$, suppose without loss of generality that $i=k$. Note that $m_{ij}^\prime = m_{ij}$. The only nontrivial case is when there is an arrow $j\rightarrow k =i$. Since $i$ and $j$ are connected in this case, $m_{ij}$ is one of 3,4, or 6.
 
 
 \vskip.1in
@@ -1475,40 +1553,40 @@ $$t_it_jt_i = s_is_is_js_i^{-1}s_i = s_is_is_j = s_is_js_is_js_i^{-1} = t_jt_it_
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 4$}.  Here we have $s_is_js_is_j = s_js_is_js_i$, so $s_is_is_js_is_js_i^{-1} = s_is_js_is_j$ and therefore
+{\sf Case $m_{ij} = 4$}. Here we have $s_is_js_is_j = s_js_is_js_i$, so $s_is_is_js_is_js_i^{-1} = s_is_js_is_j$ and therefore
 
 $$t_it_jt_it_j = s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_is_js_is_js_i^{-1} = s_is_js_is_j = s_is_js_i^{-1}s_is_is_js_i^{-1}s_i = t_jt_it_jt_i$$
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 6$}.  Here we have $s_is_is_js_is_js_is_js_i^{-1} = s_is_js_is_js_is_j$.  As in the previous case, we add an remove pairs $s_is_i^{-1}$ as necessary, giving
+{\sf Case $m_{ij} = 6$}. Here we have $s_is_is_js_is_js_is_js_i^{-1} = s_is_js_is_js_is_j$. As in the previous case, we add an remove pairs $s_is_i^{-1}$ as necessary, giving
 
 $$t_it_jt_it_jt_it_j = s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_i = t_jt_it_jt_it_jt_i$$
 
 
-For case $(b)$, the only nontrivial case is when there is an arrow $i\rightarrow k$ or $j\rightarrow k$.  Without loss of generality, suppose there is an arrow $i\rightarrow k$.  Since $j$ is not connected to $k$, we know that $s_js_k = s_ks_j$.
+For case $(b)$, the only nontrivial case is when there is an arrow $i\rightarrow k$ or $j\rightarrow k$. Without loss of generality, suppose there is an arrow $i\rightarrow k$. Since $j$ is not connected to $k$, we know that $s_js_k = s_ks_j$.
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 2$}.  Here $s_is_j = s_js_i$, so we have that
+{\sf Case $m_{ij} = 2$}. Here $s_is_j = s_js_i$, so we have that
 
 $$t_it_j = s_ks_is_k^{-1}s_j = s_js_ks_is_k^{-1} = t_jt_i$$
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 3$}.  Here $s_is_js_i = s_js_is_j$, so we have that 
+{\sf Case $m_{ij} = 3$}. Here $s_is_js_i = s_js_is_j$, so we have that
 
 $$t_it_jt_i = s_ks_is_k^{-1}s_js_ks_is_k^{-1} = s_ks_is_js_is_k^{-1} = s_ks_js_is_js_k^{-1} = s_js_ks_is_k^{-1}s_j = t_jt_it_j$$
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 4$}.  Here $s_is_js_is_j = s_js_is_js_i$, so we have that
+{\sf Case $m_{ij} = 4$}. Here $s_is_js_is_j = s_js_is_js_i$, so we have that
 
 $$t_it_jt_it_j = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_k^{-1} = s_ks_js_is_js_is_k^{-1} = s_js_ks_is_k^{-1}s_js_ks_is_k^{-1} = t_jt_it_jt_i$$
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 6$}.  Here $s_is_js_is_js_is_j = s_js_is_js_is_js_i$, so we have that
+{\sf Case $m_{ij} = 6$}. Here $s_is_js_is_js_is_j = s_js_is_js_is_js_i$, so we have that
 
 $$t_it_jt_it_jt_it_j = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_is_js_k^{-1} = s_ks_js_is_js_is_js_is_k^{-1} = t_jt_it_jt_it_jt_i$$
 
@@ -1516,17 +1594,17 @@ $$t_it_jt_it_jt_it_j = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_k
 
 
 \begin{lem}\label{lem:r2b_relations}
-Let $i,j$ be distinct vertices of $\Gamma$ such that $i$ and $j$ are connected.  Then $\langle t_it_j \rangle^k = e$.
+Let $i,j$ be distinct vertices of $\Gamma$ such that $i$ and $j$ are connected. Then $\langle t_it_j \rangle^k = e$.
 \end{lem}
 
 \begin{proof}
-The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Corollary \ref{local_three_picture}.  We show that $t_i$ and $t_j$ satisfy the $(R2^\prime)$ relations by checking each case.  We also check that the corresponding $(R3^\prime)$ relations hold in cases (b), (d), (e), and (f).  Within each case we view the subdiagram on the left as a subdiagram of $\Gamma$ in the subcase $(i)$ and as a subdiagram of $\Gamma^\prime$ in the subcase $(ii)$.\todo{Disaster.  Open to suggestions for how to make this more clear}
+The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Corollary \ref{local_three_picture}. We show that $t_i$ and $t_j$ satisfy the $(R2^\prime)$ relations by checking each case. We also check that the corresponding $(R3^\prime)$ relations hold in cases (b), (d), (e), and (f). Within each case we view the subdiagram on the left as a subdiagram of $\Gamma$ in the subcase $(i)$ and as a subdiagram of $\Gamma^\prime$ in the subcase $(ii)$.\todo{Disaster. Open to suggestions for how to make this more clear}
 
-Throughout the proof we will make frequent use of the fact that if $m$ and $n$ are vertices of $\Gamma$, then 
+Throughout the proof we will make frequent use of the fact that if $m$ and $n$ are vertices of $\Gamma$, then
 
 $$s_ms_ns_m = s_ns_ms_n \Leftrightarrow s_ms_ns_m^{-1} = s_n^{-1}s_ms_n \Leftrightarrow s_ms_n^{-1}s_m^{-1} = s_n^{-1}s_m^{-1}s_n \Leftrightarrow s_m^{-1}s_n^{-1}s_m^{-1} = s_n^{-1}s_m^{-1}s_n^{-1}$$
 
-When helpful, we underline the sections of an expression that are about to be manipulated.  We also frequently combine two applications of $A_{\Gamma}$ relations when one manipulation is simply commuting pairs of variables.
+When helpful, we underline the sections of an expression that are about to be manipulated. We also frequently combine two applications of $A_{\Gamma}$ relations when one manipulation is simply commuting pairs of variables.
 
 
 \begin{enumerate}[a)]
@@ -1605,7 +1683,7 @@ The elements $t_i$ satisfy the $(R3^\prime)$ relations in $\Gamma^\prime$.
 \end{lem}
 
 \begin{proof}
-We know that every chordless cycle in $\Gamma'$ arises from a subdiagram of $\Gamma$ in the form of one of the cases of Lemma \ref{lem:chordless_cycles}, so we simply need to check that a cycle relation holds in each case.  We follow the labeling of the vertices used in Lemma \ref{lem:chordless_cycles}.
+We know that every chordless cycle in $\Gamma'$ arises from a subdiagram of $\Gamma$ in the form of one of the cases of Lemma \ref{lem:chordless_cycles}, so we simply need to check that a cycle relation holds in each case. We follow the labeling of the vertices used in Lemma \ref{lem:chordless_cycles}.
 
 \begin{enumerate}[a)]
 \item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$
@@ -1681,7 +1759,7 @@ t_3t_4^{-1}t_1t_4 &= s_3s_4^{-1}\underline{s_2s_1s_2^{-1}}s_4\\
 
 
 \begin{proof}[Proof of Proposition \ref{prop:ti_relations}]
-Lemma \ref{lem:r2a_relations} and Lemma \ref{lem:r2b_relations} show that the elements $t_i$ satisfy the $(R2^\prime)$ relations for $A_{\Gamma^\prime}$.  Lemma \ref{lem:r3_relations} shows that they satisfy the $(R3^\prime)$ relations.  Since these are all of the relations defining $A_{\Gamma^\prime}$, it follows that $\varphi$ defines a group homomorphism $A_{\Gamma^\prime}\rightarrow A_\Gamma$.
+Lemma \ref{lem:r2a_relations} and Lemma \ref{lem:r2b_relations} show that the elements $t_i$ satisfy the $(R2^\prime)$ relations for $A_{\Gamma^\prime}$. Lemma \ref{lem:r3_relations} shows that they satisfy the $(R3^\prime)$ relations. Since these are all of the relations defining $A_{\Gamma^\prime}$, it follows that $\varphi$ defines a group homomorphism $A_{\Gamma^\prime}\rightarrow A_\Gamma$.
 \end{proof}
 
 
