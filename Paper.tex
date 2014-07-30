@@ -95,14 +95,14 @@ In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster alg
 %\end{thm}
 
 
-In our paper, we define $A_{\Gamma}$ to be the Artin group presentation arising from a cluster algebra, where $\Gamma$ is the diagram associated to the cluster algebra. We provide the necessary relations for the generators of the group, and show that these relations hold under mutations of chordless cycles in a diagram. Our main result is to show that this Artin group presentation is invariant up to isomorphism under the mutation equivalence relation. We state the result here, but present the detailed proof in Section \ref{sec:proof_of_main}.
+In our paper, we define $A_{\Gamma}$ to be the Artin group presentation arising from a cluster algebra, where $\Gamma$ is the diagram associated to the cluster algebra. We provide the necessary relations for the generators of the group, and show that these relations hold under mutations of chordless cycles in a diagram. Our main result is to show that this Artin group presentation is invariant up to isomorphism under the mutation equivalence relation. We state the result here, but present the detailed proof in Section \ref{sec:main_result}.
 
 \begin{thm}[Theorem \ref{thm:main}]
 Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$.  Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$.
 \end{thm}
 
 
-\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \ref{sec:proof_of_main} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
+\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams}  will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \ref{sec:main_result} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
 
 \section{Background}
 \label{sec:main_definitions}
@@ -120,10 +120,10 @@ B_{ij}^{\prime} = \begin{cases} - B_{ij} & \mbox{ if } i = k \mbox{ or } j = k;\
 																B_{ij} + \frac{|B_{ik}|B_{kj} + B_{ik}|B_{kj}|}{2} & \mbox{ otherwise. }\\
 									\end{cases}
 \end{displaymath}
-and $\textbf{x}^{\prime} = \left{ x_1, x_2, \ldots, x_{k-1}, x_k^{\prime}, x_{k+1}, \ldots, x_n \right}$. 
-Such a mutation or a sequence of such mutations generate \textit{seeds} which in turn generate all cluster variables in that, for each $\textbf{x} = \left{ x_1, \ldots, x_n \right}$ corresponding to a seed of the cluster algebra, the entries $x_i$ are the cluster variables. \\
+and $\textbf{x}^{\prime} = { x_1, x_2, \ldots, x_{k-1}, x_k^{\prime}, x_{k+1}, \ldots, x_n}$. 
+Such a mutation or a sequence of such mutations generate \textit{seeds} which in turn generate all cluster variables in that, for each $\textbf{x} = { x_1, \ldots, x_n}$ corresponding to a seed of the cluster algebra, the entries $x_i$ are the cluster variables. \\
 
- A cluster algebra is said to be of \textit{finite type} if the number of cluster variables that generate it is finite (if it has finitely many seeds). For each finite type cluster algebra, we can associate to its corresponding skew-symmetrisable matrix an edge-weighted, oriented graph, called a \textit{diagram}. We will often denote this diagram by $\Gamma$, and the vertex set of $\Gamma$ by $\V$. We will denote two connected vertices by $i \rightarrow j$, or by $i\--\ j$ if the orientation is not specified. The diagram is determined by, for $i, j \in \V$, $i \xrightarrow{w} j$ if and only if $B_{ij} > 0$ and $w = |B_{ij}B_{ji}|$ is the weight of the edge. A skew-symmetrisable matrix $B$ is \textit{2-finite} if $|B_{ij}B_{ji}| \leq 3$ for $i, j \in \left{ 1, \ldots, n \right}$.  By \cite[7.5]{FZ02}, we have that if $B$ is 2-finite, all 3-cycles in the unoriented graph underlying our diagram must be oriented cyclically. \\
+ A cluster algebra is said to be of \textit{finite type} if the number of cluster variables that generate it is finite (if it has finitely many seeds). For each finite type cluster algebra, we can associate to its corresponding skew-symmetrisable matrix an edge-weighted, oriented graph, called a \textit{diagram}. We will often denote this diagram by $\Gamma$, and the vertex set of $\Gamma$ by $\V$. We will denote two connected vertices by $i \rightarrow j$, or by $i\--\ j$ if the orientation is not specified. The diagram is determined by, for $i, j \in \V$, $i \xrightarrow{w} j$ if and only if $B_{ij} > 0$ and $w = |B_{ij}B_{ji}|$ is the weight of the edge. A skew-symmetrisable matrix $B$ is \textit{2-finite} if $|B_{ij}B_{ji}| \leq 3$ for $i, j \in { 1, \ldots, n }$.  By \cite[7.5]{FZ02}, we have that if $B$ is 2-finite, all 3-cycles in the unoriented graph underlying our diagram must be oriented cyclically. \\
 
 Just as we can define mutations of the seeds of a cluster variable, we can also define mutations of a diagram associated to a cluster algebra of finite type by the following set of rules:
 \begin{prop}\cite[Proposition 1.4]{BM13}
@@ -241,7 +241,7 @@ Defining the group $W_{\Gamma}$ with relations as shown above allows them to pro
 Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
 \end{thm}
 
-The rest of the paper will be devoted to building up analogous relations, defined in ~\ref{grp def} to prove a similar result in the case of Artin groups. For $\Gamma$ a diagram of finite type, we define the Artin group associated to $\Gamma$ as in Section \ref{sec:defn_artingroup}. We will then use the group relations presented in this definition to prove the mutation invariance of $A_{\Gamma}$ in Section \ref{sec:proof_of_main}.
+The rest of the paper will be devoted to building up analogous relations, defined in ~\ref{grp def} to prove a similar result in the case of Artin groups. For $\Gamma$ a diagram of finite type, we define the Artin group associated to $\Gamma$ as in Section \ref{sec:defn_artingroup}. We will then use the group relations presented in this definition to prove the mutation invariance of $A_{\Gamma}$ in Section \ref{sec:main_result}.
 
 \section{Diagrams of Finite Type}
 \label{sec:finite-type_diagrams}
@@ -919,7 +919,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma)$ the muta
   \draw[->]
   (ur) to node[right]{2} (dr)
   ;
-    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){k};
+    \node [yshift = .4 cm,xshift = -.4 cm] at (ul){1};
    \node  [yshift = .4 cm,xshift = .4 cm] at (ur){k=2};
     \node [yshift = -.4 cm,xshift = .4 cm] at (dr){3};
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
@@ -1147,7 +1147,7 @@ Let
 	(x_ix_j)^{\frac{k-1}{2}}x_i &\text{ if } k \equiv 1 \pmod 2
 \end{cases}
 \end{align*}
-That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and $x_j$ of length $k.$
+That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and $x_j$ of length $k$.  We also write $\langle x_i,x_j\rangle^{-k}$ to denote $\left(\langle x_i,x_j\rangle^k\right)^{-1}$
 
 \end{note}
 \begin{defn}
@@ -1407,19 +1407,14 @@ Finally, given a square labeled as in ~\ref{2sqr} and the relations r(1, 2) and 
 But this relation holds if and only if $s_{i}^{-1}, \dots, s_{l}^{-1}$ satisfy r(j, i) in A$_{\Gamma^{op}}$. Therefore, we are done.
 \end{proof}
 
-\section{Proof of Main Result}\label{sec:proof_of_main}
-
-
-\noindent In this section we prove our main result:
-
+\section{Main Result}\label{sec:main_result}
+\noindent In Section \ref{sec:proof_of_main_result} we prove our main result:
 
 \begin{thm}\label{thm:main}
 Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$.  Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$
 \end{thm}
 
-Throughout this section we will fix a diagram of finite type $\Gamma$, a vertex $k$ of $\Gamma$, and write $\Gamma^{\prime} = \mu_k(\Gamma)$.  We will write $s_i$, $r_i$, $q_i$, and $u_i$ for the generators corresponding to vertex $i$ of $A_{\Gamma}$, $A_{\Gamma^\prime}$, $A_{\Gamma^{op}}$, and $A_{\left(\Gamma^\prime\right)^{op}}$, respectively.  We will also abuse notation and write $u_i$ for the generators of $A_{\left(\Gamma^{op}\right)^\prime}$ as well, making use of the fact that $\left(\Gamma^\prime\right)^{op} = \left(\Gamma^{op}\right)^\prime$.
-
-In the proof of Theorem \ref{thm:main} we will use Lemma \ref{lem:op_homomorphism} along with the following proposition, whose proof we will defer until after the proof of Theorem \ref{thm:main} and then split into Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}.
+Throughout the section we will fix a diagram of finite type $\Gamma$, a vertex $k$ of $\Gamma$, and write $\Gamma^{\prime} = \mu_k(\Gamma)$.  We will write $s_i$, $r_i$, $q_i$, and $u_i$ for the generators corresponding to vertex $i$ of $A_{\Gamma}$, $A_{\Gamma^\prime}$, $A_{\Gamma^{op}}$, and $A_{\left(\Gamma^\prime\right)^{op}}$, respectively. Note that the $u_i$ are generators $A_{\left(\Gamma^{op}\right)^\prime}$ as well, since $\left(\Gamma^\prime\right)^{op} = \left(\Gamma^{op}\right)^\prime$.  In the proof of Theorem \ref{thm:main} we will use Lemma \ref{lem:op_homomorphism} along with the following proposition, which we prove in Section \ref{sec:proof_of_ti_relations}.
 
 \begin{prop}\label{prop:ti_relations}
 The map $\varphi \colon A_{\Gamma^\prime}\rightarrow A_{\Gamma}$ defined by
@@ -1432,95 +1427,113 @@ The map $\varphi \colon A_{\Gamma^\prime}\rightarrow A_{\Gamma}$ defined by
 \noindent is a group homomorphism.
 \end{prop}
 
+
+
+\subsection{Proof of Main Result}\label{sec:proof_of_main_result}
+
+
 \todo{do we define $m_{ij}'$ somewhere?}
 
 \begin{proof}[Proof of Theorem \ref{thm:main}]
-By Proposition \ref{prop:ti_relations} $\varphi\colon A_{\Gamma^\prime}\rightarrow A_\Gamma$ is a group homomorphism.  We also abuse notation and write $\varphi\colon A_{\Gamma^{op}}\rightarrow A_{\left(\Gamma^{op}\right)^\prime}$ by letting $\varphi(q_i)$ equal $u_ku_iu_k^{-1}$ if there is an arrow $i\rightarrow k$ in $\left(\Gamma^{op}\right)^\prime$, and $u_i$ otherwise, and this is a homomorphism by Proposition \ref{prop:ti_relations} as well.  By Lemma \ref{lem:op_homomorphism}, the homormorphism $\Delta$ that sends $s_i\in A(\Gamma)$ to $q_i^{-1}\in A(\Gamma^{op})$ and $u_i\in A_{\left(\Gamma^\prime\right)^{op}}$ to $r_i\in A_{\Gamma^\prime}$ is well-defined.  We then have a homomorphism 
-$$\psi = \Delta\circ\varphi\circ\Delta\colon A(\Gamma)\rightarrow A(\Gamma^{op})\rightarrow A(\left(\Gamma^{op}\right)^{\prime}) \rightarrow A(\Gamma^{\prime})$$
+By Proposition \ref{prop:ti_relations} $\varphi\colon A_{\Gamma^\prime}\rightarrow A_\Gamma$ is a group homomorphism and $\varphi_{op}\colon A_{\Gamma^{op}}\rightarrow A_{\left(\Gamma^{op}\right)^\prime}$ defined by
+
+\begin{displaymath}
+\varphi_{op}(q_i) = \begin{cases}    u_ku_iu_k^{-1} & \mbox{if there is a (possibly weighted) arrow } i \rightarrow k \mbox{ in } \left(\Gamma^{op}\right)^\prime\\
+				u_i & \mbox{otherwise}\\
+	\end{cases}
+\end{displaymath}
+
+\noindent is a group homomorphism as well.  By Lemma \ref{lem:op_homomorphism}, there exist two well-defined homomorphisms $\Delta\colon A_{\Gamma}\rightarrow A_\Gamma^{op}$ defined by $\Delta(s_i) = q_i^{-1}$ and $\Delta^\prime\colon A_{\left(\Gamma^\prime\right)^{op}} \rightarrow A_{\Gamma^\prime}$ defined by $\Delta^\prime(u_i) = r_i^{-1}$. We then have a homomorphism 
+
+$$\psi = \Delta^\prime\circ\varphi_{op}\circ\Delta\colon A(\Gamma)\rightarrow A(\Gamma^{op})\rightarrow A(\left(\Gamma^{op}\right)^{\prime}) \rightarrow A(\Gamma^{\prime})$$
 
 Suppose that there is an arrow $i\rightarrow k$ in $\Gamma$.  Then there will be an arrow $k\rightarrow i$ in $\Gamma^{op}$ and hence an arrow $i\rightarrow k$ in $\left(\Gamma^{op}\right)^{\prime}$, so we have that
 
-$$\psi\circ\varphi(r_i) = \Delta(\varphi(\Delta(\varphi(r_i)))) = \Delta(\varphi(\Delta(s_ks_is_k^{-1}))) = \Delta(\varphi(q_k^{-1}q_i^{-1}q_k)) = \Delta(u_i^{-1}) = r_i$$
+$$\psi\circ\varphi(r_i) = \Delta^\prime(\varphi_{op}(\Delta(\varphi(r_i)))) = \Delta^\prime(\varphi_{op}(\Delta(s_ks_is_k^{-1}))) = \Delta^\prime(\varphi_{op}(q_k^{-1}q_i^{-1}q_k)) = \Delta^\prime(u_i^{-1}) = r_i$$
 
 Similarly if there is an arrow $k\rightarrow i$ or no arrow between $i$ and $k$ in $\Gamma$ then there will be an arrow $k\rightarrow i$ or no arrow between $i$ and $k$ in $\left(\Gamma^{op}\right)^{\prime}$, respectively.  In each of these cases we have that
 
-$$\psi\circ\varphi(r_i) = \Delta(\varphi(\Delta(\varphi(r_i)))) = \Delta(\varphi(\Delta(s_i))) = \Delta(\varphi(q_i^{-1})) = \Delta(u_i^{-1}) = r_i$$
+$$\psi\circ\varphi(r_i) = \Delta^\prime(\varphi_{op}(\Delta(\varphi(r_i)))) = \Delta^\prime(\varphi_{op}(\Delta(s_i))) = \Delta^\prime(\varphi_{op}(q_i^{-1})) = \Delta^\prime(u_i^{-1}) = r_i$$
 
-Thus $\psi\circ\varphi$ is the identity map on $A(\Gamma^{\prime})$.  By a similar argument $\varphi\circ\psi$ is the identity map on $A(\Gamma)$, and hence $A(\Gamma)\cong A(\Gamma^{\prime}))$.
+Thus $\psi\circ\varphi$ is the identity map on $A_{\Gamma^{\prime}}$.  By a similar argument $\varphi\circ\psi$ is the identity map on $A_\Gamma$, and hence $A_\Gamma\cong A_{\Gamma^{\prime}}$.
 \end{proof}
 
 
 
-We prove Proposition \ref{prop:ti_relations} by showing that that the elements $\varphi(r_i)\in A_\Gamma$ satisfy the $(R2^\prime)$ and $(R3^\prime)$ relations in $A_{\Gamma^\prime}$.  Proofs that the $t_i$ satisfy these relations are divided among Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}.  Throughout the proofs we write $t_i = \varphi(r_i)$ for convenience.
+
+
+\subsection{Proof of Proposition \ref{prop:ti_relations}}\label{sec:proof_of_ti_relations}
+
+We prove Proposition \ref{prop:ti_relations} by showing that that the elements $\varphi(r_i)\in A_\Gamma$ satisfy the $(R2^\prime)$ and $(R3^\prime)$ relations in $A_{\Gamma^\prime}$.  The proof that the $\varphi(r_i)$ satisfy these relations is divided among Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}.  Throughout the proofs we write $t_i = \varphi(r_i)$ for convenience.
 
 
 \begin{lem}\label{lem:r2a_relations}
 Let $i,j$ be distinct vertices of $\Gamma$.
 \begin{enumerate}[(a)]
-\item If $i=k$ or $j=k$, then $\langle t_it_j \rangle^k = e$.
-\item If at most of $i,j$ is connected to $k$ in $\Gamma$, then $\langle t_it_j \rangle^k = e$.
+\item If $i=k$ or $j=k$, then $\langle t_it_j \rangle^{m_{ij}^\prime} = \langle t_jt_i \rangle^{m_{ij}^\prime}$.
+\item If at most one of $i,j$ is connected to $k$ in $\Gamma$, then $\langle t_it_j \rangle^{m_{ij}^\prime} = \langle t_jt_i \rangle^{m_{ij}^\prime}$.
 \end{enumerate}
 \end{lem}
 
 \begin{proof}
-For case $(a)$, suppose without loss of generality that $i=k$.  Note that $m_{ij}^\prime = m_{ij}$. The only nontrivial case is when there is an arrow $j\rightarrow k =i$.  Since $i$ and $j$ are connected in this case, $m_{ij}$ is one of 3,4, or 6.
+For case $(a)$, suppose without loss of generality that $i=k$.  Note that $m_{ij}^\prime = m_{ij}$. The only nontrivial case is when there is an arrow $j\rightarrow k =i$.  Since $i$ and $j$ are connected in this case, $m_{ij}$ is one of 3, 4, or 6.
 
 
 \vskip.1in
 \noindent
 {\sf Case $m_{ij} = 3$}.
-Here we have $s_js_is_j = s_is_js_i$, so $s_is_j = s_js_is_js_i^{-1}$, so
+Here $\langle s_js_i \rangle^{3} = \langle s_is_j \rangle^{3}$, so $s_is_j = s_js_is_js_i^{-1}$ and we have
 
-$$t_it_jt_i = s_is_is_js_i^{-1}s_i = s_is_is_j = s_is_js_is_js_i^{-1} = t_jt_it_j$$
 
-\vskip.1in
-\noindent
-{\sf Case $m_{ij} = 4$}.  Here we have $s_is_js_is_j = s_js_is_js_i$, so $s_is_is_js_is_js_i^{-1} = s_is_js_is_j$ and therefore
-
-$$t_it_jt_it_j = s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_is_js_is_js_i^{-1} = s_is_js_is_j = s_is_js_i^{-1}s_is_is_js_i^{-1}s_i = t_jt_it_jt_i$$
+$$\langle t_it_j \rangle^{3} = t_it_jt_i = s_is_is_js_i^{-1}s_i = s_is_is_j = s_is_js_is_js_i^{-1} = t_jt_it_j = \langle t_jt_i \rangle^{3}$$
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 6$}.  Here we have $s_is_is_js_is_js_is_js_i^{-1} = s_is_js_is_js_is_j$.  As in the previous case, we add an remove pairs $s_is_i^{-1}$ as necessary, giving
+{\sf Case $m_{ij} = 4$}.  Here $\langle s_is_j \rangle^{4} = \langle s_js_i \rangle^{4}$, so $s_is_is_js_is_js_i^{-1} = s_is_js_is_j$ and therefore
 
-$$t_it_jt_it_jt_it_j = s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_i = t_jt_it_jt_it_jt_i$$
+$$\langle t_it_j \rangle^{4} = s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_is_js_is_js_i^{-1} = s_is_js_is_j = s_is_js_i^{-1}s_is_is_js_i^{-1}s_i = \langle t_jt_i \rangle^{4}$$
+
+\vskip.1in
+\noindent
+{\sf Case $m_{ij} = 6$}.  Here $\langle s_is_j \rangle^{6} = \langle s_js_i \rangle^{6}$, so $s_is_is_js_is_js_is_js_i^{-1} = s_is_js_is_js_is_j$.  As in the previous case, we add and remove pairs $s_is_i^{-1}$ as necessary, giving
+
+$$\langle t_it_j \rangle^{6} = s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1} = s_is_js_i^{-1}s_is_is_js_i^{-1}s_is_is_js_i^{-1}s_i = \langle t_it_j \rangle^{6}$$
 
 
 For case $(b)$, the only nontrivial case is when there is an arrow $i\rightarrow k$ or $j\rightarrow k$.  Without loss of generality, suppose there is an arrow $i\rightarrow k$.  Since $j$ is not connected to $k$, we know that $s_js_k = s_ks_j$.
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 2$}.  Here $s_is_j = s_js_i$, so we have that
+{\sf Case $m_{ij} = 2$}.  Here $s_is_j = s_js_i$, so $s_j$ commutes with both $s_i$ and $s_k$ and we have that
 
 $$t_it_j = s_ks_is_k^{-1}s_j = s_js_ks_is_k^{-1} = t_jt_i$$
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 3$}.  Here $s_is_js_i = s_js_is_j$, so we have that 
+{\sf Case $m_{ij} = 3$}.  Here $\langle s_is_j \rangle^{3} = \langle s_js_i \rangle^{3}$, so we have that 
 
-$$t_it_jt_i = s_ks_is_k^{-1}s_js_ks_is_k^{-1} = s_ks_is_js_is_k^{-1} = s_ks_js_is_js_k^{-1} = s_js_ks_is_k^{-1}s_j = t_jt_it_j$$
-
-\vskip.1in
-\noindent
-{\sf Case $m_{ij} = 4$}.  Here $s_is_js_is_j = s_js_is_js_i$, so we have that
-
-$$t_it_jt_it_j = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_k^{-1} = s_ks_js_is_js_is_k^{-1} = s_js_ks_is_k^{-1}s_js_ks_is_k^{-1} = t_jt_it_jt_i$$
+$$\langle t_it_j \rangle^{3} = s_ks_is_k^{-1}s_js_ks_is_k^{-1} = s_ks_is_js_is_k^{-1} = s_ks_js_is_js_k^{-1} = s_js_ks_is_k^{-1}s_j = \langle t_jt_i \rangle^{3}$$
 
 \vskip.1in
 \noindent
-{\sf Case $m_{ij} = 6$}.  Here $s_is_js_is_js_is_j = s_js_is_js_is_js_i$, so we have that
+{\sf Case $m_{ij} = 4$}.  Here $\langle s_is_j \rangle^{4} = \langle s_js_i \rangle^{4}$, so we have that
 
-$$t_it_jt_it_jt_it_j = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_is_js_k^{-1} = s_ks_js_is_js_is_js_is_k^{-1} = t_jt_it_jt_it_jt_i$$
+$$\langle t_it_j \rangle^{4} = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_k^{-1} = s_ks_js_is_js_is_k^{-1} = s_js_ks_is_k^{-1}s_js_ks_is_k^{-1} = \langle t_jt_i \rangle^{4}$$
 
+\vskip.1in
+\noindent
+{\sf Case $m_{ij} = 6$}.  Here $\langle s_is_j \rangle^{6} = \langle s_js_i \rangle^{6}$, so we have that
+
+$$\langle t_it_j \rangle^{6} = s_ks_is_k^{-1}s_js_ks_is_k^{-1}s_js_ks_is_k^{-1}s_j = s_ks_is_js_is_js_is_js_k^{-1} = s_ks_js_is_js_is_js_is_k^{-1} = \langle t_it_j \rangle^{6}$$
 \end{proof}
 
 
 \begin{lem}\label{lem:r2b_relations}
-Let $i,j$ be distinct vertices of $\Gamma$ such that $i$ and $j$ are connected.  Then $\langle t_it_j \rangle^k = e$.
+Let $i,j$ be distinct vertices of $\Gamma$ such that $i$ and $j$ are connected.  Then $\langle t_it_j \rangle^{m_{ij}^\prime} = \langle t_jt_i \rangle^{m_{ij}^\prime}$.
 \end{lem}
 
 \begin{proof}
-The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Corollary \ref{local_three_picture}.  We show that $t_i$ and $t_j$ satisfy the $(R2^\prime)$ relations by checking each case.  We also check that the corresponding $(R3^\prime)$ relations hold in cases (b), (d), (e), and (f).  Within each case we view the subdiagram on the left as a subdiagram of $\Gamma$ in the subcase $(i)$ and as a subdiagram of $\Gamma^\prime$ in the subcase $(ii)$.\todo{Disaster.  Open to suggestions for how to make this more clear}
+The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Corollary \ref{local_three_picture}.  We show that $t_i$ and $t_j$ satisfy the $(R2^\prime)$ relations by checking each case.  Within each case, subcase $(i)$ is when the subdiagram of $\Gamma$ is the diagram on the left in the figure in Corollary \ref{local_three_picture}, and subcase $(ii)$ is when the subdiagram of $\Gamma$ is the diagram on the right in the figure in Corollary \ref{local_three_picture}.
 
 Throughout the proof we will make frequent use of the fact that if $m$ and $n$ are vertices of $\Gamma$, then 
 
@@ -1532,66 +1545,76 @@ When helpful, we underline the sections of an expression that are about to be ma
 \begin{enumerate}[a)]
 \item
 \begin{enumerate}[i)]
-\item We have $t_it_j = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = t_jt_i$.
-\item We have $t_it_j = s_is_j = s_js_i = t_jt_i$.
+\item We have $\langle t_it_j \rangle^{2} = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = \langle t_jt_i \rangle^{2}$.
+\item We have $\langle t_it_j \rangle^{2} = s_is_j = s_js_i = \langle t_jt_i \rangle^{2}$.
 \end{enumerate}
 \item
 \begin{enumerate}[i)]
 \item We have
 \begin{align*}
-t_it_jt_i &= s_ks_i\underline{s_k^{-1}s_js_k}s_is_k^{-1}\\
+\langle t_it_j \rangle^{3} &= s_ks_i\underline{s_k^{-1}s_js_k}s_is_k^{-1}\\
 &= s_k\underline{s_is_j}s_k\underline{s_j^{-1}s_i}s_k^{-1}\\
 &= s_ks_j\underline{s_is_ks_i}s_j^{-1}s_k^{-1}\\
 &= \underline{s_ks_js_k}s_i\underline{s_ks_j^{-1}s_k^{-1}}\\
 &= s_js_k\underline{s_js_is_j^{-1}}s_k^{-1}s_j\\
 &= s_js_ks_is_k^{-1}s_j\\
-&= t_it_jt_i
+&= \langle t_jt_i \rangle^{3}
 \end{align*}
 
-\item We have $t_it_j = s_i\underline{s_ks_js_k^{-1}} = \underline{s_is_j^{-1}s_ks_j} = \underline{s_j^{-1}s_ks_j}s_i = s_ks_js_k^{-1}s_i = t_jt_i$
+\item We have $\langle t_it_j \rangle^{2} = s_i\underline{s_ks_js_k^{-1}} = \underline{s_is_j^{-1}s_ks_j} = \underline{s_j^{-1}s_ks_j}s_i = s_ks_js_k^{-1}s_i = \langle t_jt_i \rangle^{2}$
 \end{enumerate}
 \item
 \begin{enumerate}[i)]
-\item We have $t_it_j = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = t_jt_i$
-\item We have $t_it_j = s_is_j = s_js_i = t_jt_i$
+\item We have $\langle t_it_j \rangle^{2} = s_ks_is_k^{-1}s_ks_js_k^{-1} = s_ks_is_js_k^{-1} = s_ks_js_is_k^{-1} = \langle t_jt_i \rangle^{2}$
+\item We have $\langle t_it_j \rangle^{2} = s_is_j = s_js_i = \langle t_jt_i \rangle^{2}$
 \end{enumerate}
 \item
 \begin{enumerate}[i)]
 \item We have
 \begin{align*}
-t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1} &= s_ks_is_k^{-1}s_js_ks_i\underline{s_k^{-1}s_js_k}s_i^{-1}\underline{s_k^{-1}s_j^{-1}s_k}s_i^{-1}s_k^{-1}s_j^{-1}\\
+\langle t_it_j \rangle^{4}\langle t_jt_i \rangle^{-4} &= t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1}\\
+ &= s_ks_is_k^{-1}s_js_ks_i\underline{s_k^{-1}s_js_k}s_i^{-1}\underline{s_k^{-1}s_j^{-1}s_k}s_i^{-1}s_k^{-1}s_j^{-1}\\
 &=s_ks_is_k^{-1}\underline{s_js_ks_is_j}s_k\underline{s_j^{-1}s_i^{-1}s_j}s_k^{-1}s_j^{-1}s_i^{-1}s_k^{-1}s_j^{-1}\\
 &=s_k\underline{s_is_k^{-1}s_ks_j}s_ks_is_ks_i^{-1}s_k^{-1}\underline{s_j^{-1}s_i^{-1}s_k^{-1}s_j^{-1}}\\
 &=s_ks_j\underline{s_is_ks_is_ks_i^{-1}s_k^{-1}s_i^{-1}s_k^{-1}}s_j^{-1}s_k^{-1}\\
+&= s_ks_j\langle s_is_j \rangle^{4}\langle s_js_i \rangle^{-4}s_j^{-1}s_k^{-1} \\
 &= e
 \end{align*}
 
-\item We have $t_it_j = s_is_ks_js_k^{-1} = s_is_j^{-1}s_ks_j = s_j^{-1}s_ks_js_i = s_ks_js_k^{-1}s_i = t_jt_i$
+\item We have $\langle t_it_j \rangle^{2} = s_is_ks_js_k^{-1} = s_is_j^{-1}s_ks_j = s_j^{-1}s_ks_js_i = s_ks_js_k^{-1}s_i = \langle t_jt_i \rangle^{2}$
 \end{enumerate}
 \item
 \begin{enumerate}[i)]
 \item We have
 \begin{align*}
-t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1} &= \underline{s_ks_is_k^{-1}}s_j\underline{s_ks_is_k^{-1}}s_j\underline{s_ks_i^{-1}s_k^{-1}}s_j^{-1}\underline{s_ks_i^{-1}s_k^{-1}}s_j^{-1}\\
+\langle t_it_j \rangle^{4}\langle t_jt_i \rangle^{-4} &= t_it_jt_it_jt_i^{-1}t_j^{-1}t_i^{-1}t_j^{-1}\\
+&= \underline{s_ks_is_k^{-1}}s_j\underline{s_ks_is_k^{-1}}s_j\underline{s_ks_i^{-1}s_k^{-1}}s_j^{-1}\underline{s_ks_i^{-1}s_k^{-1}}s_j^{-1}\\
 &= s_i^{-1}s_k\underline{s_is_js_i^{-1}}s_k\underline{s_is_js_i^{-1}}s_k^{-1}\underline{s_is_j^{-1}s_i^{-1}}s_k^{-1}\underline{s_is_j^{-1}}\\
 &= s_i^{-1}\underline{s_ks_js_ks_js_k^{-1}s_j^{-1}s_k^{-1}s_j^{-1}}s_i\\
+&= s_i^{-1}\langle t_kt_j \rangle^{4}\langle t_jt_k \rangle^{-4}s_i\\
 &= e
 \end{align*}
 
 \item Since $s_js_k^{-1}s_is_k = s_k^{-1}s_is_ks_j$, we have that $s_js_k^{-1}s_i^{-1}s_k = s_k^{-1}s_i^{-1}s_ks_j$, hence
 
-$$t_it_jt_i^{-1}t_j^{-1} = s_is_k\underline{s_js_k^{-1}s_i^{-1}s_k}s_j^{-1}s_k^{-1} = s_is_ks_k^{-1}s_i^{-1}s_ks_js_j^{-1}s_k^{-1} = e$$
+\begin{align*}
+\langle t_it_j \rangle^{2}\langle t_jt_i \rangle^{-2} &= t_it_jt_i^{-1}t_j^{-1}\\
+&= s_is_k\underline{s_js_k^{-1}s_i^{-1}s_k}s_j^{-1}s_k^{-1}\\
+&= s_is_ks_k^{-1}s_i^{-1}s_ks_js_j^{-1}s_k^{-1}\\
+&= e\\
+\end{align*}
 
 \end{enumerate}
 \item
 \begin{enumerate}[i)]
 \item We have that
 \begin{align*}
-s_k^{-1}t_it_jt_it_j^{-1}t_i^{-1}t_j^{-1}s_k &= s_is_k^{-1}s_js_ks_is_k^{-1}s_j^{-1}s_ks_i^{-1}s_k^{-1}s_j^{-1}s_k\\
+s_k^{-1}\langle t_it_j \rangle^{3}\langle t_jt_i \rangle^{-3}s_k &= s_k^{-1}t_it_jt_it_j^{-1}t_i^{-1}t_j^{-1}s_k\\
+&= s_is_k^{-1}s_js_ks_is_k^{-1}s_j^{-1}s_ks_i^{-1}s_k^{-1}s_j^{-1}s_k\\
 &= e
 \end{align*}
 
-Where the second equality follows from Lemma \ref{lem:extra_square_relation}.
+Where the second equality follows from Lemma \ref{lem:extra_square_relation}.  It follows that $\langle t_it_j \rangle^{4} = \langle t_jt_i \rangle^{4}$.
 
 \item This follows from part (i) by symmetry
 \end{enumerate}
@@ -1605,49 +1628,56 @@ The elements $t_i$ satisfy the $(R3^\prime)$ relations in $\Gamma^\prime$.
 \end{lem}
 
 \begin{proof}
-We know that every chordless cycle in $\Gamma'$ arises from a subdiagram of $\Gamma$ in the form of one of the cases of Lemma \ref{lem:chordless_cycles}, so we simply need to check that a cycle relation holds in each case.  We follow the labeling of the vertices used in Lemma \ref{lem:chordless_cycles}.
+We know that every chordless cycle in $\Gamma'$ arises from a subdiagram of $\Gamma$ in the form of one of the cases of Lemma \ref{lem:chordless_cycles}, so we simply need to check that a cycle relation holds in each case.  We follow the labeling of the vertices used in Lemma \ref{lem:chordless_cycles}.  We denote by $r^\prime(m,n)$ the expression given by replacing the generators $r_i$ in the corresponding expression $r(m,n)$ in $A_{\Gamma^\prime}$ with $t_i$.  When helpful we note uses of $(R3)$ relations in $A_\Gamma$ by referencing the particular cycle relation used next to the manipulation.
 
 \begin{enumerate}[a)]
-\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$
+\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $r^\prime(1,2) = e$.
 
-\item We have $ t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_3t_1$
+\item We have $ t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $r^\prime(1,2) = e$.
 
-\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_3s_1 = t_2^{-1}t_3t_2t_1$
+\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $r^\prime(1,2) = e$.
 
 \item We have
 \begin{align*}
-t_3t_1^{-1}t_2t_1t_3^{-1}t_1^{-1}s_2^{-1}t_1 &= s_2s_3s_2^{-1}s_1^{-1}s_2s_1s_2s_3^{-1}s_2^{-1}s_1^{-1}s_2^{-1}s_1\\
-&= s_2s_3s_1s_2s_1^{-1}s_2^{-1}s_2s_3^{-1}s_2^{-1}s_1^{-1}s_2^{-1}s_1\\
-&= s_2s_3s_1s_2s_1^{-1}s_3^{-1}s_2^{-1}s_1^{-1}s_2^{-1}s_1\\
-&= s_2s_3s_1s_2s_1^{-1}s_3^{-1}s_1s_2^{-1}s_1^{-1}s_2^{-1}\\
-&= s_2s_1s_2s_1^{-1}s_3s_3^{-1}s_1s_2^{-1}s_1^{-1}s_2\\
-&= e\\
+s_2^{-1}r^\prime(3,1)s_2 &= s_2^{-1}t_3t_1^{-1}t_2t_1t_3^{-1}t_1^{-1}s_2^{-1}t_1s_2\\
+&= s_3\underline{s_2^{-1}s_1^{-1}s_2s_1s_2}s_3^{-1}\underline{s_2^{-1}s_1^{-1}s_2^{-1}s_1s_2}\\
+&= s_3s_1\underline{s_2s_1^{-1}s_3^{-1}s_1}s_2^{-1}s_1^{-1}\\
+&= s_3s_1s_1^{-1}s_3^{-1}s_1s_2s_2^{-1}s_1^{-1} &r(2,1)\\
+&= e
 \end{align*}
+
+\noindent Hence $r^\prime(3,1) = e$.
 
 \item We have
 \begin{align*}
 t_1t_2^{-1}t_3^{-1}t_4t_3t_2 &= (s_1s_2^{-1}s_1^{-1}s_1s_2s_1^{-1})s_1s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3s_1s_2s_1^{-1}\\
 &= s_1s_2^{-1}s_1^{-1}\underline{s_1s_2s_1s_2^{-1}s_1^{-1}}s_3^{-1}s_4s_3s_1s_2s_1^{-1}\\
 &= s_1s_2^{-1}s_1^{-1}\underline{s_2s_3^{-1}s_4s_3}s_1s_2s_1^{-1}\\
-&= s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3\underline{s_2s_1s_2s_1^{-1}}\\
+&= s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3\underline{s_2s_1s_2s_1^{-1}} &r(2,3)\\
 &= s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3s_1s_2s_1^{-1}s_1\\
 &= t_2^{-1}t_3^{-1}t_4t_3t_2t_1\\
 \end{align*}
+
+\noindent Hence $r^\prime(1,2) = e$.
 
 \item We have
 \begin{align*}
 t_1t_2^{-1}t_3^{-1}t_4t_3t_2 &= s_1\underline{s_2^{-1}s_2}s_3^{-1}\underline{s_2^{-1}s_4s_2}s_3 \underline{s_2^{-1}s_2}\\
 &= s_1s_3^{-1}s_4s_3\\
-&= s_3^{-1}s_4s_3s_1\\
+&= s_3^{-1}s_4s_3s_1 &r(1,3)\\
 &= (s_2^{-1}s_2)s_3^{-1}(s_2^{-1}\underline{s_2)s_4(s_2^{-1}}s_2)s_3(s_2^{-1}s_2s_1\\
-&= s_2^{-1}2s_3^{-1}s_2^{-1}s_4s_2s_3s_2^{-1}s_2s_1\\
+&= s_2^{-1}s_2s_3^{-1}s_2^{-1}s_4s_2s_3s_2^{-1}s_2s_1\\
 &= t_2^{-1}t_3^{-1}t_4t_3t_2t_1\\
 \end{align*}
 
+\noindent Hence $r^\prime(1,2) = e$.
+
 \item We have
 \begin{align*}
-t_3t_4^{-1}t_2t_4t_3^{-1}t_4^{-1}t_2^{-1}t_4 &= \underline{s_3s_1}s_4^{-1}s_1^{-1}s_2s_1s_4\underline{s_1^{-1}s_3^{-1}s_1}s_4^{-1}s_1^{-1}s_2^{-1}s_1s_4s_1^{-1}\\
+r^\prime(3,4) &= t_3t_4^{-1}t_2t_4t_3^{-1}t_4^{-1}t_2^{-1}t_4\\
+&= \underline{s_3s_1}s_4^{-1}s_1^{-1}s_2s_1s_4\underline{s_1^{-1}s_3^{-1}s_1}s_4^{-1}s_1^{-1}s_2^{-1}s_1s_4s_1^{-1}\\
 &= s_1\underline{s_3s_4^{-1}s_1^{-1}s_2s_1s_4s_3^{-1}s_4^{-1}s_1^{-1}s_2^{-1}s_1s_4}s_1^{-1}\\
+&= s_1r(3,4)s_1^{-1}\\
 &= s_1s_1^{-1}\\
 &= e\\
 \end{align*}
@@ -1656,26 +1686,46 @@ t_3t_4^{-1}t_2t_4t_3^{-1}t_4^{-1}t_2^{-1}t_4 &= \underline{s_3s_1}s_4^{-1}s_1^{-
 \begin{align*}
 t_3t_4^{-1}t_1t_4 &= s_3s_4^{-1}\underline{s_2s_1s_2^{-1}}s_4\\
 &= s_3s_4^{-1}s_1^{-1}s_2s_1s_4\\
-&= s_4^{-1}\underline{s_1^{-1}s_2s_1}s_4s_3\\
+&= s_4^{-1}\underline{s_1^{-1}s_2s_1}s_4s_3 &r(3,4)\\
 &= s_4^{-1}s_2s_1s_2^{-1}s_4s_3\\
 &= t_4^{-1}t_1t_4t_3\\
 \end{align*}
 
-\item We have
-\begin{align*}
-& t_1t_2^{-1}t_3^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2t_1^{-1}t_2^{-1}\cdots t_{h-1}^{-1}t_h^{-1}t_{h-1}\cdots t_2\\
-&= s_1s_2^{-1}s_3^{-1}\cdots s_{h-1}^{-1}\underline{s_ks_hs_k^{-1}}s_{h-1}\cdots s_2s_1^{-1}s_2^{-1}\cdots s_{h-1}^{-1}\underline{s_ks_h^{-1}s_k^{-1}}s_{h-1}\cdots s_2\\
-&= s_1s_2^{-1}s_3^{-1}\cdots s_{h-1}^{-1}s_h^{-1}s_ks_hs_{h-1}\cdots s_2s_1^{-1}s_2^{-1}\cdots s_{h-1}^{-1}s_h^{-1}s_k^{-1}s_hs_{h-1}\cdots s_2\\
-&= e\\
-\end{align*}
+\noindent Hence $r^\prime(3,4) = e$.
 
 \item We have
 \begin{align*}
-& t_ht_k^{-1}t_1^{-1}t_2^{-1}\cdots t_{h-2}^{-1}t_{h-1}t_{h-2}\cdots t_1t_kt_h^{-1}t_k^{-1}t_1^{-1}t_2^{-1}\cdots t_{h-2}^{-1}t_{h-1}^{-1}t_{h-2}\cdots t_2t_1t_k\\
-&= s_h\underline{s_k^{-1}s_k}s_1^{-1}\underline{s_k^{-1}}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}s_{h-2}\cdots \underline{s_k}s_1\underline{s_k^{-1}s_k}s_h^{-1}\underline{s_k^{-1}s_k}s_1^{-1}\underline{s_k^{-1}}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}^{-1}s_{h-2}\cdots s_2 \underline{s_k}s_1\underline{s_k^{-1}s_k}\\
-&= s_hs_1^{-1}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}s_{h-2}\cdots s_2s_1s_h^{-1}s_1^{-1}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}^{-1}s_{h-2}\cdots s_2s_1\\
+&r^\prime(1,2)\\
+&= t_1t_2^{-1}t_3^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2t_1^{-1}t_2^{-1}\cdots t_{h-1}^{-1}t_h^{-1}t_{h-1}\cdots t_2\\
+&= s_1s_2^{-1}s_3^{-1}\cdots s_{h-1}^{-1}\underline{s_ks_hs_k^{-1}}s_{h-1}\cdots s_2s_1^{-1}s_2^{-1}\cdots s_{h-1}^{-1}\underline{s_ks_h^{-1}s_k^{-1}}s_{h-1}\cdots s_2\\
+&= s_1s_2^{-1}s_3^{-1}\cdots s_{h-1}^{-1}s_h^{-1}s_ks_hs_{h-1}\cdots s_2s_1^{-1}s_2^{-1}\cdots s_{h-1}^{-1}s_h^{-1}s_k^{-1}s_hs_{h-1}\cdots s_2\\
+&= r(1,2)\\
 &= e\\
 \end{align*}
+
+\item Here $s_k$ commutes with $s_i$ for all $i\ne 1,h$, so we have
+\begin{align*}
+& r^\prime(h,1)\\
+&= t_ht_k^{-1}t_1^{-1}t_2^{-1}\cdots t_{h-2}^{-1}t_{h-1}t_{h-2}\cdots t_1t_kt_h^{-1}t_k^{-1}t_1^{-1}t_2^{-1}\cdots t_{h-2}^{-1}t_{h-1}^{-1}t_{h-2}\cdots t_2t_1t_k\\
+&= s_h\underline{s_k^{-1}s_k}s_1^{-1}\underline{s_k^{-1}}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}s_{h-2}\cdots \underline{s_k}s_1\underline{s_k^{-1}s_k}s_h^{-1}\underline{s_k^{-1}s_k}s_1^{-1}\underline{s_k^{-1}}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}^{-1}s_{h-2}\cdots s_2 \underline{s_k}s_1\underline{s_k^{-1}s_k}\\
+&= s_hs_1^{-1}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}s_{h-2}\cdots s_2s_1s_h^{-1}s_1^{-1}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}^{-1}s_{h-2}\cdots s_2s_1\\
+&= r(h,1)\\
+&= e\\
+\end{align*}
+
+\item Here $t_i = s_i$ for all vertices $i$ in $C^\prime$, so the case is trivial.
+
+\item  If the edge between $k$ and $h$ points towards $h$, then $t_i = s_i$ for all $i\in C^\prime$ and the case is trivial.  If the edge points towards $k$ then $t_h = s_ks_hs_k^{-1}$ and $s_k$ commutes with $s_i$ for all vertices $i\ne h$ in $C^\prime$, so we have
+
+\begin{align*}
+t_1t_2^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2 &= s_1s_2^{-1}\cdots s_{h-1}^{-1}s_ks_hs_k^{-1}s_{h-1}\cdots s_2\\
+&= s_k\underline{s_1s_2^{-1}\cdots s_{h-1}^{-1}s_hs_{h-1}\cdots s_2}s_k^{-1}\\
+&= s_ks_2^{-1}\cdots s_{h-1}^{-1}s_hs_{h-1}\cdots s_2s_1s_k^{-1} &r(1,2)\\
+&= s_2^{-1}\cdots s_{h-1}^{-1}s_ks_hs_k^{-1}s_{h-1}\cdots s_2s_1\\
+&= t_2^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2t_1\\
+\end{align*}
+
+\noindent Hence $r^\prime(1,2) = e$.
 \end{enumerate}
 \end{proof}
 

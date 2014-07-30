@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.7.20)  21 JUL 2014 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.7.20)  29 JUL 2014 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,11 +798,7 @@ e
 \tf@tdo=\write4
 \openout4 = `Paper.tdo'.
 
-
-Overfull \vbox (1.25264pt too high) has occurred while \output is active []
-
-
-[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
@@ -812,12 +808,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
-[2]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 117.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 117.
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
@@ -835,98 +830,120 @@ risable
  []
 
 
-Underfull \vbox (badness 3058) has occurred while \output is active []
-
- [3]
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-[4] [5]
-Overfull \hbox (67.83466pt too wide) in paragraph at lines 358--359
+[4]
+Overfull \hbox (67.83466pt too wide) in paragraph at lines 331--332
 [][] 
  []
 
-[6]
-Underfull \vbox (badness 5490) has occurred while \output is active []
+[5]
+Underfull \vbox (badness 1810) has occurred while \output is active []
+
+ [6]
+Underfull \vbox (badness 3612) has occurred while \output is active []
 
  [7]
-Overfull \hbox (68.582pt too wide) in paragraph at lines 1071--1072
+Overfull \hbox (68.582pt too wide) in paragraph at lines 1039--1040
 [][] 
  []
 
 
-Overfull \hbox (68.582pt too wide) in paragraph at lines 1155--1156
+Overfull \hbox (68.582pt too wide) in paragraph at lines 1123--1124
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: Citation `artin' on page 8 undefined on input line 1154
+.
 
- [8]
-[9] [10] [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[8] [9]
+Underfull \vbox (badness 2213) has occurred while \output is active []
 
- [12]
-[13] [14]
-Overfull \hbox (22.29124pt too wide) detected at line 1480
+ [10]
+[11] [12] [13]
+Overfull \hbox (5.3807pt too wide) in paragraph at lines 1446--1447
+\OT1/cmr/m/n/10.95 defined ho-mo-mor-phisms $^^A\U/MnSymbolC/m/n/10.95 ^^B \OML
+/cmm/m/it/10.95 A[] \U/MnSymbolA/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 A[]$ \OT1/cm
+r/m/n/10.95 de-fined by $^^A\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 s[]\O
+MX/MnSymbolE/m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 q[]$ \O
+T1/cmr/m/n/10.95 and $^^A[]\U/MnSymbolC/m/n/10.95 ^^B \OML/cmm/m/it/10.95 A[] \
+U/MnSymbolA/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (61.33908pt too wide) detected at line 1452
 \OML/cmm/m/it/10.95   \U/MnSymbolC/m/n/10.95 X \OML/cmm/m/it/10.95 '\OMX/MnSymb
 olE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 r[]\OMX/MnSymbolE/m/n/10.95  \U/MnSymbolD/m
-/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.9
-5 '\OMX/MnSymbolE/m/n/10.95 ˆ\OT1/cmr/m/n/10.95 ^^A\OMX/MnSymbolE/m/n/10.95 ˆ\O
-ML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 r[]\OMX/MnSymb
-olE/m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A\OMX/MnSymb
-olE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 ˆ\OT1/cmr/m/n/10.9
-5 ^^A\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 s[]s[]s[]\OMX/MnSymbolE/m/n/
-10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A\OMX/MnSymbolE/m/n/1
-0.95 ˆ\OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 q[]q[]
+/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A[]\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10
+.95 '[]\OMX/MnSymbolE/m/n/10.95 ˆ\OT1/cmr/m/n/10.95 ^^A\OMX/MnSymbolE/m/n/10.95
+ ˆ\OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 r[]\OMX/Mn
+SymbolE/m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A[]\OMX/
+MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 '[]\OMX/MnSymbolE/m/n/10.95 ˆ\OT1/cmr/
+m/n/10.95 ^^A\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 s[]s[]s[]\OMX/MnSymb
+olE/m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A[]\OMX/MnSym
+bolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 '[]\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/
+10.95 q[]q[]q[]\OMX/MnSymbolE/m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/
+m/n/10.95 ^^A[]\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 u[]\OMX/MnSymbolE/
+m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 r[]
+ []
+
+
+Overfull \hbox (10.98808pt too wide) detected at line 1456
+\OML/cmm/m/it/10.95   \U/MnSymbolC/m/n/10.95 X \OML/cmm/m/it/10.95 '\OMX/MnSymb
+olE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 r[]\OMX/MnSymbolE/m/n/10.95  \U/MnSymbolD/m
+/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A[]\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10
+.95 '[]\OMX/MnSymbolE/m/n/10.95 ˆ\OT1/cmr/m/n/10.95 ^^A\OMX/MnSymbolE/m/n/10.95
+ ˆ\OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 r[]\OMX/Mn
+SymbolE/m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A[]\OMX/
+MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 '[]\OMX/MnSymbolE/m/n/10.95 ˆ\OT1/cmr/
+m/n/10.95 ^^A\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 s[]\OMX/MnSymbolE/m/
+n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^A[]\OMX/MnSymbolE/m
+/n/10.95 ˆ\OML/cmm/m/it/10.95 '[]\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 
 q[]\OMX/MnSymbolE/m/n/10.95  \U/MnSymbolD/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^
-A\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 u[]\OMX/MnSymbolE/m/n/10.95  \U
-/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 r[]
+A[]\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 u[]\OMX/MnSymbolE/m/n/10.95  
+\U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 r[]
+ []
+
+[14]
+Overfull \hbox (16.65019pt too wide) detected at line 1494
+\OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[
+] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/Mn
+SymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/1
+0.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m
+/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OMX/MnSymbolE/m/
+n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[]
+ []
+
+
+Overfull \hbox (50.5988pt too wide) detected at line 1521
+\OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[
+] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/Mn
+SymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/1
+0.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML
+/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OMX/MnSymb
+olE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[]
+ []
+
+
+Overfull \hbox (32.06113pt too wide) detected at line 1527
+\OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[
+] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]
+s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] 
+\U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSy
+mbolD/m/n/10.95 ^^@ \OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/Mn
+SymbolE/m/n/10.95 e[]
  []
 
 [15]
-Overfull \hbox (21.52275pt too wide) detected at line 1517
-\OML/cmm/m/it/10.95 t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95
- s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]
-s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[] \U/MnS
-ymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/
-m/n/10.95 ^^@ \OML/cmm/m/it/10.95 t[]t[]t[]t[]
- []
-
-
-Overfull \hbox (17.54256pt too wide) detected at line 1523
-\OML/cmm/m/it/10.95 t[]t[]t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it
-/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm
-/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OM
-L/cmm/m/it/10.95 t[]t[]t[]t[]t[]t[]
- []
-
-
-Overfull \hbox (55.47136pt too wide) detected at line 1544
-\OML/cmm/m/it/10.95 t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95
- s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]
-s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] 
-\U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSy
-mbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 t[]t[]t[]t[]
- []
-
-
-Overfull \hbox (68.33548pt too wide) detected at line 1550
-\OML/cmm/m/it/10.95 t[]t[]t[]t[]t[]t[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it
-/10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm
-/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/1
-0.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 t[
-]t[]t[]t[]t[]t[]
- []
-
-[16]
-Overfull \hbox (60.90555pt too wide) detected at line 1564
+Overfull \hbox (60.90555pt too wide) detected at line 1540
 \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolD/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 s[
 ]s[]s[] \U/MnSymbolA/m/n/10.95 ^^T \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolD/m
 /n/10.95 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolA/m/n/10.95 ^^T \OML/cmm/
@@ -935,23 +952,36 @@ U/MnSymbolA/m/n/10.95 ^^T \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolD/m/n/10.95
 ^^@ \OML/cmm/m/it/10.95 s[]s[]s[]
  []
 
-[17] [18] [19]
-Overfull \hbox (71.54442pt too wide) in paragraph at lines 1715--1715
+
+Underfull \vbox (badness 1087) has occurred while \output is active []
+
+ [16]
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Overfull \hbox (71.54442pt too wide) in paragraph at lines 1714--1714
 [] 
  []
 
-(./Paper.bbl)
-Overfull \hbox (81.5222pt too wide) in paragraph at lines 1729--1729
+(./Paper.bbl [20])
+Overfull \hbox (81.5222pt too wide) in paragraph at lines 1743--1743
 []\OT1/cmr/m/it/9 E-mail ad-dress\OT1/cmr/m/n/9 : \OT1/cmtt/m/n/9 jhaley3@nd.ed
 u, david.hemminger@duke.edu, aaronlandesman@college.harvard.com,
  []
 
-[20] (./Paper.aux) ) 
+
+Package natbib Warning: There were undefined citations.
+
+[21] (./Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 17594 strings out of 493108
- 345613 string characters out of 6134853
- 433595 words of memory out of 5000000
- 20505 multiletter control sequences out of 15000+600000
+ 17501 strings out of 493108
+ 343233 string characters out of 6134853
+ 409642 words of memory out of 5000000
+ 20412 multiletter control sequences out of 15000+600000
  29937 words of font info for 107 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  62i,16n,82p,1176b,1027s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -983,10 +1013,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2014/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Paper.pdf (20 pages, 369006 bytes).
+Output written on Paper.pdf (21 pages, 366872 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 185 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
