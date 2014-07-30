@@ -1,2 +1,2 @@
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ put reference for artin, found at the bottom, in bibliography, but I don't know how to use this bibliography format. - it's just BibTex, which you'll almost certainly want to learn at some point. Try editing References.bib, and if you have trouble feel free to ask me for help - David}{9}
-\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ do we define $m_{ij}'$ somewhere?}{14}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ put reference for artin, found at the bottom, in bibliography, but I don't know how to use this bibliography format. - it's just BibTex, which you'll almost certainly want to learn at some point. Try editing References.bib, and if you have trouble feel free to ask me for help - David}{9}
+\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color {orange}o}}\ do we define $m_{ij}'$ somewhere?}{14}
