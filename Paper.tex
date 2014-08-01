@@ -249,7 +249,7 @@ The rest of the paper will be devoted to building up analogous relations, define
 \section{Diagrams of Finite Type}
 \label{sec:finite-type_diagrams}
 
-In this section, we shall review the structure of diagrams of finite type, and how their cycles are affected by mutation. This section is simply a recap of \cite[Section 2]{BM13}. First, in Proposition ~\ref{cycle_types}, all types of chordless cycles in diagrams of finite type are classified. Second, in Corollary ~\ref{local_three_picture} all possible local pictures between a mutated vertex and two adjacent vertices are drawn. Finally, in ~\ref{lem:chordless_cycles}, all chordless cycles introduced from a mutation are drawn. These three lemmas will be crucial in proving the main result Theorem ~\ref{thm:main}, as they will allow us to inspect precisely which relations are added and removed after mutating at a prescribed vertex.
+In this section, we shall review the structure of diagrams of finite type, and how their cycles are affected by mutation. This section is simply a recap of \cite[Section 2]{BM13}. First, in Proposition ~\ref{cycle_types}, all types of chordless cycles in diagrams of finite type are classified. Second, in Corollary ~\ref{local_three_picture} all possible local pictures between a mutated vertex and two adjacent vertices are drawn. Finally, in Lemma ~\ref{lem:chordless_cycles}, all chordless cycles introduced from a mutation are drawn. These three lemmas will be crucial in proving the main result Theorem ~\ref{thm:main}, as they will allow us to inspect precisely which relations are added and removed after mutating at a prescribed vertex.
 
 \begin{defn}
 \label{chordlesscycle}
@@ -258,7 +258,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
 
 \begin{prop}
 \label{cycle_types}
-\cite[Proposition 2.1]{BM13} Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a square with two opposite edges of weight 2 and two opposite edges of weight 1, as pictured below, or a triangle with two edges of weight 2 and one of weight 1.
+\cite[Proposition 2.1]{BM13} Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a square with two opposite edges of weight 2 and two opposite edges of weight 1, or a triangle with two edges of weight 2 and one of weight 1, as pictured below.
 \\
 \hspace*{-1.2cm}
 \begin{tikzpicture}[baseline=-0.5ex]
@@ -1233,27 +1233,28 @@ Let
 \end{cases}
 \end{align*}
 That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and $x_j$ of length $k$.  We also write $\langle x_i,x_j\rangle^{-k}$ to denote $\left(\langle x_i,x_j\rangle^k\right)^{-1}$
-
 \end{note}
+
 \begin{defn}
 \cite[Beginning of section 1.2]{C06}
-For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a matrix whose entries can take values in the real numbers or infinity, satisfying $M_{i,j} = M_{j,i}$ we define the associated {\it Artin group} in terms of generators and relations by
+For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a matrix whose entries can take values in the real numbers or infinity, satisfying $M_{i,j} = M_{j,i},$ we define the associated {\it Artin group} in terms of generators and relations by
 \begin{align*}
-A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}}\forall i,j \text{ with } m_{i,j}<\infty \rangle,
+A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}}\forall i,j \text{ with } M_{i,j}<\infty \rangle,
 \end{align*}
 \end{defn}
 
 \begin{rem}
-Each Artin group has an associated Coxeter group defined by adding in the additional relations $s_i^2 = 1$ for all $i.$ An Artin group is said to be of {\it finite type} if its associated Coxeter group is of finite type. To each Artin group of finite type we can assign it the same Dynkin diagram which is assigned to the Coxeter group associated to the Artin group.
+Each Artin group has an associated Coxeter group defined by adding in the additional relations $s_i^2 = e$ for all $i.$ An Artin group is said to be of {\it finite type} if its associated Coxeter group is of finite type. To each Artin group of finite type we can assign to it the same Dynkin diagram which is assigned to the Coxeter group associated to the Artin group.
 \end{rem}
 
 \subsection{The Group associated to Diagram}
 
 Finally, we are ready to define the Artin group we associate to a diagram of finite type. First, we shall need a tiny bit more notation.
 
-\begin{note}
-Let $(i_0,\ldots, i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamma$ on the vertices $i_0,\ldots, i_{d-1}$ is a chordless cycle, with edges of nonzero weight from $i_k$ to $i_{k+1}$, where subscripts are taken $\pmod d.$ Then, denote $$p(i_a,i_{a+1}) = s_{i_{a+1}}^{-1}s_{i_{a+2}}^{-1}\dots s_{i_{a-2}}^{-1}s_{i_{a-1}}s_{i_{a-2}}s_{i_{a-3}}\dots s_{i_{a+1}} s_{i_{a}}^{-1}.$$ Additionally, let $$t(i_a,i_{a+1}) = s_{i_a} p(i_a,i_{a+1}) p(i_a,i_{a+1})^{-1} s_{i_a}^{-1}.$$
-\end{note}
+\begin{defn}
+\label{defn:cycle_tuple}
+Let $(i_0,\ldots, i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamma$ on the vertices $i_0,\ldots, i_{d-1}$ is a chordless cycle, with edges of nonzero weight from $i_k$ to $i_{k+1}$, where subscripts are taken $\pmod d.$ Call such an ordered tuple a {\it chordless cycle tuple.} Then, denote $$p(i_a,i_{a+1}) = s_{i_{a+1}}^{-1}s_{i_{a+2}}^{-1}\dots s_{i_{a-2}}^{-1}s_{i_{a-1}}s_{i_{a-2}}s_{i_{a-3}}\dots s_{i_{a+1}}.$$ Additionally, let $$t(i_a,i_{a+1}) = [s_{i_a},p(i_a,i_{a+1})]$$ where $[a,b] = aba^{-1}b^{-1}$ is the commutator.
+\end{defn}
 
 \begin{defn} \label{grp def}
 The {\it associated Artin group} to a diagram $\Gamma$ of finite type, denoted $A_\Gamma,$ is generated by $s_i,$ where there is one $s_i$ for each vertex $i$ in $\Gamma.$ These generators are subject to the following relations
@@ -1261,22 +1262,22 @@ The {\it associated Artin group} to a diagram $\Gamma$ of finite type, denoted $
 \item[(T2)] With $m_{ij}$ as defined in Definition ~\ref{defn:mij}, for all $i \neq j,$ we add the relations
 $\langle s_i,s_j \rangle^{m_{ij}}= \langle s_j,s_i \rangle^{m_{ij}}.$
 
-\item[(T3)] Let $(i_0,i_1,\ldots,i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamma$ on the vertices $(i_0,\ldots, i_{d-1})$ is a chordless cycle, with edges of nonzero weight from $i_k$ to $i_{k+1},$ where subscripts $k$ are taken $\pmod d.$ If $(i_0,\ldots, i_{d-1})$ is such an ordered tuple, and additionally, one of the following two conditions hold,
+\item[(T3)] Let $(i_0,i_1,\ldots,i_{d-1})$ be a chordless cycle tuple, as defined in Definition ~\ref{defn:cycle_tuple}. If additionally one of the following two conditions hold,
 \begin{enumerate}
-\item All edges in the chordless cycle are of weight 1 or 2 and the edge $i_{d-1}\rightarrow i_0$ has weight 2.
-\item All edges in the chordless cycle have weight $1.$
+\item All edges in the chordless cycle are of weight 1 or 2 and the edge $i_{d-1}\rightarrow i_0$ has weight 2,
+\item All edges in the chordless cycle have weight $1,$
 \end{enumerate}
 then, we include the relation
-$t(i_0,i_1) = e.$
+$t(i_0,i_1)=e.$
 \end{itemize}
 \end{defn}
 
 \begin{rem}
-In the above definition, the tuple cycle is ordered, and so we may have multiple relations corresponding to the same set $\{i_0,\ldots, i_{d-1}\},$ corresponding to cyclic rotations of the tuple $(i_0,\ldots, i_{d-1}).$ However, we shall see in Section ~\ref{sec:one_relation} that many of these relations are redundant.
+In the above definition, the chordless cycle tuple is ordered, and so we may have other relations corresponding to chordless cycle tuples which are cyclic reorderings the chordless cycle tuple $(i_0,\ldots, i_{d-1}).$ However, we shall see in Section ~\ref{sec:one_relation} that many of these relations are redundant.
 \end{rem}
 
 \begin{rem}
-We purposely include relations $(T2),(T3)$ but not $(T1)$ in order to make our relation labeling analogous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(T1)$ as defined at the beginning of Section 3 of \cite{BM13} (namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma$), then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of rem 3 in \cite{BM13}.
+We purposely include relations $(T2),(T3)$ but not $(T1)$ in order to make our relation labeling analogous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(R1)$ as defined at the beginning of Section 3 of \cite{BM13} (namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma$), then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of in \cite[Remark 3]{BM13}.
 \end{rem}
 
 \begin{rem}
@@ -1315,7 +1316,7 @@ sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
    \begin{enumerate}
 \item[(T2)]
 \begin{itemize}
-\item $\langle s_1,s_2 \rangle^3 = \langle s_2,s_21 \rangle^3$
+\item $\langle s_1,s_2 \rangle^3 = \langle s_2,s_1 \rangle^3$
 \item $\langle s_2,s_3 \rangle^3 = \langle s_3,s_2 \rangle^3$
 \item $\langle s_3,s_4 \rangle^3 = \langle s_4,s_3 \rangle^3$
 \item $\langle s_4,s_1 \rangle^3 = \langle s_1,s_4 \rangle^3$
@@ -1334,7 +1335,7 @@ sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
 
 
 \begin{rem}
-Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the corresponding Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(T2'),$ which define the Artin group.
+Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(T2'),$ which define the Artin group.
 \end{rem}
 
 \section{Symmetry among (R3) Relations}
