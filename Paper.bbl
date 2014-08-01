@@ -1,9 +1,14 @@
-\begin{thebibliography}{BM13}
+\begin{thebibliography}{Cha06}
 
 \bibitem[BM13]{BM13}
 Michael Barot and Robert~J. Marsh.
 \newblock Reflection group presentations arising from cluster algebras.
 \newblock arXiv: 1112.2300v2, 2013.
+
+\bibitem[Cha06]{C06}
+Ruth Charney.
+\newblock An introduction to right-angled artin groups.
+\newblock arXiv:math/0610668, 2006.
 
 \bibitem[FN61]{FN61}
 R.~Fox and L.~Neuwirth.
