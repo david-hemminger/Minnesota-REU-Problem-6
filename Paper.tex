@@ -1523,9 +1523,6 @@ s_i & \mbox{otherwise}\\
 
 \subsection{Proof of Main Result}\label{sec:proof_of_main_result}
 
-
-\todo{do we define $m_{ij}'$ somewhere?}
-
 \begin{proof}[Proof of Theorem \ref{thm:main}]
 By Proposition \ref{prop:ti_relations} $\varphi\colon A_{\Gamma^\prime}\rightarrow A_\Gamma$ is a group homomorphism and $\varphi_{op}\colon A_{\Gamma^{op}}\rightarrow A_{\left(\Gamma^{op}\right)^\prime}$ defined by
 
@@ -1553,7 +1550,7 @@ Thus $\psi\circ\varphi$ is the identity map on $A_{\Gamma^{\prime}}$.  By a simi
 
 \subsection{Proof of Proposition \ref{prop:ti_relations}}\label{sec:proof_of_ti_relations}
 
-We prove Proposition \ref{prop:ti_relations} by showing that that the elements $\varphi(r_i)\in A_\Gamma$ satisfy the $(R2^\prime)$ and $(R3^\prime)$ relations in $A_{\Gamma^\prime}$.  The proof that the $\varphi(r_i)$ satisfy these relations is divided among Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}.  Throughout the proofs we write $t_i = \varphi(r_i)$ for convenience.
+We prove Proposition \ref{prop:ti_relations} by showing that that the elements $\varphi(r_i)\in A_\Gamma$ satisfy the $(T2^\prime)$ and $(T3^\prime)$ relations in $A_{\Gamma^\prime}$.  The proof that the $\varphi(r_i)$ satisfy these relations is divided among Lemmas \ref{lem:r2a_relations}, \ref{lem:r2b_relations}, and \ref{lem:r3_relations}.  Throughout the proofs we write $t_i = \varphi(r_i)$ and $m_{ij}^\prime$ for the weight of the edge between $i$ and $j$ in $\Gamma^\prime$.
 
 
 \begin{lem}\label{lem:r2a_relations}
@@ -1622,7 +1619,7 @@ Let $i,j$ be distinct vertices of $\Gamma$ such that $i$ and $j$ are connected. 
 \end{lem}
 
 \begin{proof}
-The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Corollary \ref{local_three_picture}.  We show that $t_i$ and $t_j$ satisfy the $(R2^\prime)$ relations by checking each case.  Within each case, subcase $(i)$ is when the subdiagram of $\Gamma$ is the diagram on the left in the figure in Corollary \ref{local_three_picture}, and subcase $(ii)$ is when the subdiagram of $\Gamma$ is the diagram on the right in the figure in Corollary \ref{local_three_picture}.
+The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Corollary \ref{local_three_picture}.  We show that $t_i$ and $t_j$ satisfy the $(T2^\prime)$ relations by checking each case.  Within each case, subcase $(i)$ is when the subdiagram of $\Gamma$ is the diagram on the left in the figure in Corollary \ref{local_three_picture}, and subcase $(ii)$ is when the subdiagram of $\Gamma$ is the diagram on the right in the figure in Corollary \ref{local_three_picture}.
 
 Throughout the proof we will make frequent use of the fact that if $m$ and $n$ are vertices of $\Gamma$, then
 
@@ -1713,60 +1710,60 @@ Where the second equality follows from Lemma \ref{lem:extra_square_relation}.  I
 
 
 \begin{lem}\label{lem:r3_relations}
-The elements $t_i$ satisfy the $(R3^\prime)$ relations in $\Gamma^\prime$.
+The elements $t_i$ satisfy the $(T3^\prime)$ relations in $\Gamma^\prime$.
 \end{lem}
 
 \begin{proof}
-We know that every chordless cycle in $\Gamma'$ arises from a subdiagram of $\Gamma$ in the form of one of the cases of Lemma \ref{lem:chordless_cycles}, so we simply need to check that a cycle relation holds in each case.  We follow the labeling of the vertices used in Lemma \ref{lem:chordless_cycles}.  We denote by $r^\prime(m,n)$ the expression given by replacing the generators $r_i$ in the corresponding expression $r(m,n)$ in $A_{\Gamma^\prime}$ with $t_i$.  When helpful we note uses of $(R3)$ relations in $A_\Gamma$ by referencing the particular cycle relation used next to the manipulation.
+We know that every chordless cycle in $\Gamma'$ arises from a subdiagram of $\Gamma$ in the form of one of the cases of Lemma \ref{lem:chordless_cycles}, so we simply need to check that a cycle relation holds in each case.  We follow the labeling of the vertices used in Lemma \ref{lem:chordless_cycles}.  We denote by $t^\prime(m,n)$ the expression given by replacing the generators $r_i$ in the corresponding expression $t(m,n)$ in $A_{\Gamma^\prime}$ with $t_i$.  When helpful we note uses of $(T3)$ relations in $A_\Gamma$ by referencing the particular cycle relation used next to the manipulation.
 
 \begin{enumerate}[a)]
-\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $r^\prime(1,2) = e$.
+\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $t^\prime(1,2) = e$.
 
-\item We have $ t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $r^\prime(1,2) = e$.
+\item We have $ t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_1s_3 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $t^\prime(1,2) = e$.
 
-\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $r^\prime(1,2) = e$.
+\item We have $t_1t_2^{-1}t_3t_2 = s_1s_2^{-1}s_2s_3s_2^{-1}s_2 = s_3s_1 = t_2^{-1}t_3t_2t_1$, hence $t^\prime(1,2) = e$.
 
 \item We have
 \begin{align*}
-s_2^{-1}r^\prime(3,1)s_2 &= s_2^{-1}t_3t_1^{-1}t_2t_1t_3^{-1}t_1^{-1}s_2^{-1}t_1s_2\\
+s_2^{-1}t^\prime(3,1)s_2 &= s_2^{-1}t_3t_1^{-1}t_2t_1t_3^{-1}t_1^{-1}s_2^{-1}t_1s_2\\
 &= s_3\underline{s_2^{-1}s_1^{-1}s_2s_1s_2}s_3^{-1}\underline{s_2^{-1}s_1^{-1}s_2^{-1}s_1s_2}\\
 &= s_3s_1\underline{s_2s_1^{-1}s_3^{-1}s_1}s_2^{-1}s_1^{-1}\\
-&= s_3s_1s_1^{-1}s_3^{-1}s_1s_2s_2^{-1}s_1^{-1} &r(2,1)\\
+&= s_3s_1s_1^{-1}s_3^{-1}s_1s_2s_2^{-1}s_1^{-1} &t(2,1)\\
 &= e
 \end{align*}
 
-\noindent Hence $r^\prime(3,1) = e$.
+\noindent Hence $t^\prime(3,1) = e$.
 
 \item We have
 \begin{align*}
 t_1t_2^{-1}t_3^{-1}t_4t_3t_2 &= (s_1s_2^{-1}s_1^{-1}s_1s_2s_1^{-1})s_1s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3s_1s_2s_1^{-1}\\
 &= s_1s_2^{-1}s_1^{-1}\underline{s_1s_2s_1s_2^{-1}s_1^{-1}}s_3^{-1}s_4s_3s_1s_2s_1^{-1}\\
 &= s_1s_2^{-1}s_1^{-1}\underline{s_2s_3^{-1}s_4s_3}s_1s_2s_1^{-1}\\
-&= s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3\underline{s_2s_1s_2s_1^{-1}} &r(2,3)\\
+&= s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3\underline{s_2s_1s_2s_1^{-1}} &t(2,3)\\
 &= s_1s_2^{-1}s_1^{-1}s_3^{-1}s_4s_3s_1s_2s_1^{-1}s_1\\
 &= t_2^{-1}t_3^{-1}t_4t_3t_2t_1\\
 \end{align*}
 
-\noindent Hence $r^\prime(1,2) = e$.
+\noindent Hence $t^\prime(1,2) = e$.
 
 \item We have
 \begin{align*}
 t_1t_2^{-1}t_3^{-1}t_4t_3t_2 &= s_1\underline{s_2^{-1}s_2}s_3^{-1}\underline{s_2^{-1}s_4s_2}s_3 \underline{s_2^{-1}s_2}\\
 &= s_1s_3^{-1}s_4s_3\\
-&= s_3^{-1}s_4s_3s_1 &r(1,3)\\
+&= s_3^{-1}s_4s_3s_1 &t(1,3)\\
 &= (s_2^{-1}s_2)s_3^{-1}(s_2^{-1}\underline{s_2)s_4(s_2^{-1}}s_2)s_3(s_2^{-1}s_2s_1\\
 &= s_2^{-1}s_2s_3^{-1}s_2^{-1}s_4s_2s_3s_2^{-1}s_2s_1\\
 &= t_2^{-1}t_3^{-1}t_4t_3t_2t_1\\
 \end{align*}
 
-\noindent Hence $r^\prime(1,2) = e$.
+\noindent Hence $t^\prime(1,2) = e$.
 
 \item We have
 \begin{align*}
-r^\prime(3,4) &= t_3t_4^{-1}t_2t_4t_3^{-1}t_4^{-1}t_2^{-1}t_4\\
+t^\prime(3,4) &= t_3t_4^{-1}t_2t_4t_3^{-1}t_4^{-1}t_2^{-1}t_4\\
 &= \underline{s_3s_1}s_4^{-1}s_1^{-1}s_2s_1s_4\underline{s_1^{-1}s_3^{-1}s_1}s_4^{-1}s_1^{-1}s_2^{-1}s_1s_4s_1^{-1}\\
 &= s_1\underline{s_3s_4^{-1}s_1^{-1}s_2s_1s_4s_3^{-1}s_4^{-1}s_1^{-1}s_2^{-1}s_1s_4}s_1^{-1}\\
-&= s_1r(3,4)s_1^{-1}\\
+&= s_1t(3,4)s_1^{-1}\\
 &= s_1s_1^{-1}\\
 &= e\\
 \end{align*}
@@ -1775,30 +1772,30 @@ r^\prime(3,4) &= t_3t_4^{-1}t_2t_4t_3^{-1}t_4^{-1}t_2^{-1}t_4\\
 \begin{align*}
 t_3t_4^{-1}t_1t_4 &= s_3s_4^{-1}\underline{s_2s_1s_2^{-1}}s_4\\
 &= s_3s_4^{-1}s_1^{-1}s_2s_1s_4\\
-&= s_4^{-1}\underline{s_1^{-1}s_2s_1}s_4s_3 &r(3,4)\\
+&= s_4^{-1}\underline{s_1^{-1}s_2s_1}s_4s_3 &t(3,4)\\
 &= s_4^{-1}s_2s_1s_2^{-1}s_4s_3\\
 &= t_4^{-1}t_1t_4t_3\\
 \end{align*}
 
-\noindent Hence $r^\prime(3,4) = e$.
+\noindent Hence $t^\prime(3,4) = e$.
 
 \item We have
 \begin{align*}
-&r^\prime(1,2)\\
+&t^\prime(1,2)\\
 &= t_1t_2^{-1}t_3^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2t_1^{-1}t_2^{-1}\cdots t_{h-1}^{-1}t_h^{-1}t_{h-1}\cdots t_2\\
 &= s_1s_2^{-1}s_3^{-1}\cdots s_{h-1}^{-1}\underline{s_ks_hs_k^{-1}}s_{h-1}\cdots s_2s_1^{-1}s_2^{-1}\cdots s_{h-1}^{-1}\underline{s_ks_h^{-1}s_k^{-1}}s_{h-1}\cdots s_2\\
 &= s_1s_2^{-1}s_3^{-1}\cdots s_{h-1}^{-1}s_h^{-1}s_ks_hs_{h-1}\cdots s_2s_1^{-1}s_2^{-1}\cdots s_{h-1}^{-1}s_h^{-1}s_k^{-1}s_hs_{h-1}\cdots s_2\\
-&= r(1,2)\\
+&= t(1,2)\\
 &= e\\
 \end{align*}
 
 \item Here $s_k$ commutes with $s_i$ for all $i\ne 1,h$, so we have
 \begin{align*}
-& r^\prime(h,1)\\
+& t^\prime(h,1)\\
 &= t_ht_k^{-1}t_1^{-1}t_2^{-1}\cdots t_{h-2}^{-1}t_{h-1}t_{h-2}\cdots t_1t_kt_h^{-1}t_k^{-1}t_1^{-1}t_2^{-1}\cdots t_{h-2}^{-1}t_{h-1}^{-1}t_{h-2}\cdots t_2t_1t_k\\
 &= s_h\underline{s_k^{-1}s_k}s_1^{-1}\underline{s_k^{-1}}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}s_{h-2}\cdots \underline{s_k}s_1\underline{s_k^{-1}s_k}s_h^{-1}\underline{s_k^{-1}s_k}s_1^{-1}\underline{s_k^{-1}}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}^{-1}s_{h-2}\cdots s_2 \underline{s_k}s_1\underline{s_k^{-1}s_k}\\
 &= s_hs_1^{-1}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}s_{h-2}\cdots s_2s_1s_h^{-1}s_1^{-1}s_2^{-1}\cdots s_{h-2}^{-1}s_{h-1}^{-1}s_{h-2}\cdots s_2s_1\\
-&= r(h,1)\\
+&= t(h,1)\\
 &= e\\
 \end{align*}
 
@@ -1809,18 +1806,18 @@ t_3t_4^{-1}t_1t_4 &= s_3s_4^{-1}\underline{s_2s_1s_2^{-1}}s_4\\
 \begin{align*}
 t_1t_2^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2 &= s_1s_2^{-1}\cdots s_{h-1}^{-1}s_ks_hs_k^{-1}s_{h-1}\cdots s_2\\
 &= s_k\underline{s_1s_2^{-1}\cdots s_{h-1}^{-1}s_hs_{h-1}\cdots s_2}s_k^{-1}\\
-&= s_ks_2^{-1}\cdots s_{h-1}^{-1}s_hs_{h-1}\cdots s_2s_1s_k^{-1} &r(1,2)\\
+&= s_ks_2^{-1}\cdots s_{h-1}^{-1}s_hs_{h-1}\cdots s_2s_1s_k^{-1} &t(1,2)\\
 &= s_2^{-1}\cdots s_{h-1}^{-1}s_ks_hs_k^{-1}s_{h-1}\cdots s_2s_1\\
 &= t_2^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2t_1\\
 \end{align*}
 
-\noindent Hence $r^\prime(1,2) = e$.
+\noindent Hence $t^\prime(1,2) = e$.
 \end{enumerate}
 \end{proof}
 
 
 \begin{proof}[Proof of Proposition \ref{prop:ti_relations}]
-Lemma \ref{lem:r2a_relations} and Lemma \ref{lem:r2b_relations} show that the elements $t_i$ satisfy the $(R2^\prime)$ relations for $A_{\Gamma^\prime}$. Lemma \ref{lem:r3_relations} shows that they satisfy the $(R3^\prime)$ relations. Since these are all of the relations defining $A_{\Gamma^\prime}$, it follows that $\varphi$ defines a group homomorphism $A_{\Gamma^\prime}\rightarrow A_\Gamma$.
+Lemma \ref{lem:r2a_relations} and Lemma \ref{lem:r2b_relations} show that the elements $t_i$ satisfy the $(T2^\prime)$ relations for $A_{\Gamma^\prime}$. Lemma \ref{lem:r3_relations} shows that they satisfy the $(T3^\prime)$ relations. Since these are all of the relations defining $A_{\Gamma^\prime}$, it follows that $\varphi$ defines a group homomorphism $A_{\Gamma^\prime}\rightarrow A_\Gamma$.
 \end{proof}
 
 
