@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Preliminary Definitions}{4}{0}{1}
+\beamer@sectionintoc {2}{Background Results}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Mutation Rules}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Unoriented structures underlying $\Gamma $}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Possible mutations for 3-cycles in $\Gamma $}{11}{0}{2}
+\beamer@sectionintoc {3}{$W_{\Gamma }$ presentation}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Generators and Relations}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{Invariance under Mutation Equivalence}{14}{0}{3}
+\beamer@sectionintoc {4}{$A_{\Gamma }$ presentation}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Generators and Relations}{17}{0}{4}
+\beamer@subsectionintoc {4}{2}{Invariance under Mutation Equivalence}{19}{0}{4}
