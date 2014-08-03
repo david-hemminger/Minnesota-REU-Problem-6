@@ -9,6 +9,6 @@
 \beamer@subsectionintoc {3}{2}{Invariance under Mutation Equivalence}{15}{0}{3}
 \beamer@sectionintoc {4}{Artin group presentation (HHLP)}{16}{0}{4}
 \beamer@subsectionintoc {4}{1}{Generators and Relations}{18}{0}{4}
-\beamer@subsectionintoc {4}{2}{Invariance under Mutation Equivalence}{20}{0}{4}
-\beamer@sectionintoc {5}{Jacob}{21}{0}{5}
-\beamer@subsectionintoc {5}{1}{Possible mutations for 3-cycles in $\Gamma $}{22}{0}{5}
+\beamer@subsectionintoc {4}{2}{Invariance under Mutation Equivalence}{22}{0}{4}
+\beamer@sectionintoc {5}{Jacob}{23}{0}{5}
+\beamer@subsectionintoc {5}{1}{Possible mutations for 3-cycles in $\Gamma $}{24}{0}{5}
