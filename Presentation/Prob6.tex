@@ -15,12 +15,13 @@
 } 
 
 \usepackage[english]{babel}
-\usepackage[utf8x]{inputenc}
+%\usepackage[utf8x]{inputenc}
 \usepackage{mathrsfs}
 
 \newtheorem{proposition}{Proposition}
 \newtheorem{rem}{Remark}
-\newtheorem{question}{Question}
+\newtheorem{goal}{Goal}
+
 
 \title[Artin Group Presentations]{Artin Group Presentations Arising from Cluster Algebras}
 \author{Jacob Haley*, David Hemminger, Aaron Landesman, 
@@ -28,10 +29,12 @@ Hailee Peck*}
 \institute{University of Minnesota, Twin Cities REU}
 \date{\today}
 
+
 \begin{document}
 
 \begin{frame}
   \titlepage
+  \let\thefootnote\relax\footnote{* denotes speaker}
 \end{frame}
 
  
@@ -39,10 +42,52 @@ Hailee Peck*}
   \tableofcontents
 \end{frame}
 
-\begin{frame}{REU Problem 6}
-\begin{question}
+\begin{frame}{Brief History}
+Fomin and Zelevinsky introduced \textit{cluster algebras}, generated from seed variables. These algebras are of finite type if they are generated from a finite number of seeds. Fomin and Zelevinsky also showed that cluster algebras of finite type can be classified by Dynkin diagrams.
+\begin{figure}
+\centering
+\includegraphics[scale = .25]{dynkindiagrams.PNG}
+\caption{Dynkin diagrams}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{figure}
+\centering
+\includegraphics[scale = .65]{DynkinA3.PNG}
+\caption{Dynkin diagram of type $A_3$}
+\end{figure}
+
+Coxeter group relations:
+\begin{itemize}
+\item $s_1^2 = s_2^2 = s_3^2 = e$
+\item $(s_1s_2)^3 = (s_2s_3)^3 = e$
+\item $(s_1s_3)^2 = e$
+\end{itemize}
+
+Artin group relations:
+\begin{itemize}
+\item $\langle s_1, s_2 \rangle ^3 = \langle s_2, s_1 \rangle ^3$
+\item $\langle s_2, s_3 \rangle ^3 = \langle s_3, s_2 \rangle ^3$
+\item $\langle s_1, s_3 \rangle ^2 = \langle s_3, s_1 \rangle ^2$
+\end{itemize}
+Alternatively, the above relations correspond to 
+\begin{itemize}
+\item $s_1s_2s_1 = s_2s_1s_2$
+\item $s_2s_3s_2 = s_3s_2s_3$
+\item $s_1s_3 = s_3s_1$
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+Barot and Marsh extended the Coxeter group presentations to diagrams of finite type (making an allowance for chordless cycles), and proved that this group presentation is isomorphic to the Coxeter group associated to a Dynkin diagram. They also proved mutation invariance, up to isomorphism, for these Coxeter groups.
+
+\pause
+\begin{goal}
 Develop variations of relations for the Coxeter group associated to a diagram of finite type provided in Barot-Marsh to define the Artin group $A_{\Gamma}$ corresponding to a diagram $\Gamma$. Prove that for $\Gamma^{\prime} = \mu_k(\Gamma)$, we get $A_{\Gamma} \cong A_{\Gamma^{\prime}}$. 
-\end{question}
+\end{goal}
 \end{frame}
 
 \section{Preliminary Definitions}
@@ -74,8 +119,7 @@ For $i, j \in V(\Gamma)$, $i \xrightarrow{w} j$ if and only if $B_{ij}>0$ and $w
 
 \begin{frame}{Mutation Rules}
 \begin{proposition}
-%%CITE BAROT MARSH PROP 1.4
-%\alert{Proposition 1.4}
+[Proposition 1.4, Barot-Marsh]
 Let $B$ be a $2$-finite skew-symmetrisable matrix. Then $\Gamma(\mu_k(B))$ is uniquely determined by $\Gamma(B)$ as follows:
 \begin{itemize}
 \item Reverse the orientations of all edges in $\Gamma(B)$ incident with $k$ (leaving the weights unchanged)
@@ -97,11 +141,11 @@ Then $\Gamma(B)$ changes in a predetermined way, taking the case $c' = 0$ to mea
 \end{figure}
 \end{frame}
 
-\subsection{Unoriented structures underlying $\Gamma$}
+\subsection{Chordless cycles underlying $\Gamma$}
 
 \begin{frame}{Unoriented structures underlying $\Gamma$}
 \begin{proposition}
-%%CITE \alert{Proposition 2.1}
+[Proposition 2.1, Barot-Marsh]
 Any chordless cycle in $\Gamma$ must have an unoriented structure that is one of the following. Furthermore, it must be cyclically oriented.
 \begin{figure}[h]
 \centering
@@ -112,37 +156,8 @@ Any chordless cycle in $\Gamma$ must have an unoriented structure that is one of
 \end{proposition}
 \end{frame}
 
-\begin{frame}{Unoriented structures underlying $\Gamma$}
-\begin{lemma}
-%CITE \alert{Lemma 2.2}
-For $\Gamma$, if we have a subdiagram of $\Gamma$ with three connected vertices, then the unoriented graph underlying the subdiagram must be one of the following:
-\begin{figure}[h]
-\centering
-\includegraphics[scale = .65]{3vertconnected.PNG}
-\caption{Unoriented 3-vertex connected subdiagrams}
-\end{figure}
-\end{lemma}
 
-\end{frame}
-
-\subsection{Possible mutations for 3-cycles in $\Gamma$}
-
-\begin{frame}{Possible mutations for $i\--\ k\--\ j$}
-\begin{corollary}
-%CITE \alert{Corollary 2.3}
-If in $\Gamma$ we have $i,j,k \in V(\Gamma), i \neq k \neq j$, and we have $i\--\ k\--\ j$, then the only possible mutations for this connected path between the three vertices are the following:
-\begin{figure}[h]
-\centering
-\includegraphics[scale = .40]{mutation3path.PNG}
-\caption{Mutation of three connected vertices}
-\end{figure}
-\end{corollary}
-\end{frame}
-
-
-
-
-\section{$W_{\Gamma}$  presentation}
+\section{Coxeter group presentation (Barot-Marsh)}
 
 \begin{frame}
 \begin{definition}
@@ -189,7 +204,7 @@ Then we have the following relations:
 Given a diagram $\Gamma$ and the corresponding Coxeter group $W_{\Gamma}$, Barot and Marsh prove that this group is invariant (up to isomorphism) under mutation of $\Gamma$.
 
 \begin{theorem}
-%CITE \alert{Theorem 5.4} 
+[Theorem 5.4, Barot-Marsh]
 \begin{enumerate}
 \item Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
 \item Let $\mathscr{A}$ be a cluster algebra of finite type. Then the groups $W_{\Gamma}$ associated to the diagrams $\Gamma$ arising from the seeds of $\mathscr{A}$ are all isomorphic (to the reflection group associated to the Dynkin diagram associated to $\mathscr{A}$).
@@ -198,7 +213,7 @@ Given a diagram $\Gamma$ and the corresponding Coxeter group $W_{\Gamma}$, Barot
 \end{frame}
 
 
-\section{$A_{\Gamma}$ presentation}
+\section{Artin group presentation (HHLP)}
 
 \begin{frame}
 \begin{block}
@@ -215,7 +230,7 @@ That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and 
 
 \begin{block}
 
-Let $(i_0,\ldots, i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamma$ on the vertices $i_0,\ldots, i_{d-1}$ is a chordless cycle, with edges of nonzero weight from $i_k$ to $i_{k+1}$, where subscripts are taken $\pmod d.$ Then, denote $$p(i_a,i_{a+1}) = s_{i_{a+1}}^{-1}s_{i_{a+2}}^{-1}\dots s_{i_{a-2}}^{-1}s_{i_{a-1}}s_{i_{a-2}}s_{i_{a-3}}\dots s_{i_{a+1}} s_{i_{a}}^{-1}.$$
+Let $(i_0,\ldots, i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamma$ on the vertices $i_0,\ldots, i_{d-1}$ is a chordless cycle, with edges of nonzero weight from $i_k$ to $i_{k+1}$, where subscripts are taken $\pmod d.$ Then, denote $$p(i_a,i_{a+1}) = s_{i_{a+1}}^{-1}s_{i_{a+2}}^{-1}\dots s_{i_{a-2}}^{-1}s_{i_{a-1}}s_{i_{a-2}}s_{i_{a-3}}\dots s_{i_{a+1}}.$$
 \end{block}
 
 \end{frame}
@@ -227,9 +242,9 @@ Now we have
 (x_ix_j)^{\frac{k-1}{2}}x_i &\text{ if } k \equiv 1 \pmod 2
 \end{cases}
 \end{align*}
-And $$p(i_a,i_{a+1}) = s_{i_{a+1}}^{-1}s_{i_{a+2}}^{-1}\dots s_{i_{a-2}}^{-1}s_{i_{a-1}}s_{i_{a-2}}s_{i_{a-3}}\dots s_{i_{a+1}} s_{i_{a}}^{-1}.$$
+And $$p(i_a,i_{a+1}) = s_{i_{a+1}}^{-1}s_{i_{a+2}}^{-1}\dots s_{i_{a-2}}^{-1}s_{i_{a-1}}s_{i_{a-2}}s_{i_{a-3}}\dots s_{i_{a+1}}.$$
 
-Additionally, let $$t(i_a,i_{a+1}) = s_{i_a} p(i_a,i_{a+1}) p(i_a,i_{a+1})^{-1} s_{i_a}^{-1}.$$
+Additionally, let $$t(i_a,i_{a+1}) = s_{i_a} p(i_a,i_{a+1})  s_{i_a}^{-1}p(i_a,i_{a+1})^{-1}.$$
 
 These definitions will allow us to present generator relations in the group $A_{\Gamma}$.
 
@@ -239,7 +254,7 @@ These definitions will allow us to present generator relations in the group $A_{
 \subsection{Generators and Relations}
 
 \begin{frame}
-Given a diagram $\Gamma$ of finite type, we define the Artin group $A_{\Gamma}$ with generators $s_i, i = 1,2,\ldots, n$, subject to the following relations:
+Given a diagram $\Gamma$ of finite type, we define the Artin group $A_{\Gamma}$ with generators $s_i, i = 1,2,\ldots, n$, subject to the following relations (noting that $t(i_a,i_{a+1}) = s_{i_a} p(i_a,i_{a+1})  s_{i_a}^{-1}p(i_a,i_{a+1})^{-1}$):
 
 \begin{block}
 
@@ -282,10 +297,44 @@ Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamm
 \end{theorem}
 \end{frame}
 
+\section{Jacob}
+
+\begin{frame}{Unoriented structures underlying $\Gamma$}
+\begin{lemma}
+[Lemma 2.2, Barot-Marsh]
+For $\Gamma$, if we have a subdiagram of $\Gamma$ with three connected vertices, then the unoriented graph underlying the subdiagram must be one of the following:
+\begin{figure}[h]
+\centering
+\includegraphics[scale = .65]{3vertconnected.PNG}
+\caption{Unoriented 3-vertex connected subdiagrams}
+\end{figure}
+\end{lemma}
+
+\end{frame}
+
+\subsection{Possible mutations for 3-cycles in $\Gamma$}
+
+\begin{frame}{Possible mutations for $i\--\ k\--\ j$}
+\begin{corollary}
+[Corollary 2.3, Barot-Marsh]
+If in $\Gamma$ we have $i,j,k \in V(\Gamma), i \neq k \neq j$, and we have $i\--\ k\--\ j$, then the only possible mutations for this connected path between the three vertices are the following:
+\begin{figure}[h]
+\centering
+\includegraphics[scale = .40]{mutation3path.PNG}
+\caption{Mutation of three connected vertices}
+\end{figure}
+\end{corollary}
+\end{frame}
+
+\begin{frame}
+\begin{thebibliography}{69}
+
+\bibitem{BM}[1] Barot, M. and Marsh, R., Reflection Group Presentations Arising from Cluster Algebras, \emph{Preprint}, arXiv:1112.2300 (2011)
 
 
+\end{thebibliography}
 
-
+\end{frame}
 
 
 
