@@ -43,7 +43,7 @@ Hailee Peck*}
 \end{frame}
 
 \begin{frame}{Brief History}
-Fomin and Zelevinsky introduced \textit{cluster algebras}, generated from seed variables. These algebras are of finite type if they are generated from a finite number of seeds. Fomin and Zelevinsky also showed that cluster algebras of finite type can be classified by Dynkin diagrams.
+Fomin and Zelevinsky introduced \textit{cluster algebras}, generated from seed variables. These algebras are of finite type if they are generated from a finite number of cluster variables. Fomin and Zelevinsky also showed that cluster algebras of finite type can be classified by Dynkin diagrams.
 \begin{figure}
 \centering
 \includegraphics[scale = .25]{dynkindiagrams.PNG}
@@ -60,18 +60,12 @@ Fomin and Zelevinsky introduced \textit{cluster algebras}, generated from seed v
 
 Coxeter group relations:
 \begin{itemize}
-\item $s_1^2 = s_2^2 = s_3^2 = e$
-\item $(s_1s_2)^3 = (s_2s_3)^3 = e$
-\item $(s_1s_3)^2 = e$
+\item $s_i^2 = e$ :  $s_1^2 = s_2^2 = s_3^2 = e$ 
+\item $(s_is_j)^{m_{ij}} = e$ :  $(s_1s_2)^3 = (s_2s_3)^3 = e$
+\item  $(s_is_j)^{m_{ij}} = e$ :  $(s_1s_3)^2 = e$
 \end{itemize}
 
 Artin group relations:
-\begin{itemize}
-\item $\langle s_1, s_2 \rangle ^3 = \langle s_2, s_1 \rangle ^3$
-\item $\langle s_2, s_3 \rangle ^3 = \langle s_3, s_2 \rangle ^3$
-\item $\langle s_1, s_3 \rangle ^2 = \langle s_3, s_1 \rangle ^2$
-\end{itemize}
-Alternatively, the above relations correspond to 
 \begin{itemize}
 \item $s_1s_2s_1 = s_2s_1s_2$
 \item $s_2s_3s_2 = s_3s_2s_3$
@@ -82,19 +76,27 @@ Alternatively, the above relations correspond to
 
 
 \begin{frame}
-Barot and Marsh extended the Coxeter group presentations to diagrams of finite type (making an allowance for chordless cycles), and proved that this group presentation is isomorphic to the Coxeter group associated to a Dynkin diagram. They also proved mutation invariance, up to isomorphism, for these Coxeter groups.
+Barot and Marsh extended the Coxeter group presentations to diagrams of finite type (making an allowance for chordless cycles).
+\begin{theorem}
+[Theorem 5.4, Barot-Marsh]
+\begin{enumerate}
+\item Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $W_{\Gamma} \cong W_{\Gamma^{\prime}}$.
+\item Let $\mathscr{A}$ be a cluster algebra of finite type. Then the groups $W_{\Gamma}$ associated to the diagrams $\Gamma$ arising from the seeds of $\mathscr{A}$ are all isomorphic (to the reflection group associated to the Dynkin diagram associated to $\mathscr{A}$).
+\end{enumerate}
+\end{theorem}
+
 
 \pause
-\begin{goal}
-Develop variations of relations for the Coxeter group associated to a diagram of finite type provided in Barot-Marsh to define the Artin group $A_{\Gamma}$ corresponding to a diagram $\Gamma$. Prove that for $\Gamma^{\prime} = \mu_k(\Gamma)$, we get $A_{\Gamma} \cong A_{\Gamma^{\prime}}$. 
-\end{goal}
+\begin{theorem}{(HHLP, 14)}
+ Let $\Gamma$ be a diagram of finite type and $\Gamma^{\prime} = \mu_k(\Gamma)$ the mutation of $\Gamma$ at vertex $k$. Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$. 
+\end{theorem}
 \end{frame}
 
 \section{Preliminary Definitions}
 
 \begin{frame}
 \begin{definition}
-We say a matrix $B$ is \textit{skew-symmetrisable} if there exists a diagonal matrix $D$ of the same size such that $|D_{ii}|>0$ and $DB$ is skew-symmetric.
+We say a matrix $B$ is \textit{skew-symmetrisable} if there exists a diagonal matrix $D$ of the same size such that $D_{ii}>0$ and $DB$ is skew-symmetric.
 \end{definition}
 
 \pause
@@ -145,7 +147,7 @@ Then $\Gamma(B)$ changes in a predetermined way, taking the case $c' = 0$ to mea
 
 \begin{frame}{Unoriented structures underlying $\Gamma$}
 \begin{proposition}
-[Proposition 2.1, Barot-Marsh]
+[Proposition 9.7, Fomin-Zelevinsky II]
 Any chordless cycle in $\Gamma$ must have an unoriented structure that is one of the following. Furthermore, it must be cyclically oriented.
 \begin{figure}[h]
 \centering
@@ -156,17 +158,20 @@ Any chordless cycle in $\Gamma$ must have an unoriented structure that is one of
 \end{proposition}
 \end{frame}
 
+\begin{frame}
+\tableofcontents 
+\end{frame}
 
 \section{Coxeter group presentation (Barot-Marsh)}
 
-\begin{frame}
+\begin{frame}{Coxeter group presentation}
 \begin{definition}
 For a diagram $\Gamma$ and $i, j \in V(\Gamma)$, define 
 \begin{displaymath}
 m_{ij} = \begin{cases}    2 & \mbox{if } i \mbox{ and } j \mbox{ are not connected;} \\
-																	3 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 1;\\
-																	4 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 2;\\
-																	6 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 3.\\
+						3 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 1;\\
+						4 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 2;\\
+						6 & \mbox{if } i \mbox{ and } j \mbox{ are connected by an edge of weight } 3.\\
 					\end{cases}
 \end{displaymath}	
 \end{definition}
@@ -176,7 +181,7 @@ This definition will allow us to present generator relations in the group $W_{\G
 
 \subsection{Generators and Relations}
 
-\begin{frame}
+\begin{frame}{Coxeter group presentation}
 
 Given a diagram $\Gamma$ of finite type, Barot and Marsh define the Coxeter group $W_{\Gamma}$ with generators $s_i, i = 1,2,\ldots, n$, subject to the following relations:
 \begin{block}
@@ -200,7 +205,7 @@ Then we have the following relations:
 
 \subsection{Invariance under Mutation Equivalence}
 
-\begin{frame}
+\begin{frame}{Coxeter group invariance}
 Given a diagram $\Gamma$ and the corresponding Coxeter group $W_{\Gamma}$, Barot and Marsh prove that this group is invariant (up to isomorphism) under mutation of $\Gamma$.
 
 \begin{theorem}
@@ -213,9 +218,9 @@ Given a diagram $\Gamma$ and the corresponding Coxeter group $W_{\Gamma}$, Barot
 \end{frame}
 
 
-\section{Artin group presentation (HHLP)}
+\section{Artin group presentation (HHLP, 14)}
 
-\begin{frame}
+\begin{frame}{Artin group presentation}
 \begin{block}
 
 Let
@@ -225,7 +230,6 @@ Let
 (x_ix_j)^{\frac{k-1}{2}}x_i &\text{ if } k \equiv 1 \pmod 2
 \end{cases}
 \end{align*}
-That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and $x_j$ of length $k$.  We also write $\langle x_i,x_j\rangle^{-k}$ to denote $\left(\langle x_i,x_j\rangle^k\right)^{-1}$.
 \end{block}
 
 \begin{block}
@@ -234,7 +238,7 @@ Let $(i_0,\ldots, i_{d-1})$ be an ordered tuple such that the subgraph of $\Gamm
 \end{block}
 
 \end{frame}
-\begin{frame}
+\begin{frame}{Artin group presentation}
 Now we have 
 \begin{align*}
 \langle x_i,x_j \rangle ^k = \begin{cases}
@@ -253,7 +257,7 @@ These definitions will allow us to present generator relations in the group $A_{
 
 \subsection{Generators and Relations}
 
-\begin{frame}
+\begin{frame}{Artin group presentation}
 Given a diagram $\Gamma$ of finite type, we define the Artin group $A_{\Gamma}$ with generators $s_i, i = 1,2,\ldots, n$, subject to the following relations (noting that $t(i_a,i_{a+1}) = s_{i_a} p(i_a,i_{a+1})  s_{i_a}^{-1}p(i_a,i_{a+1})^{-1}$):
 
 \begin{block}
@@ -321,10 +325,10 @@ The T3 relation $t(3,4) = e$ can be defined in a similar manner.
 
 \subsection{Invariance under Mutation Equivalence}
 
-\begin{frame}
+\begin{frame}{Artin group invariance}
 Given a diagram $\Gamma$ and the corresponding Artin group $A_{\Gamma}$, we prove this group is invariant (up to isomorphism) under mutation of $\Gamma$.
 
-\begin{theorem}
+\begin{theorem}{(HHLP, 14)}
 Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamma)$ be the mutation of $\Gamma$ at vertex $k$. Then $A_{\Gamma} \cong A_{\Gamma^{\prime}}$.
 \end{theorem}
 \end{frame}
@@ -568,7 +572,8 @@ $A_{\Gamma}$ is invariant up to isomorphism under diagram mutation.
 \begin{thebibliography}{69}
 
 \bibitem{BM}[1] Barot, M. and Marsh, R., Reflection Group Presentations Arising from Cluster Algebras, \emph{Preprint}, arXiv:1112.2300 (2011)
-
+\bibitem{FZ}[2] Fomin, S. and Zelevinsky, A., Cluster Algebras I. Foundations, \emph{J. Amer. Math. Soc.}, \textbf{15} (2002), 497-529.
+\bibitem{FZ}[3] Fomin, S. and Zelevinsky, A., Cluster Algebras II. Finite type classification, \emph{Invent. Math.}, \textbf{154} (2003), 63-121.
 
 \end{thebibliography}
 
