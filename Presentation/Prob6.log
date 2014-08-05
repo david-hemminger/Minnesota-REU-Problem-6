@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  5 AUG 2014 01:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  5 AUG 2014 13:25
 entering extended mode
 **Prob6.tex
 (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Presentation\Prob6.tex
@@ -892,15 +892,15 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Presentation\Prob6.toc) [2
 
 ]
-<dynkindiagrams.PNG, id=79, 281.55188pt x 467.49657pt>
+<dynkindiagrams.PNG, id=105, 281.55188pt x 467.49657pt>
 File: dynkindiagrams.PNG Graphic file (type png)
  <use dynkindiagrams.PNG>
 Package pdftex.def Info: dynkindiagrams.PNG used on input line 52.
 (pdftex.def)             Requested size: 70.38779pt x 116.87386pt.
  [3
 
- <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/dynkindiagrams.PNG>] <DynkinA3.PNG, id=89, 79
-.79813pt x 18.82031pt>
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/dynkindiagrams.PNG>] <DynkinA3.PNG, id=114, 7
+9.79813pt x 18.82031pt>
 File: DynkinA3.PNG Graphic file (type png)
 
 <use DynkinA3.PNG>
@@ -921,7 +921,7 @@ Package pdftex.def Info: DynkinA3.PNG used on input line 81.
 
 ] [10
 
-] <mutationrules.PNG, id=134, 312.41719pt x 130.23656pt>
+] <mutationrules.PNG, id=157, 312.41719pt x 130.23656pt>
 File: mutationrules.PNG Graphic file (type png)
  <use mutationrules.PNG>
 Package pdftex.def Info: mutationrules.PNG used on input line 142.
@@ -941,7 +941,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 144.
 
-<chordlesscycles.PNG, id=141, 389.95688pt x 140.02313pt>
+<chordlesscycles.PNG, id=164, 389.95688pt x 140.02313pt>
 File: chordlesscycles.PNG Graphic file (type png)
  <use chordlesscycles.PNG>
 Package pdftex.def Info: chordlesscycles.PNG used on input line 157.
@@ -961,7 +961,7 @@ Package pdftex.def Info: chordlesscycles.PNG used on input line 157.
 ] [18
 
 ]
-<4cycle.PNG, id=183, 98.61844pt x 104.64093pt>
+<4cycle.PNG, id=200, 98.61844pt x 104.64093pt>
 File: 4cycle.PNG Graphic file (type png)
  <use 4cycle.PNG>
 Package pdftex.def Info: 4cycle.PNG used on input line 296.
@@ -982,7 +982,7 @@ Package pdftex.def Info: 4cycle.PNG used on input line 318.
 ] [23
 
 ]
-<3vertconnected.PNG, id=211, 460.72125pt x 70.76437pt>
+<3vertconnected.PNG, id=226, 460.72125pt x 70.76437pt>
 File: 3vertconnected.PNG Graphic file (type png)
  <use 3vertconnected.PNG>
 Package pdftex.def Info: 3vertconnected.PNG used on input line 366.
@@ -1002,14 +1002,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 367.
 
-<mutation3path.PNG, id=218, 570.63188pt x 271.0125pt>
+<mutation3path.PNG, id=233, 570.63188pt x 271.0125pt>
 File: mutation3path.PNG Graphic file (type png)
  <use mutation3path.PNG>
 Package pdftex.def Info: mutation3path.PNG used on input line 379.
 (pdftex.def)             Requested size: 228.2487pt x 108.40306pt.
  [25
 
- <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/mutation3path.PNG>] <Comm-Diag.pdf, id=227, 3
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/mutation3path.PNG>] <Comm-Diag.pdf, id=241, 3
 58.96107pt x 216.10939pt>
 File: Comm-Diag.pdf Graphic file (type pdf)
 
@@ -1019,7 +1019,7 @@ Package pdftex.def Info: Comm-Diag.pdf used on input line 387.
  [26
 
  <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Comm-Diag.pdf>]
-<Affine-Diagrams.pdf, id=257, 569.52777pt x 296.50775pt>
+<Affine-Diagrams.pdf, id=271, 569.52777pt x 296.50775pt>
 File: Affine-Diagrams.pdf Graphic file (type pdf)
  <use Affine-Diagrams.pdf>
 Package pdftex.def Info: Affine-Diagrams.pdf used on input line 396.
@@ -1031,14 +1031,14 @@ Package pdftex.def Info: Affine-Diagrams.pdf used on input line 396.
 ] [29
 
 ]
-<Diagram1.pdf, id=283, 158.64069pt x 176.86075pt>
+<Diagram1.pdf, id=296, 158.64069pt x 176.86075pt>
 File: Diagram1.pdf Graphic file (type pdf)
  <use Diagram1.pdf>
 Package pdftex.def Info: Diagram1.pdf used on input line 435.
 (pdftex.def)             Requested size: 79.32014pt x 88.43015pt.
  [30
 
- <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram1.pdf>] <Diagram2.pdf, id=295, 303.963
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram1.pdf>] <Diagram2.pdf, id=308, 303.963
 61pt x 266.44043pt>
 File: Diagram2.pdf Graphic file (type pdf)
  <use Diagram2.pdf>
@@ -1047,14 +1047,14 @@ Package pdftex.def Info: Diagram2.pdf used on input line 443.
  [31
 
  <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram2.pdf>]
-<Diagram3.pdf, id=308, 167.65034pt x 169.87967pt>
+<Diagram3.pdf, id=321, 167.65034pt x 169.87967pt>
 File: Diagram3.pdf Graphic file (type pdf)
  <use Diagram3.pdf>
 Package pdftex.def Info: Diagram3.pdf used on input line 451.
 (pdftex.def)             Requested size: 83.82495pt x 84.93962pt.
  [32
 
- <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram3.pdf>] <Diagram4.pdf, id=320, 325.113
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram3.pdf>] <Diagram4.pdf, id=333, 325.113
 6pt x 266.44643pt>
 File: Diagram4.pdf Graphic file (type pdf)
  <use Diagram4.pdf>
@@ -1063,7 +1063,7 @@ Package pdftex.def Info: Diagram4.pdf used on input line 459.
  [33
 
  <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram4.pdf>]
-<Diagram5.pdf, id=332, 174.70068pt x 169.87967pt>
+<Diagram5.pdf, id=345, 174.70068pt x 169.87967pt>
 File: Diagram5.pdf Graphic file (type pdf)
  <use Diagram5.pdf>
 Package pdftex.def Info: Diagram5.pdf used on input line 467.
@@ -1077,7 +1077,7 @@ File: Diagram2.pdf Graphic file (type pdf)
  <use Diagram2.pdf>
 Package pdftex.def Info: Diagram2.pdf used on input line 480.
 (pdftex.def)             Requested size: 91.18977pt x 79.93274pt.
- <Diagram6.pdf, id=349, 296.13033pt x 266.44043pt>
+ <Diagram6.pdf, id=362, 296.13033pt x 266.44043pt>
 File: Diagram6.pdf Graphic file (type pdf)
 
 <use Diagram6.pdf>
@@ -1150,13 +1150,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 579.
  ) 
 Here is how much of TeX's memory you used:
- 16929 strings out of 494045
- 327520 string characters out of 3148374
- 389225 words of memory out of 3000000
- 19684 multiletter control sequences out of 15000+200000
+ 17071 strings out of 494045
+ 329134 string characters out of 3148374
+ 389226 words of memory out of 3000000
+ 19826 multiletter control sequences out of 15000+200000
  22252 words of font info for 82 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 56i,20n,55p,405b,615s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,20n,55p,405b,616s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
@@ -1169,9 +1169,9 @@ pe1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/hoekwater/rsfs/rsfs10.pfb>
-Output written on Prob6.pdf (45 pages, 357648 bytes).
+Output written on Prob6.pdf (45 pages, 362547 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
+ 515 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
