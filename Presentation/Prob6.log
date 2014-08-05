@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.7.19)  5 AUG 2014 15:22
+=======
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  5 AUG 2014 13:25
+>>>>>>> origin/master
 entering extended mode
 **Prob6.tex
 
@@ -960,7 +964,12 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (C:\Users\Hailee\Documents\GitHub\Minnesota-REU-Problem-6\Presentation\Prob6.to
 c) [2
 
+<<<<<<< HEAD
 ] <dynkindiagrams.PNG, id=105, 281.55188pt x 467.49657pt>
+=======
+]
+<dynkindiagrams.PNG, id=105, 281.55188pt x 467.49657pt>
+>>>>>>> origin/master
 File: dynkindiagrams.PNG Graphic file (type png)
 
 <use dynkindiagrams.PNG>
@@ -968,9 +977,14 @@ Package pdftex.def Info: dynkindiagrams.PNG used on input line 52.
 (pdftex.def)             Requested size: 70.38779pt x 116.87386pt.
  [3
 
+<<<<<<< HEAD
  <C:/Users/Hailee/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/dynkind
 iagrams.PNG>]
 <DynkinA3.PNG, id=114, 79.79813pt x 18.82031pt>
+=======
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/dynkindiagrams.PNG>] <DynkinA3.PNG, id=114, 7
+9.79813pt x 18.82031pt>
+>>>>>>> origin/master
 File: DynkinA3.PNG Graphic file (type png)
  <use DynkinA3.PNG>
 Package pdftex.def Info: DynkinA3.PNG used on input line 75.
@@ -991,8 +1005,12 @@ Package pdftex.def Info: DynkinA3.PNG used on input line 75.
 
 ] [10
 
+<<<<<<< HEAD
 ]
 <mutationrules.PNG, id=157, 312.41719pt x 130.23656pt>
+=======
+] <mutationrules.PNG, id=157, 312.41719pt x 130.23656pt>
+>>>>>>> origin/master
 File: mutationrules.PNG Graphic file (type png)
  <use mutationrules.PNG>
 Package pdftex.def Info: mutationrules.PNG used on input line 144.
@@ -1040,7 +1058,11 @@ c) [13
 ] [19
 
 ]
+<<<<<<< HEAD
 <4cycle.PNG, id=218, 98.61844pt x 104.64093pt>
+=======
+<4cycle.PNG, id=200, 98.61844pt x 104.64093pt>
+>>>>>>> origin/master
 File: 4cycle.PNG Graphic file (type png)
  <use 4cycle.PNG>
 Package pdftex.def Info: 4cycle.PNG used on input line 300.
@@ -1063,7 +1085,11 @@ Package pdftex.def Info: 4cycle.PNG used on input line 322.
 ] [24
 
 ]
+<<<<<<< HEAD
 <3vertconnected.PNG, id=243, 460.72125pt x 70.76437pt>
+=======
+<3vertconnected.PNG, id=226, 460.72125pt x 70.76437pt>
+>>>>>>> origin/master
 File: 3vertconnected.PNG Graphic file (type png)
 
 <use 3vertconnected.PNG>
@@ -1085,16 +1111,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 371.
 
+<<<<<<< HEAD
 <mutation3path.PNG, id=251, 570.63188pt x 271.0125pt>
+=======
+<mutation3path.PNG, id=233, 570.63188pt x 271.0125pt>
+>>>>>>> origin/master
 File: mutation3path.PNG Graphic file (type png)
  <use mutation3path.PNG>
 Package pdftex.def Info: mutation3path.PNG used on input line 383.
 (pdftex.def)             Requested size: 228.2487pt x 108.40306pt.
 
+<<<<<<< HEAD
 [26
 
  <C:/Users/Hailee/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/mutatio
 n3path.PNG>] <Comm-Diag.pdf, id=258, 358.96107pt x 216.10939pt>
+=======
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/mutation3path.PNG>] <Comm-Diag.pdf, id=241, 3
+58.96107pt x 216.10939pt>
+>>>>>>> origin/master
 File: Comm-Diag.pdf Graphic file (type pdf)
 
 <use Comm-Diag.pdf>
@@ -1102,9 +1137,14 @@ Package pdftex.def Info: Comm-Diag.pdf used on input line 391.
 (pdftex.def)             Requested size: 179.48009pt x 108.05443pt.
  [27
 
+<<<<<<< HEAD
  <C:/Users/Hailee/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Comm-Di
 ag.pdf>]
 <Affine-Diagrams.pdf, id=288, 569.52777pt x 296.50775pt>
+=======
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Comm-Diag.pdf>]
+<Affine-Diagrams.pdf, id=271, 569.52777pt x 296.50775pt>
+>>>>>>> origin/master
 File: Affine-Diagrams.pdf Graphic file (type pdf)
 
 <use Affine-Diagrams.pdf>
@@ -1118,39 +1158,63 @@ Diagrams.pdf>] [29
 ] [30
 
 ]
+<<<<<<< HEAD
 <Diagram1.pdf, id=313, 158.64069pt x 176.86075pt>
+=======
+<Diagram1.pdf, id=296, 158.64069pt x 176.86075pt>
+>>>>>>> origin/master
 File: Diagram1.pdf Graphic file (type pdf)
  <use Diagram1.pdf>
 Package pdftex.def Info: Diagram1.pdf used on input line 439.
 (pdftex.def)             Requested size: 79.32014pt x 88.43015pt.
  [31
 
+<<<<<<< HEAD
  <C:/Users/Hailee/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram
 1.pdf>] <Diagram2.pdf, id=326, 303.96361pt x 266.44043pt>
+=======
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram1.pdf>] <Diagram2.pdf, id=308, 303.963
+61pt x 266.44043pt>
+>>>>>>> origin/master
 File: Diagram2.pdf Graphic file (type pdf)
  <use Diagram2.pdf>
 Package pdftex.def Info: Diagram2.pdf used on input line 447.
 (pdftex.def)             Requested size: 151.98141pt x 133.21988pt.
  [32
 
+<<<<<<< HEAD
  <C:/Users/Hailee/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram
 2.pdf>] <Diagram3.pdf, id=338, 167.65034pt x 169.87967pt>
+=======
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram2.pdf>]
+<Diagram3.pdf, id=321, 167.65034pt x 169.87967pt>
+>>>>>>> origin/master
 File: Diagram3.pdf Graphic file (type pdf)
  <use Diagram3.pdf>
 Package pdftex.def Info: Diagram3.pdf used on input line 455.
 (pdftex.def)             Requested size: 83.82495pt x 84.93962pt.
  [33
 
+<<<<<<< HEAD
  <C:/Users/Hailee/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram
 3.pdf>] <Diagram4.pdf, id=350, 325.1136pt x 266.44643pt>
+=======
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram3.pdf>] <Diagram4.pdf, id=333, 325.113
+6pt x 266.44643pt>
+>>>>>>> origin/master
 File: Diagram4.pdf Graphic file (type pdf)
  <use Diagram4.pdf>
 Package pdftex.def Info: Diagram4.pdf used on input line 463.
 (pdftex.def)             Requested size: 162.5564pt x 133.22289pt.
  [34
 
+<<<<<<< HEAD
  <C:/Users/Hailee/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram
 4.pdf>] <Diagram5.pdf, id=362, 174.70068pt x 169.87967pt>
+=======
+ <C:/Users/jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Presentation/Diagram4.pdf>]
+<Diagram5.pdf, id=345, 174.70068pt x 169.87967pt>
+>>>>>>> origin/master
 File: Diagram5.pdf Graphic file (type pdf)
  <use Diagram5.pdf>
 Package pdftex.def Info: Diagram5.pdf used on input line 471.
@@ -1166,6 +1230,11 @@ File: Diagram2.pdf Graphic file (type pdf)
  <use Diagram2.pdf>
 Package pdftex.def Info: Diagram2.pdf used on input line 484.
 (pdftex.def)             Requested size: 91.18977pt x 79.93274pt.
+<<<<<<< HEAD
+=======
+ <Diagram6.pdf, id=362, 296.13033pt x 266.44043pt>
+File: Diagram6.pdf Graphic file (type pdf)
+>>>>>>> origin/master
 
 <Diagram6.pdf, id=379, 296.13033pt x 266.44043pt>
 File: Diagram6.pdf Graphic file (type pdf)
@@ -1241,6 +1310,7 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 584.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  16094 strings out of 494045
  302672 string characters out of 3145966
  371575 words of memory out of 3000000
@@ -1273,5 +1343,30 @@ Output written on Prob6.pdf (46 pages, 374057 bytes).
 PDF statistics:
  536 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 500000)
+=======
+ 17071 strings out of 494045
+ 329134 string characters out of 3148374
+ 389226 words of memory out of 3000000
+ 19826 multiletter control sequences out of 15000+200000
+ 22252 words of font info for 82 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 56i,20n,55p,405b,616s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/hoekwater/rsfs/rsfs10.pfb>
+Output written on Prob6.pdf (45 pages, 362547 bytes).
+PDF statistics:
+ 515 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+>>>>>>> origin/master
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
