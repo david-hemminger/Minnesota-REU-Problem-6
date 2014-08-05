@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.26pt}
 \select@language {english}
 \beamer@sectionintoc {1}{Preliminary Definitions}{7}{0}{1}
 \beamer@sectionintoc {2}{Background Results}{10}{0}{2}
@@ -9,7 +9,7 @@
 \beamer@subsectionintoc {3}{2}{Invariance under Mutation Equivalence}{15}{0}{3}
 \beamer@sectionintoc {4}{Artin group presentation (HHLP)}{16}{0}{4}
 \beamer@subsectionintoc {4}{1}{Generators and Relations}{18}{0}{4}
-\beamer@subsectionintoc {4}{2}{Invariance under Mutation Equivalence}{22}{0}{4}
-\beamer@sectionintoc {5}{Constructing the Isomorphism}{23}{0}{5}
-\beamer@subsectionintoc {5}{1}{Possible mutations for 3-cycles in $\Gamma $}{26}{0}{5}
-\beamer@sectionintoc {6}{Affine Dynkin Diagrams}{28}{0}{6}
+\beamer@subsectionintoc {4}{2}{Invariance under Mutation Equivalence}{21}{0}{4}
+\beamer@sectionintoc {5}{Constructing the Isomorphism}{22}{0}{5}
+\beamer@subsectionintoc {5}{1}{Possible mutations for 3-cycles in $\Gamma $}{25}{0}{5}
+\beamer@sectionintoc {6}{Affine Dynkin Diagrams}{27}{0}{6}
