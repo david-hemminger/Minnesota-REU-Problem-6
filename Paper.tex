@@ -13,7 +13,7 @@
 %
 % \todo[inline]{this will appear in the middle of the page}
 
-\usepackage[colorinlistoftodos, textsize=tiny]{todonotes}
+%\usepackage[colorinlistoftodos, textsize=tiny]{todonotes}
 %\def\ltblue{blue!20!white}
 %\def\ltgreen{green!20!white}
 
@@ -68,8 +68,9 @@
 \title{Artin Group Presentations Arising from Cluster Algebras}
 \author{Jacob Haley, David Hemminger, Aaron Landesman, Hailee Peck}
 \address{you can put addresses for authors\\
-here \\
-Jacob: 225 St. Edward's Hall; Notre Dame, IN 46556}
+ \\
+Jacob: 225 St. Edward's Hall; Notre Dame, IN 46556 \\
+Hailee: 1184 W Main St; Decatur, IL 62522 }
 \email{jhaley3@nd.edu, david.hemminger@duke.edu, aaronlandesman@college.harvard.com, hpeck@millikin.edu}
 \date{\today}
 \keywords{Artin group, cluster algebra, diagram representations}
@@ -84,8 +85,7 @@ In 2003, Fomin and Zelevinsky proved that finite type cluster algebras can be cl
 \label{sec:Intro}
 
 
-In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster algebras in order to make further strides in the areas of representation theory, Lie theory, and total positivity. Since then, the study of cluster algebras has provided a motivation for applications in various other areas of mathematics, including quiver representations. Of particular interest were \textit{finite type} cluster algebras, that is, cluster algebras whose variables are generated through mutation on a finite number of \textit{seeds}. In the sequel to their introductory paper (\cite{FZ03}), Fomin and Zelevinsky introduce the concept of \textit{mutation equivalence} between diagrams, proving that a connected graph is mutation equivalent to an oriented Dynkin diagram if and only if all mutation equivalent graphs have edge weights not exceeding 3. In particular, this proves that finite type cluster algebras can be classified by Dynkin diagrams. \\
-\indent Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite type cluster algebra. They also proved that this group presentation is invariant up to isomorphism under the mutation equivalence relation.That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively.
+In \cite{FZ02}, Fomin and Zelevinsky first introduced the concept of cluster algebras. Barot and Marsh extended Fomin and Zelevinsky's results in \cite{BM13}, providing a presentation of the reflection group associated to a Dynkin diagram with generators that correspond to elements of a companion basis associated to a seed of a finite type cluster algebra. They define generator relations corresponding to chordless cycles arising in diagrams of finite type in order to give a Coxeter group presentation for these diagrams. They also proved that this Coxeter group presentation is invariant up to isomorphism under the mutation equivalence relation.That is, given a diagram $\Gamma$ and a diagram mutation equivalent to $\Gamma$, denoted $\Gamma^{\prime} = \mu_k(\Gamma)$, they proved that $W_{\Gamma} \cong W_{\Gamma^{\prime}}$, where $W_{\Gamma}$ and $W_{\Gamma^{\prime}}$ are the group representations corresponding to $\Gamma$ and $\Gamma^{\prime}$, respectively.
 
 
 %%\begin{thm}\cite[Theorem 5.4]{BM13}
@@ -110,7 +110,7 @@ Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamm
 
 We begin by introducing some preliminary notations and definitions which will aid the reader in understanding the results in the following sections. For further references on cluster algebras, we refer the reader to \cite{FZ02} and \cite{FZ03} and for a more detailed description of Artin group presentations, we direct attention to \cite{FN61}. We also provide references to several lemmas and propositions from \cite{BM13} which were helpful in formulating our own results. \\
 
-
+The initial introduction of cluster algebras by Fomin and Zelevinsky was aimed at making further strides in the areas of representation theory, Lie theory, and total positivity. Since then, the study of cluster algebras has provided a motivation for applications in various other areas of mathematics, including quiver representations. Of particular interest were \textit{finite type} cluster algebras. In the sequel to their introductory paper (\cite{FZ03}), Fomin and Zelevinsky introduce the concept of \textit{mutation equivalence} between diagrams, proving that a connected graph is mutation equivalent to an oriented Dynkin diagram if and only if all mutation equivalent graphs have edge weights not exceeding 3. In particular, this proves that finite type cluster algebras can be classified by Dynkin diagrams. \\
 A \textit{cluster algebra} is an integral domain which can be generated by a set of elements called \textit{cluster variables} that satisfy certain exchange relations. Following the style of \cite{FZ02} and \cite{BM13}, we will define cluster algebras in terms of \textit{skew-symmetrisable} matrices (that is, a matrix $B$ such that there exists a diagonal matrix $D$ of the same size with $D_{ii} >0$ such that $DB$ is skew-symmetric). Let $\mathbb{F} = \mathbb{Q}(u_1, u_2, \ldots, u_n)$ be the field of rational functions in $n$ indeterminates over $\mathbb{Q}$. We will define an \textit{intial seed} for the cluster algebra to be a fixed pair $(\textbf{x}, B)$, where $\textbf{x} = \{x_1, \ldots, x_n\}$ is a free generating set of $\mathbb{F}$ and $B$ is an $n \times n$ skew-symmetric matrix. Define $x_k^{\prime} \in \mathbb{F}$ by the \textit{exchange relation}
 \begin{displaymath}
 x_k^{\prime}x_k = \prod_{B_{ik} > 0}{x_i^{B_{ik}}} + \prod_{B_{ik} < 0}{x_i^{-B_{ik}}}
