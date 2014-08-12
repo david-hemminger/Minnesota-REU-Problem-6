@@ -1239,13 +1239,15 @@ That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and 
 \cite[Beginning of section 1.2]{C06}
 For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a matrix whose entries can take values in the real numbers or infinity, satisfying $M_{i,j} = M_{j,i},$ we define the associated {\it Artin group} in terms of generators and relations by
 \begin{align*}
-A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}}\forall i,j \text{ with } M_{i,j}<\infty \rangle,
+A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}} = \langle x_j,x_i \rangle^{M_{i,j}} \forall i,j \text{ with } M_{i,j}<\infty \rangle,
 \end{align*}
 \end{defn}
 
 \begin{rem}
 Each Artin group has an associated Coxeter group defined by adding in the additional relations $s_i^2 = e$ for all $i.$ An Artin group is said to be of {\it finite type} if its associated Coxeter group is of finite type. To each Artin group of finite type we can assign to it the same Dynkin diagram which is assigned to the Coxeter group associated to the Artin group.
 \end{rem}
+
+One of the most well-known Artin groups is the braid group on n strands, which was shown to have an Artin group structure in \cite{FN61}. The associated Coxeter group is the symmetric group $S_{n}$.
 
 \subsection{The Group associated to Diagram}
 
@@ -1821,6 +1823,8 @@ t_1t_2^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2 &= s_1s_2^{-1}\cdots s_{h-1}^
 Lemma \ref{lem:r2a_relations} and Lemma \ref{lem:r2b_relations} show that the elements $t_i$ satisfy the $(T2^\prime)$ relations for $A_{\Gamma^\prime}$. Lemma \ref{lem:r3_relations} shows that they satisfy the $(T3^\prime)$ relations. Since these are all of the relations defining $A_{\Gamma^\prime}$, it follows that $\varphi$ defines a group homomorphism $A_{\Gamma^\prime}\rightarrow A_\Gamma$.
 \end{proof}
 
+\section{Acknowledgements}
+\thanks{This work was supported by the RTG grant NSF/DMS-1148634. We'd also like to thank the University of Minnesota School of Mathematics for hosting us, and we'd like to thank Gregg Musiker and Emily Gunawan for their useful comments on our work.
 
 \bibliography{References}
 \bibliographystyle{alpha}
