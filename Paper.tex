@@ -332,15 +332,18 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   ;
   
    \end{tikzpicture}
-\caption{Possible chordless cycles in a diagram of finite type}
+\caption{Possible chordless cycles in a diagram of finite type, as found in \cite[Figure 2]{BM13}}
 \end{figure}
 \end{prop}
 
 
 \begin{cor}
 \label{local_three_picture}
-\cite[Corollary 2.3]{BM13} Let $\Gamma$ be a graph of finite type and suppose there are three vertices, labeled $i,j,k$ with both $i,j$ connected to $k.$ Then mutation at $k$ on the induced subdiagram appear as in one of the following figures, either from left to right or right to left, up to switching $i$ and $j,$
+\cite[Corollary 2.3]{BM13} Let $\Gamma$ be a graph of finite type and suppose there are three vertices, labeled $i,j,k$ with both $i,j$ connected to $k.$ Then mutation at $k$ on the induced subdiagram appear as in Figure \ref{fig:local_three}, either from left to right or right to left, up to switching $i$ and $j,$
+\end{cor}
 
+\begin{figure}
+\label{fig:local_three}
 \begin{enumerate}[(a)]
 \item
 \begin{tikzpicture}[baseline=-0.5ex]
@@ -569,17 +572,14 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
    \end{tikzpicture}
 \end{enumerate}
-
-\end{cor}
+\caption{Local picture of the mutation of a finite type diagram, as found in \cite[Figure 4]{BM13}}
+\end{figure}
 
 %\begin{lem} \cite[Lemma 2.4]{BM13}
 %Suppose that a vertex k is connected to at least one vertex of a chordless cycle in a diagram $\Gamma$ of finite type. Then k is connected to at most two vertices in the cycle, and if it is connected to two vertices, %they must be adjacent in the cycle.
 %\end{lem}
-
-\begin{longfig}
-\label{fig:cycle_types}
-Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mutation of $\Gamma$ at vertex $k.$ Below, we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. 
-
+\begin{figure}
+\label{fig:cycle_types_a}
 \begin{enumerate}[(a)]
 \item
 \begin{tikzpicture}[baseline=-0.5ex]
@@ -960,8 +960,15 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mut
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
   \node [yshift = -.95 cm,xshift = .3 5 cm] at (ul){$C'$};
     \end{tikzpicture}
+    \end{enumerate}
+\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 5]{BM13}}
+\end{figure}
     
-   \item
+
+\begin{figure}
+\label{fig:cycle_types_b}
+\begin{enumerate}
+   \item[(i)]
    \begin{tikzpicture}[baseline=-0.5ex]
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={25pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
@@ -1046,7 +1053,7 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mut
   \node [yshift = -.9 cm] at (um){$C'$};
     \end{tikzpicture}
    
-   \item
+   \item[(j)]
    \begin{tikzpicture}[baseline=-0.5ex]
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={25pt,between origins},nodes={asymmetrical rectangle}] at (8,0)
@@ -1130,9 +1137,9 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mut
     \node at (dl.south){$h$};
     \end{tikzpicture}
     
-    \item $C$ is an oriented cycle in $\Gamma$ not connected to $k$ and $C'$ is the corresponding cycle in $\Gamma'.$
+    \item[(k)] $C$ is an oriented cycle in $\Gamma$ not connected to $k$ and $C'$ is the corresponding cycle in $\Gamma'.$
     
-      \item
+      \item[(l)]
    \begin{tikzpicture}[baseline=-0.5ex]
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
     sep={25pt,between origins},nodes={asymmetrical rectangle}] at (8,0)
@@ -1210,17 +1217,22 @@ Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mut
   \node [yshift = -.9 cm] at (ur){$C'$};
    \end{tikzpicture}
 \end{enumerate}
-\end{longfig}
+
+\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 6]{BM13}}
+\end{figure}
 
 \begin{lem}\label{lem:chordless_cycles}
-\cite[Lemma 2.5]{BM13} Every chordless cycle in $\Gamma'$ is of one of the types listed in Figure ~\ref{fig:cycle_types}.
+\cite[Lemma 2.5]{BM13} 
+Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mutation of $\Gamma$ at vertex $k.$ In figures \ref{fig:cycle_types_a} and \ref{fig:cycle_types_b} we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. 
+
+Every chordless cycle in $\Gamma'$ is of one of the types listed in Figure \ref{fig:cycle_types_a} or Figure \ref{fig:cycle_types_b}.
 \end{lem}
 
 
 \section{The Artin Group of a Diagram}
 \label{sec:defn_artingroup}
 
-In order to prove our main result, Theorem ~\ref{thm:main}, we must first define the Artin group associated to a finite type diagram. This definition will be similar to that made in \cite{BM13} at the beginning of Section 3, except that we shall not require $s_i^2 = e.$ Since Artin Groups are very similar to Coxeter groups, with the caveat that the generators are not involutions, we will be able to use these modified relations to great effect.
+In order to prove our main result, Theorem ~\ref{thm:main}, we must first define the Artin group associated to a finite type diagram. This definition will be similar to that made in \cite{BM13} at the beginning of Section 3, except that we shall not require relation $(R1),$ i.e., $s_i^2 = e.$ Since Artin Groups are very similar to Coxeter groups, with the caveat that the generators are not involutions, we will be able to use these modified relations to great effect.
 
 \subsection{Artin Groups}
 
@@ -1237,9 +1249,9 @@ That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and 
 
 \begin{defn}
 \cite[Beginning of section 1.2]{C06}
-For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a matrix whose entries can take values in the real numbers or infinity, satisfying $M_{i,j} = M_{j,i},$ we define the associated {\it Artin group} in terms of generators and relations by
+For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a symmetric matrix whose entries can take values in the integers or infinity, we define the associated {\it Artin group} in terms of generators and relations by
 \begin{align*}
-A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}} = \langle x_j,x_i \rangle^{M_{i,j}} \forall i,j \text{ with } M_{i,j}<\infty \rangle,
+A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}} = \langle x_j,x_i \rangle^{M_{i,j}} \text{ for all } i,j \text{ with } M_{i,j}<\infty \rangle,
 \end{align*}
 \end{defn}
 
@@ -1251,7 +1263,7 @@ One of the most well-known Artin groups is the braid group on n strands, which w
 
 \subsection{The Group associated to Diagram}
 
-Finally, we are ready to define the Artin group we associate to a diagram of finite type. First, we shall need a tiny bit more notation.
+We are now ready to define the Artin group we associate to a diagram of finite type.
 
 \begin{defn}
 \label{defn:cycle_tuple}
@@ -1270,7 +1282,7 @@ $\langle s_i,s_j \rangle^{m_{ij}}= \langle s_j,s_i \rangle^{m_{ij}}.$
 \item All edges in the chordless cycle have weight $1,$
 \end{enumerate}
 then, we include the relation
-$t(i_0,i_1)=e.$
+$t(i_0,i_1)=e.$ That is, $s_{i_0}$ and $p(i_0,i_1)$ commute.
 \end{itemize}
 \end{defn}
 
@@ -1279,7 +1291,7 @@ In the above definition, the chordless cycle tuple is ordered, and so we may hav
 \end{rem}
 
 \begin{rem}
-We purposely include relations $(T2),(T3)$ but not $(T1)$ in order to make our relation labeling analogous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(R1)$ as defined at the beginning of Section 3 of \cite{BM13} (namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma$), then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of in \cite[Remark 3]{BM13}.
+We purposely include relations $(T2),(T3)$ but not $(T1)$ in order to make our relation labeling analogous to that of \cite{BM13} at the beginning of Section 3. Note that if we add the additional relation $(R1)$ as defined at the beginning of Section 3 of \cite{BM13} (namely, if we add $s_i^2 = e$ for all vertices $i$ in $\Gamma$), then we will precisely obtain the group $W_\Gamma$ as defined at the beginning of Section 3 in \cite{BM13}.
 \end{rem}
 
 \begin{rem}
@@ -1318,10 +1330,10 @@ sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
    \begin{enumerate}
 \item[(T2)]
 \begin{itemize}
-\item $\langle s_1,s_2 \rangle^3 = \langle s_2,s_1 \rangle^3$
-\item $\langle s_2,s_3 \rangle^3 = \langle s_3,s_2 \rangle^3$
-\item $\langle s_3,s_4 \rangle^3 = \langle s_4,s_3 \rangle^3$
-\item $\langle s_4,s_1 \rangle^3 = \langle s_1,s_4 \rangle^3$
+\item $\langle s_1,s_2 \rangle^3 = \langle s_2,s_1 \rangle^3,$ i.e., $s_1s_2s_1 = s_2s_1s_2$
+\item $\langle s_2,s_3 \rangle^3 = \langle s_3,s_2 \rangle^3,$ i.e., $s_2s_3s_2 = s_3s_2s_3$
+\item $\langle s_3,s_4 \rangle^3 = \langle s_4,s_3 \rangle^3,$ i.e., $s_3s_4s_3 = s_4s_3s_4$
+\item $\langle s_4,s_1 \rangle^3 = \langle s_1,s_4 \rangle^3,$ i.e., $s_4s_1s_4 = s_1s_4s_1$
 \end{itemize}
 \item[(T3)]
 \begin{itemize}
@@ -1333,11 +1345,50 @@ sep={40pt,between origins},nodes={asymmetrical rectangle}] at (6,0)
 \end{enumerate}
 \end{ex}
 
+\begin{ex}
+The relations $(T2),(T3)$ in that $\Gamma$ is a triangle with two edges of weight 2 and one of weight 1 are as follows:
+\[\Gamma = \begin{tikzpicture}[baseline=-0.5ex]
+\matrix[matrix of math nodes,column sep={25pt,between origins},row
+    sep={40pt,between origins},nodes={asymmetrical rectangle}] at (0,0)
+  {
+    && |[name = u]|\circ& \\
+    %
+    &|[name=dl]| \circ & &|[name=dr]| \circ \\
+  };
+\draw[->]
+   (u) to node[right] {2}(dr)
+  ;
+  \draw[->]
+  (dl) to node[left]{2}(u)
+  ;
+  \draw[->]
+  (dr) to node[below]{1}(dl)
+  ;
+  \node [yshift = .4 cm] at (u){1};
+    \node [yshift = -.4 cm,xshift = .4 cm] at (dr){2};
+    \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){3};
+   \end{tikzpicture}\]
+   \begin{enumerate}
+\item[(T2)]
+\begin{itemize}
+\item $\langle s_1,s_2 \rangle^4 = \langle s_2,s_1 \rangle^4,$ i.e., $s_1s_2s_1s_2 = s_2s_1s_2s_1$
+\item $\langle s_2,s_3 \rangle^3 = \langle s_3,s_2 \rangle^3,$ i.e., $s_2s_3s_2 = s_3s_2s_3$
+\item $\langle s_3,s_4 \rangle^4 = \langle s_4,s_3 \rangle^4,$ i.e., $s_3s_4s_3s_4 = s_4s_3s_4s_3$              
+\end{itemize}
+\item[(T3)]
+\begin{itemize}
+\item $s_1s_2^{-1}s_3^{-1}s_2s_1^{-1}s_2^{-1}s_3s_2 = e$
+
+\item $s_2s_3^{-1}s_1^{-1}s_3s_2^{-1}s_3^{-1}s_1s_3 =e$
+
+\end{itemize}
+\end{enumerate}
+\end{ex}
 
 
 
 \begin{rem}
-Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(T2'),$ which define the Artin group.
+Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(T2),$ which define the Artin group.
 \end{rem}
 
 \section{Symmetry among (R3) Relations}
