@@ -101,7 +101,7 @@ Let $\Gamma$ be a diagram of finite type, and let $\Gamma^{\prime} = \mu_k(\Gamm
 \end{thm}
 
 
-\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams} will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Finally, Section \ref{sec:main_result} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. \\
+\indent Section \ref{sec:main_definitions} provides the necessary definitions and fundamental results from \cite{BM13} to motivate our own results. For further definitions and references on the topic, we refer the reader to \cite{FZ02}. Section \ref{sec:finite-type_diagrams} will review theory from \cite{FZ02}, \cite{FZ03} as well as review the classifications (from \cite{BM13}) of mutations of diagrams and their oriented chordless cycles. In Section \ref{sec:defn_artingroup}, we define the appropriate relations for our Artin group presentations. Section \ref{sec:one_relation} specifies how certain relations in chordless cycles imply other relations in those chordless cycles. Section \ref{sec:main_result} will provide the proof that the Artin group defined for a diagram $\Gamma$ is invariant up to isomorphism under mutations of $\Gamma$. Finally, in Section \ref{sec:affine}, we will state a conjecture which could extend the main result to diagrams of affine type. \\
 
 \section{Background}
 \label{sec:main_definitions}
@@ -126,13 +126,13 @@ Such a mutation or a sequence of such mutations generate \textit{seeds} which in
  A cluster algebra is said to be of \textit{finite type} if the number of cluster variables that generate it is finite (if it has finitely many seeds). For each finite type cluster algebra, we can associate to its corresponding skew-symmetrisable matrix an edge-weighted, oriented graph, called a \textit{diagram}. We will often denote this diagram by $\Gamma$, and the vertex set of $\Gamma$ by $\V$. We will denote two connected vertices by $i \rightarrow j$, or by $i\--\ j$ if the orientation is not specified. The diagram is determined by the following: for $i, j \in \V$, $i \xrightarrow{w} j$ if and only if $B_{ij} > 0$ and $w = |B_{ij}B_{ji}|$ is the weight of the edge. A skew-symmetrisable matrix $B$ is \textit{2-finite} if $|B_{ij}B_{ji}| \leq 3$ for $i, j \in \left\{ 1, \ldots, n \right\}$. By \cite[7.5]{FZ02}, we have that if $B$ is 2-finite, all 3-cycles in the unoriented graph underlying our diagram must be oriented cyclically. \\
 
 Just as we can define mutations of the seeds of a cluster variable, we can also define mutations of a diagram associated to a cluster algebra of finite type by the following set of rules:
-\begin{prop}\cite[Proposition 1.4]{BM13}
+\begin{prop}\cite{FZ03}
 Let $B$ be a 2-finite skew-symmetrisable matrix. Then $\Gamma(\mu_k(B))$ is uniquely determined by $\Gamma(B)$ as follows:
 \begin{itemize}
 \item Reverse the orientations of all edges in $\Gamma(B)$ incident to $k$ (leaving the weights unchanged)
 \item For any path in $\Gamma(B)$ of form $i \xrightarrow{a} k \xrightarrow{b} j$ (i.e. with $a,b$ positive), let $c$ be the weight on the edge $j \rightarrow i$, taken to be zero if there is no such arrow. Let $c'$ be determined by $c'\geq 0$ and
-$c+c' =$ max$(a,b)$.
-Then $\Gamma(B)$ changes as in Figure \ref{mutation}, taking the case $c' = 0$ to mean no arrow between $i$ and $j$.
+$\pm \sqrt{c} \pm \sqrt{c'} = \sqrt{ab}$, 
+where the sign before $\sqrt{c}$ (respectively, $\sqrt{c'}$) is positive if the arrows form an oriented cycle and negative otherwise. Then $\Gamma(B)$ changes as in Figure \ref{mutation}, taking the case $c' = 0$ to mean no arrow between $i$ and $j$.
 \end{itemize}
 \end{prop}
 
@@ -1917,6 +1917,117 @@ t_1t_2^{-1}\cdots t_{h-1}^{-1}t_ht_{h-1}\cdots t_2 &= s_1s_2^{-1}\cdots s_{h-1}^
 \begin{proof}[Proof of Proposition \ref{prop:ti_relations}]
 Lemma \ref{lem:r2a_relations} and Lemma \ref{lem:r2b_relations} show that the elements $t_i$ satisfy the $(T2^\prime)$ relations for $A_{\Gamma^\prime}$. Lemma \ref{lem:r3_relations} shows that they satisfy the $(T3^\prime)$ relations. Since these are all of the relations defining $A_{\Gamma^\prime}$, it follows that $\varphi$ defines a group homomorphism $A_{\Gamma^\prime}\rightarrow A_\Gamma$.
 \end{proof}
+
+\section{Extension to Affine Type Diagrams} \label{sec:affine}
+It is natural to ask whether one can obtain similar results for diagrams that are not of finite type, particularly those of affine type (i.e. mutation equivalent to an affine Dynkin diagram). In \cite{FT13}, the authors associated the following group to a diagram of affine type.
+
+\begin{def}\cite[Definition 4.1]{FT13}
+Let $\Gamma$ be a diagram of affine type with n + 1 vertices. Then we define $W_{\Gamma}$ to be the diagram with generators $s_{1}, \dots, s_{n}$ and satisfying the following relations:
+\begin{enumerate}
+\item[(R1)] $s_{i}^{2} = e$ for all i = 1, \dots, n
+\item[(R2)] $(s_{i}s_{j})^{m_{ij}} = e$ where 
+$$m_{ij} = 
+\begin{cases}
+2 &\text{if there is no arrow between i and j in $\Gamma$} \\
+3 &\text{if there is an arrow of weight 1 between i and j in $\Gamma$} \\
+4 &\text{if there is an arrow of weight 2 between i and j in $\Gamma$} \\
+6 &\text{if there is an arrow of weight 3 between i and j in $\Gamma$} \\
+\infty &\text{otherwise}
+\end{cases}$$
+\item[R(3)] For every chordless oriented cycle:
+$$i_{0} \stackrel{w_{i_{0}}}{\longrightarrow} i_{1} \stackrel{w_{i_{1}}}{\longrightarrow} \dots \stackrel{w_{i_{d-2}}}{\longrightarrow} i_{d-1} \stackrel{w_{i_{d-1}}}{\longrightarrow} i_{0},$$
+define for l $\in \{0, \dots, d-1\}$, 
+$$t(l) = (\prod_{j=l}^{l+d-2}{\sqrt{w_{i_{j}}}} - \sqrt{w_{i_{l+d-1}}})^{2}.$$
+Then take the relation $(s_{i_{l}}p(i_{l}, i_{l+1}))^{m(l)} = e$ where
+$$m(l) =
+\begin{cases}
+2 &\text{if $t(l)=0$} \\
+3 &\text{if $t(l)=1$} \\
+4 &\text{if $t(l)=2$} \\
+6 &\text{if $t(l)=3$}
+\end{cases}$$
+\item[R(4)] For each subdiagram of $\Gamma$ of the form shown in the first column of \ref{table1}, we add the relation(s) listed in the second column.
+\end{enumerate}
+\end{def}
+
+Given this definition of $W_{\Gamma}$, which generalizes the definition of $W_{\Gamma}$ found in \cite{BM13}, one obtains the following result.
+
+\begin{thm} \cite[Theorem 4.6]{FT13}
+Let W be an affine Weyl group and let $\Gamma$ be a diagram mutation equivalent to an orientation of a Dynkin diagram of the same type as W. Then W is isomorphic to $W_{\Gamma}$.
+\end{thm}
+
+\begin{table} \label{table1}
+\begin{tabular}{| p{3.5cm} | p{7cm} |}
+\hline
+Subdiagram & (R4) Relation \\ \hline
+\begin{center}\includegraphics[scale = .30]{Diagram1.pdf}\end{center} & $(s_{1}s_{2}s_{3}s_{4}s_{3}s_{2})^{2} = e$ \\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram2.pdf}\end{center} 
+& $(s_{1}s_{2}s_{3}s_{2}s_{1}s_{4}s_{5} \dots s_{n}s_{n+1}s_{n} \dots s_{5}s_{4})^{2} = e$ \\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram3.pdf}\end{center} & $(s_{2}s_{3}s_{4}s_{1}s_{4}s_{3})^{2} = e$ and $(s_{2}s_{1}s_{4}s_{3}s_{4}s_{1})^{2} = e$\\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram4.pdf}\end{center} & $(s_{n+1}s_{1}s_{n+1}s_{2}s_{3} \dots s_{n-1}s_{n}s_{n-1} \dots s_{3}s_{2})^{2} = e$ \\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram5.pdf}\end{center} & $(s_{2}s_{1}s_{2}s_{1}s_{2}s_{3})^{2} = e$ and $(s_{2}s_{3}s_{2}s_{3}s_{2}s_{1})^{2} = e$ \\ \hline
+\end{tabular}
+\caption{(R4) Relations}
+\end{table}
+
+In seeking an analogous result for Artin groups, we generalize A$_{\Gamma}$ as follows:
+
+\begin{defn}
+Let $\Gamma$ be a diagram of affine type with n + 1 vertices. Then we define $A_{\Gamma}$ to be the diagram with generators $s_{1}, \dots, s_{n}$ and satisfying the following relations:
+\begin{enumerate}
+\item[(T2)] $\langle s_{i}, s_{j} \rangle^{m_{ij}} = \langle s_{j}, s_{i} \rangle^{m_{ij}}$ where
+$$m_{ij} = 
+\begin{cases}
+2 &\text{if there is no arrow between i and j in $\Gamma$} \\
+3 &\text{if there is an arrow of weight 1 between i and j in $\Gamma$} \\
+4 &\text{if there is an arrow of weight 2 between i and j in $\Gamma$} \\
+6 &\text{if there is an arrow of weight 3 between i and j in $\Gamma$} \\
+\infty &\text{otherwise}
+\end{cases}$$
+\item[(T3)] For every chordless oriented cycle:
+$$i_{0} \stackrel{w_{i_{0}}}{\longrightarrow} i_{1} \stackrel{w_{i_{1}}}{\longrightarrow} \dots \stackrel{w_{i_{d-2}}}{\longrightarrow} i_{d-1} \stackrel{w_{i_{d-1}}}{\longrightarrow} i_{0},$$
+define for l $\in \{0, \dots, d-1\}$, 
+$$t(l) = (\prod_{j=l}^{l+d-2}{\sqrt{w_{i_{j}}}} - \sqrt{w_{i_{l+d-1}}})^{2}.$$
+Then take the relation $\langle s_{i_{l}}p(i_{l}, i_{l+1}) \rangle^{m(l)} = \langle p(i_{l}, i_{l+1})s_{i_{l}} \rangle^{m(l)}$ where
+$$m(l) =
+\begin{cases}
+2 &\text{if $t(l)=0$} \\
+3 &\text{if $t(l)=1$} \\
+4 &\text{if $t(l)=2$} \\
+6 &\text{if $t(l)=3$}
+\end{cases}$$
+\item[(T4)] For each subdiagram of $\Gamma$ of the form shown in the first column of \ref{table2}, we add the relation(s) listed in the second column.
+\end{enumerate}
+\end{defn}
+
+\begin{conj}
+Let $\Gamma$ be a diagram of affine type, and let $\Gamma^{\prime}$ be the mutation of $\Gamma$ at a node k. Then $A_{\Gamma}$ $\cong$ $A_{\Gamma^{\prime}}$.
+\end{conj}
+
+\begin{table} \label{table2}
+\begin{tabular}{| p{3.5cm} | p{7cm} |}
+\hline
+Subdiagram & (T4) Relation \\ \hline
+\begin{center}\includegraphics[scale = .30]{Diagram1.pdf}\end{center} & $s_{2}s_{1}s_{2}^{-1}s_{4}^{-1}s_{3}s_{4} = s_{4}^{-1}s_{3}s_{4}s_{2}s_{1}s_{2}^{-1}$ \\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram2.pdf}\end{center} 
+& $s_{2}s_{3}^{-1}s_{4}^{-1}\dots s_{n}^{-1}s_{1}s_{n+1}s_{1}^{-1}s_{n} \dots s_{4}s_{3}$
+\newline $= s_{3}^{-1}s_{4}^{-1}\dots s_{n}^{-1}s_{1}s_{n+1}s_{1}^{-1}s_{n} \dots s_{4}s_{3}s_{2}$\\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram3.pdf}\end{center} & $s_{2}s_{3}^{-1}s_{4}s_{1}s_{4}^{-1}s_{3} = s_{3}^{-1}s_{4}s_{1}s_{4}^{-1}s_{3}s_{2}$ and
+$s_{2}s_{1}s_{4}^{-1}s_{3}s_{4}s_{1}^{-1} = s_{1}s_{4}^{-1}s_{3}s_{4}s_{1}^{-1}s_{2}$\\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram4.pdf}\end{center} & $s_{1}s_{2}^{-1} \dots s_{n-1}^{-1}s_{n+1}s_{n}s_{n+1}^{-1}s_{n-1} \dots s_{2} = s_{2}^{-1} \dots s_{n-1}^{-1}s_{n+1}s_{n}s_{n+1}^{-1}s_{n-1} \dots s_{2}s_{1}$ \\ \hline
+
+\begin{center}\includegraphics[scale = .30]{Diagram5.pdf}\end{center} & $s_{2}s_{1}^{-1}s_{2}s_{3}s_{2}^{-1}s_{1} = s_{1}^{-1}s_{2}s_{3}s_{2}^{-1}s_{1}s_{2}$ and $s_{1}s_{2}s_{3}s_{2}s_{3}^{-1}s_{2}^{-1} = s_{2}s_{3}s_{2}s_{3}^{-1}s_{2}^{-1}s_{1}$ \\ \hline
+\end{tabular}
+\caption{(T4) Relations}
+\end{table}
+
 
 \section{Acknowledgements}
 \thanks{This work was supported by the RTG grant NSF/DMS-1148634. We would also like to thank the University of Minnesota School of Mathematics for hosting us. We are greatly appreciative of Gregg Musiker's mentoring, support, and guidance on this problem. We thank Emily Gunawan for her useful comments on our work. We also thank Vic Reiner for helping Gregg Musiker pose the problem.}
