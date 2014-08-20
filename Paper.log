@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  20 AUG 2014 16:14
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  20 AUG 2014 16:32
 entering extended mode
 **Paper.tex
 (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.tex
@@ -824,39 +824,32 @@ Overfull \hbox (71.54442pt too wide) in paragraph at lines 1898--1898
 [] 
  []
 
-
-Package natbib Warning: Citation `FT13' on page 22 undefined on input line 1922.
-
-[22]
-
-Package natbib Warning: Citation `FT13' on page 23 undefined on input line 1955.
-
-<Diagram1.pdf, id=98, 158.64069pt x 176.86075pt>
+[22] <Diagram1.pdf, id=98, 158.64069pt x 176.86075pt>
 File: Diagram1.pdf Graphic file (type pdf)
  <use Diagram1.pdf>
 Package pdftex.def Info: Diagram1.pdf used on input line 1963.
 (pdftex.def)             Requested size: 47.59256pt x 53.05862pt.
- <Diagram2.pdf, id=99, 303.96361pt x 266.44043pt>
-File: Diagram2.pdf Graphic file (type pdf)
 
-<use Diagram2.pdf>
+<Diagram2.pdf, id=99, 303.96361pt x 266.44043pt>
+File: Diagram2.pdf Graphic file (type pdf)
+ <use Diagram2.pdf>
 Package pdftex.def Info: Diagram2.pdf used on input line 1965.
 (pdftex.def)             Requested size: 91.18977pt x 79.93274pt.
  <Diagram3.pdf, id=100, 167.65034pt x 169.87967pt>
 File: Diagram3.pdf Graphic file (type pdf)
- <use Diagram3.pdf>
+
+<use Diagram3.pdf>
 Package pdftex.def Info: Diagram3.pdf used on input line 1968.
 (pdftex.def)             Requested size: 50.29549pt x 50.96428pt.
-
-<Diagram4.pdf, id=101, 325.1136pt x 266.44643pt>
+ <Diagram4.pdf, id=101, 325.1136pt x 266.44643pt>
 File: Diagram4.pdf Graphic file (type pdf)
  <use Diagram4.pdf>
 Package pdftex.def Info: Diagram4.pdf used on input line 1970.
 (pdftex.def)             Requested size: 97.53482pt x 79.93454pt.
- <Diagram5.pdf, id=102, 174.70068pt x 169.87967pt>
-File: Diagram5.pdf Graphic file (type pdf)
 
-<use Diagram5.pdf>
+<Diagram5.pdf, id=102, 174.70068pt x 169.87967pt>
+File: Diagram5.pdf Graphic file (type pdf)
+ <use Diagram5.pdf>
 Package pdftex.def Info: Diagram5.pdf used on input line 1972.
 (pdftex.def)             Requested size: 52.4106pt x 50.96428pt.
  [23]
@@ -910,15 +903,12 @@ Overfull \hbox (81.5222pt too wide) in paragraph at lines 2038--2038
 an@college.harvard.com,
  []
 
-
-Package natbib Warning: There were undefined citations.
-
 [25] [26] (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 16602 strings out of 494045
- 327645 string characters out of 3148374
- 505387 words of memory out of 3000000
- 19399 multiletter control sequences out of 15000+200000
+ 16604 strings out of 494045
+ 327675 string characters out of 3148374
+ 505405 words of memory out of 3000000
+ 19401 multiletter control sequences out of 15000+200000
  27559 words of font info for 98 fonts, out of 3000000 for 9000
  876 hyphenation exceptions out of 8191
  56i,18n,82p,1389b,1024s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -939,7 +929,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Fil
 s/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Paper.pdf (26 pages, 404440 bytes).
+Output written on Paper.pdf (26 pages, 404279 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

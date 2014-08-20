@@ -15,6 +15,11 @@ R.~Fox and L.~Neuwirth.
 \newblock The braid groups.
 \newblock {\em Mathematica Scandinavica}, pages 119--126, 1961.
 
+\bibitem[FT13]{FT13}
+A.~Felikson and P.~Tumarkin.
+\newblock Coxeter groups and their quotients arising from cluster algebras.
+\newblock arXiv:1307.0672v2, 2013.
+
 \bibitem[FZ02]{FZ02}
 Sergey Fomin and Andrei Zelevinsky.
 \newblock Cluster algebras i: Foundations.
