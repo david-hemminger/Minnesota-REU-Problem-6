@@ -33,8 +33,6 @@
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{conj}[thm]{Conjecture}
-\newtheorem{longfig}[thm]{Figure}
-
 %\usepackage[all]{xy}
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}
@@ -258,7 +256,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
 \label{cycle_types}
 \cite[Proposition 2.1]{BM13} Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a square with two opposite edges of weight 2 and two opposite edges of weight 1, or a triangle with two edges of weight 2 and one of weight 1, as pictured in Figure \ref{fig:cycle_types}
 
-\begin{figure}[h]\label{fig:cycle_types}
+\begin{figure}[h]
 \hspace*{-1.2cm}
 \begin{tikzpicture}[baseline=-0.5ex]
  \matrix[matrix of math nodes,column sep={40pt,between origins},row
@@ -332,6 +330,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   ;
   
    \end{tikzpicture}
+   \label{fig:cycle_types}
 \caption{Possible chordless cycles in a diagram of finite type, as found in \cite[Figure 2]{BM13}}
 \end{figure}
 \end{prop}
@@ -343,7 +342,6 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
 \end{cor}
 
 \begin{figure}
-\label{fig:local_three}
 \begin{enumerate}[(a)]
 \item
 \begin{tikzpicture}[baseline=-0.5ex]
@@ -572,6 +570,8 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){i};
    \end{tikzpicture}
 \end{enumerate}
+
+\label{fig:local_three}
 \caption{Local picture of the mutation of a finite type diagram, as found in \cite[Figure 4]{BM13}}
 \end{figure}
 
@@ -579,7 +579,6 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
 %Suppose that a vertex k is connected to at least one vertex of a chordless cycle in a diagram $\Gamma$ of finite type. Then k is connected to at most two vertices in the cycle, and if it is connected to two vertices, %they must be adjacent in the cycle.
 %\end{lem}
 \begin{figure}
-\label{fig:cycle_types_a}
 \begin{enumerate}[(a)]
 \item
 \begin{tikzpicture}[baseline=-0.5ex]
@@ -902,7 +901,15 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
   \node [yshift = -.95 cm,xshift = .95 cm] at (ul){$C'$};
     \end{tikzpicture}
+    \end{enumerate}
     
+\label{fig:cycle_types_a}
+\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 5]{BM13}}
+\end{figure}
+    
+
+\begin{figure}
+\begin{enumerate}
     
    \item
    \begin{tikzpicture}[baseline=-0.5ex]
@@ -960,14 +967,6 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
     \node [yshift = -.4 cm,xshift = -.4 cm] at (dl){4};
   \node [yshift = -.95 cm,xshift = .3 5 cm] at (ul){$C'$};
     \end{tikzpicture}
-    \end{enumerate}
-\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 5]{BM13}}
-\end{figure}
-    
-
-\begin{figure}
-\label{fig:cycle_types_b}
-\begin{enumerate}
    \item[(i)]
    \begin{tikzpicture}[baseline=-0.5ex]
     \matrix[matrix of math nodes,column sep={40pt,between origins},row
@@ -1218,12 +1217,13 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
    \end{tikzpicture}
 \end{enumerate}
 
+\label{fig:cycle_types_b}
 \caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 6]{BM13}}
 \end{figure}
 
 \begin{lem}\label{lem:chordless_cycles}
 \cite[Lemma 2.5]{BM13} 
-Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mutation of $\Gamma$ at vertex $k.$ In figures \ref{fig:cycle_types_a} and \ref{fig:cycle_types_b} we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. 
+Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mutation of $\Gamma$ at vertex $k.$ In Figure \ref{fig:cycle_types_a} and Figure \ref{fig:cycle_types_b} we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. 
 
 Every chordless cycle in $\Gamma'$ is of one of the types listed in Figure \ref{fig:cycle_types_a} or Figure \ref{fig:cycle_types_b}.
 \end{lem}
@@ -1249,7 +1249,7 @@ That is, $\langle x_i,x_j \rangle$ is just an alternating sequence of $x_i$ and 
 
 \begin{defn}
 \cite[Beginning of section 1.2]{C06}
-For $M \in M_{n \times n}(\mathbb Z \cup \infty)$ a symmetric matrix whose entries can take values in the integers or infinity, we define the associated {\it Artin group} in terms of generators and relations by
+Let $Sym_n(R)$ denote the set of $n \times n$ symmetric matrices with entries in $R$. For $M \in Sym_n(\mathbb Z \cup \infty)$ a symmetric matrix whose entries can take values in the integers or infinity, we define the associated {\it Artin group} in terms of generators and relations by
 \begin{align*}
 A = \langle x_1,\ldots, x_n| \langle x_i,x_j \rangle^{M_{i,j}} = \langle x_j,x_i \rangle^{M_{i,j}} \text{ for all } i,j \text{ with } M_{i,j}<\infty \rangle,
 \end{align*}
@@ -1388,7 +1388,7 @@ The relations $(T2),(T3)$ in that $\Gamma$ is a triangle with two edges of weigh
 
 
 \begin{rem}
-Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relation of the form $(T2),$ which define the Artin group.
+Note that if $\Gamma$ is the graph associated to a Dynkin diagram, then $W_\Gamma$ as we have defined it is precisely the Artin group corresponding to that Dynkin diagram. This occurs because, in this case, we have no cycles in $\Gamma,$ and so we only have relations of the form $(T2),$ which define the Artin group.
 \end{rem}
 
 \section{Symmetry among the (R3) Relations}
@@ -1717,7 +1717,7 @@ Let $i,j$ be distinct vertices of $\Gamma$ such that $i$ and $j$ are connected. 
 \end{lem}
 
 \begin{proof}
-The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Corollary \ref{local_three_picture}.  We show that $t_i$ and $t_j$ satisfy the $(T2^\prime)$ relations by checking each case.  Within each case, subcase $(i)$ is when the subdiagram of $\Gamma$ is the diagram on the left in the figure in Corollary \ref{local_three_picture}, and subcase $(ii)$ is when the subdiagram of $\Gamma$ is the diagram on the right in the figure in Corollary \ref{local_three_picture}.
+The possibilities for the subdiagram induced by $i$, $j$, and $k$ are enumerated in Figure \ref{fig:local_three}.  We show that $t_i$ and $t_j$ satisfy the $(T2^\prime)$ relations by checking each case.  Within each case, subcase $(i)$ is when the subdiagram of $\Gamma$ is the diagram on the left in Figure \ref{fig:local_three}, and subcase $(ii)$ is when the subdiagram of $\Gamma$ is the diagram on the right in Figure \ref{fig:local_three}.
 
 Throughout the proof we will make frequent use of the fact that if $m$ and $n$ are vertices of $\Gamma$, then
 
