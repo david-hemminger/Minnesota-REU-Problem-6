@@ -254,7 +254,8 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
 
 \begin{prop}
 \label{cycle_types}
-\cite[Proposition 2.1]{BM13} Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a square with two opposite edges of weight 2 and two opposite edges of weight 1, or a triangle with two edges of weight 2 and one of weight 1, as pictured in Figure \ref{fig:cycle_types}
+\cite[Proposition 2.1]{BM13} Let $\Gamma$ be a diagram of finite type. Then, a chordless cycle in the unoriented graph of $\Gamma$ is cyclically oriented in $\Gamma$. Furthermore, the unoriented graph underlying the cycle must either be a cycle such that all edges have weight 1, a square with two opposite edges of weight 2 and two opposite edges of weight 1, or a triangle with two edges of weight 2 and one of weight 1, as pictured in Figure \ref{fig:cycle_types}.
+\end{prop}
 
 \begin{figure}[h]
 \hspace*{-1.2cm}
@@ -333,7 +334,6 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
    \label{fig:cycle_types}
 \caption{Possible chordless cycles in a diagram of finite type, as found in \cite[Figure 2]{BM13}}
 \end{figure}
-\end{prop}
 
 
 \begin{cor}
@@ -902,11 +902,9 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   \node [yshift = -.95 cm,xshift = .95 cm] at (ul){$C'$};
     \end{tikzpicture}
     \end{enumerate}
-    
-\label{fig:cycle_types_a}
+\label{fig:first_cycle_types}
 \caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 5]{BM13}}
 \end{figure}
-    
 
 \begin{figure}
 \begin{enumerate}
@@ -1217,15 +1215,15 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
    \end{tikzpicture}
 \end{enumerate}
 
-\label{fig:cycle_types_b}
+\label{fig:second_cycle_types}
 \caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 6]{BM13}}
 \end{figure}
 
 \begin{lem}\label{lem:chordless_cycles}
 \cite[Lemma 2.5]{BM13} 
-Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mutation of $\Gamma$ at vertex $k.$ In Figure \ref{fig:cycle_types_a} and Figure \ref{fig:cycle_types_b} we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. 
+Let $\Gamma$ be a diagram of finite type with $\Gamma' = \mu_k(\Gamma),$ the mutation of $\Gamma$ at vertex $k.$ In Figure \ref{fig:first_cycle_types} and Figure \ref{fig:second_cycle_types} we list induced subdiagrams in $\Gamma$ on the left and the resulting induced subdiagrams in $\Gamma'$ with chordless cycles $C'$ on the right, after mutation at $k.$ We draw the diagrams so that $C'$ always has a clockwise cycle. Furthermore, in case $(i),$ we assume $C'$ has at least three vertices, while in case $(j),$ we assume $C'$ has at least four vertices. 
 
-Every chordless cycle in $\Gamma'$ is of one of the types listed in Figure \ref{fig:cycle_types_a} or Figure \ref{fig:cycle_types_b}.
+Every chordless cycle in $\Gamma'$ is of one of the types listed in Figure \ref{fig:first_cycle_types} or Figure \ref{fig:second_cycle_types}.
 \end{lem}
 
 
