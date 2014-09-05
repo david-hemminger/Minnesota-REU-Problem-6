@@ -134,9 +134,10 @@ where the sign before $\sqrt{c}$ (respectively, $\sqrt{c'}$) is positive if the 
 \end{itemize}
 \end{prop}
 
+\begin{figure}
 \begin{center}
 \begin{tikzpicture}[baseline=-0.5ex]
-\label{mutation}
+
 
 
 \matrix[matrix of math nodes,column sep={25pt,between origins},row
@@ -180,6 +181,9 @@ where the sign before $\sqrt{c}$ (respectively, $\sqrt{c'}$) is positive if the 
  
    \end{tikzpicture}
    \end{center}
+
+\caption{Mutation of $\Gamma$ at a node k}\label{mutation}
+\end{figure}
    
 \begin{note}
 We notate this mutation of $\Gamma(B)$ at vertex $k$ by $\mu_k(\Gamma)$. \\
@@ -331,8 +335,8 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   ;
   
    \end{tikzpicture}
-   \label{fig:cycle_types}
-\caption{Possible chordless cycles in a diagram of finite type, as found in \cite[Figure 2]{BM13}}
+   
+\caption{Possible chordless cycles in a diagram of finite type, as found in \cite[Figure 2]{BM13}} \label{fig:cycle_types}
 \end{figure}
 
 
@@ -571,8 +575,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
    \end{tikzpicture}
 \end{enumerate}
 
-\label{fig:local_three}
-\caption{Local picture of the mutation of a finite type diagram, as found in \cite[Figure 4]{BM13}}
+\caption{Local picture of the mutation of a finite type diagram, as found in \cite[Figure 4]{BM13}} \label{fig:local_three}
 \end{figure}
 
 %\begin{lem} \cite[Lemma 2.4]{BM13}
@@ -902,8 +905,8 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
   \node [yshift = -.95 cm,xshift = .95 cm] at (ul){$C'$};
     \end{tikzpicture}
     \end{enumerate}
-\label{fig:first_cycle_types}
-\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 5]{BM13}}
+	
+\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 5]{BM13}} \label{fig:first_cycle_types}
 \end{figure}
 
 \begin{figure}
@@ -1215,8 +1218,7 @@ A {\it chordless cycle} of an unoriented graph $G$ is a connected subgraph $H \s
    \end{tikzpicture}
 \end{enumerate}
 
-\label{fig:second_cycle_types}
-\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 6]{BM13}}
+\caption{Induced subdiagrams of $\Gamma$ and corresponding chordless cycles in $\Gamma' = \mu_k(\Gamma),$ as found in \cite[Figure 6]{BM13}} \label{fig:second_cycle_types}
 \end{figure}
 
 \begin{lem}\label{lem:chordless_cycles}
@@ -1944,7 +1946,7 @@ $$m(l) =
 4 &\text{if $t(l)=2$} \\
 6 &\text{if $t(l)=3$}
 \end{cases}$$
-\item[(R4)] For each subdiagram of $\Gamma$ of the form shown in the first column of \ref{table1}, we add the relation(s) listed in the second column.
+\item[(R4)] For each subdiagram of $\Gamma$ of the form shown in the first column of Table \ref{table1}, we add the relation(s) listed in the second column.
 \end{enumerate}
 \end{def}
 
@@ -1954,7 +1956,7 @@ Given this definition of $W_{\Gamma}$, which generalizes the definition of $W_{\
 Let W be an affine Weyl group and let $\Gamma$ be a diagram mutation equivalent to an orientation of a Dynkin diagram of the same type as W. Then W is isomorphic to $W_{\Gamma}$.
 \end{thm}
 
-\begin{table}[h] \label{table1}
+\begin{table}[h] 
 \begin{tabular}{| p{3.5cm} | p{7cm} |}
 \hline
 Subdiagram & (R4) Relation \\ \hline
@@ -1969,7 +1971,7 @@ Subdiagram & (R4) Relation \\ \hline
 
 \begin{center}\includegraphics[scale = .30]{Diagram5.pdf}\end{center} & $(s_{2}s_{1}s_{2}s_{1}s_{2}s_{3})^{2} = e$ and $(s_{2}s_{3}s_{2}s_{3}s_{2}s_{1})^{2} = e$ \\ \hline
 \end{tabular}
-\caption{(R4) Relations}
+\caption{(R4) Relations} \label{table1}
 \end{table}
 
 In seeking an analogous result for Artin groups, we generalize A$_{\Gamma}$ as follows:
@@ -1998,7 +2000,7 @@ $$m(l) =
 4 &\text{if $t(l)=2$} \\
 6 &\text{if $t(l)=3$}
 \end{cases}$$
-\item[(T4)] For each subdiagram of $\Gamma$ of the form shown in the first column of \ref{table2}, we add the relation(s) listed in the second column.
+\item[(T4)] For each subdiagram of $\Gamma$ of the form shown in the first column of Table \ref{table2}, we add the relation(s) listed in the second column.
 \end{enumerate}
 \end{defn}
 
@@ -2006,7 +2008,7 @@ $$m(l) =
 Let $\Gamma$ be a diagram of affine type, and let $\Gamma^{\prime}$ be the mutation of $\Gamma$ at a node k. Then $A_{\Gamma}$ $\cong$ $A_{\Gamma^{\prime}}$.
 \end{conj}
 
-\begin{table}[h] \label{table2}
+\begin{table}[h] 
 \begin{tabular}{| p{3.5cm} | p{7cm} |}
 \hline
 Subdiagram & (T4) Relation \\ \hline
@@ -2023,7 +2025,7 @@ $s_{2}s_{1}s_{4}^{-1}s_{3}s_{4}s_{1}^{-1} = s_{1}s_{4}^{-1}s_{3}s_{4}s_{1}^{-1}s
 
 \begin{center}\includegraphics[scale = .30]{Diagram5.pdf}\end{center} & $s_{2}s_{1}^{-1}s_{2}s_{3}s_{2}^{-1}s_{1} = s_{1}^{-1}s_{2}s_{3}s_{2}^{-1}s_{1}s_{2}$ and $s_{1}s_{2}s_{3}s_{2}s_{3}^{-1}s_{2}^{-1} = s_{2}s_{3}s_{2}s_{3}^{-1}s_{2}^{-1}s_{1}$ \\ \hline
 \end{tabular}
-\caption{(T4) Relations}
+\caption{(T4) Relations} \label{table2}
 \end{table}
 
 
