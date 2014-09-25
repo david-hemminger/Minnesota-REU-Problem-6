@@ -30,4 +30,15 @@ Sergey Fomin and Andrei Zelevinsky.
 \newblock Cluster algebras ii: Finite type classification.
 \newblock {\em Invent. Math.}, 154:63--121, 2003.
 
+\bibitem[GM14]{GM14}
+Joseph Grant and Robert~J. Marsh.
+\newblock Braid groups and quiver mutation.
+\newblock arXiv:1408.5267, 2014.
+
+\bibitem[Qiu14]{Q14}
+Y.~Qiu.
+\newblock On the spherical twists on 3-calabi-yau categories from marked
+  surfaces.
+\newblock arXiv:1407.0806, 2014.
+
 \end{thebibliography}
