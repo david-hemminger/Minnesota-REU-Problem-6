@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  25 SEP 2014 00:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  25 SEP 2014 12:23
 entering extended mode
 **Paper.tex
 (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.tex
@@ -700,6 +700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[5]
 
 LaTeX Warning: Float too large for page by 17.63185pt on input line 887.
 
@@ -718,7 +719,7 @@ Overfull \hbox (85.73285pt too wide) in paragraph at lines 1195--1196
 [][] 
  []
 
-[5] [6] [7] [8] [9] [10]
+[6] [7] [8] [9] [10]
 Underfull \hbox (badness 10000) in paragraph at lines 1391--1392
 
  []
@@ -728,10 +729,7 @@ Overfull \hbox (30.8151pt too wide) in paragraph at lines 1413--1413
 [] 
  []
 
-
-Underfull \vbox (badness 3557) has occurred while \output is active []
-
- [12] [13] [14] [15]
+[12] [13] [14] [15]
 Overfull \hbox (5.3807pt too wide) in paragraph at lines 1580--1581
 \OT1/cmr/m/n/10.95 defined ho-mo-mor-phisms $\U/MnSymbolC/m/n/10.95  \OML/cmm/m/it/10.95 A[] \U/MnSymbolA/m/n/10.95   
 \OML/cmm/m/it/10.95 A[]$ \OT1/cmr/m/n/10.95 de-fined by $\OMX/MnSymbolE/m/n/10.95 ˆ\OML/cmm/m/it/10.95 s[]\OMX/MnSymbol
@@ -897,33 +895,36 @@ Overfull \hbox (81.5222pt too wide) in paragraph at lines 2013--2013
 an@college.harvard.com,
  []
 
-[25] [26] (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.aux) ) 
+[25] [26] (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  16600 strings out of 494045
  327550 string characters out of 3148374
- 506289 words of memory out of 3000000
+ 503205 words of memory out of 3000000
  19400 multiletter control sequences out of 15000+200000
  27559 words of font info for 98 fonts, out of 3000000 for 9000
  876 hyphenation exceptions out of 8191
  56i,18n,82p,1389b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/jahaley11/AppData/Roaming/M
-iKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol
-/MnSymbolE.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{C:/Users/jahaley11
-/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/
-enc/dvips/mnsymbol/MnSymbolC.enc}<C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol10.p
-fb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol6.pfb><C:/Users/jahaley11/AppData/
-Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Paper.pdf (26 pages, 394377 bytes).
+{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{C:/Users/jahaley11/AppData/Roam
+ing/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mns
+ymbol/MnSymbolD.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{C:/Users/jaha
+ley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}<C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/f
+onts/type1/public/mnsymbol/MnSymbol10.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnS
+ymbol6.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Paper.pdf (26 pages, 394200 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
