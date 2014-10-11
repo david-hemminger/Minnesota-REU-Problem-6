@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  25 SEP 2014 12:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.23)  11 OCT 2014 01:55
 entering extended mode
 **Paper.tex
 (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.tex
@@ -267,13 +267,6 @@ LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks25
 )
-(C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip51
-\bibsep=\skip52
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count99
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\euscript.sty"
 Package: euscript 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
@@ -325,7 +318,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count100
+\Gread@gobject=\count99
 ))
 \Gin@req@height=\dimen116
 \Gin@req@width=\dimen117
@@ -351,10 +344,10 @@ Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 \pgf@yc=\dimen125
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count101
-\c@pgf@countb=\count102
-\c@pgf@countc=\count103
-\c@pgf@countd=\count104
+\c@pgf@counta=\count100
+\c@pgf@countb=\count101
+\c@pgf@countc=\count102
+\c@pgf@countd=\count103
 \t@pgf@toka=\toks31
 \t@pgf@tokb=\toks32
 \t@pgf@tokc=\toks33
@@ -372,8 +365,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count105
-\pgfsyssoftpath@bigbuffer@items=\count106
+\pgfsyssoftpath@smallbuffer@items=\count104
+\pgfsyssoftpath@bigbuffer@items=\count105
 )
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -403,7 +396,7 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.code.tex)
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen126
-\pgfmath@count=\count107
+\pgfmath@count=\count106
 \pgfmath@box=\box30
 \pgfmath@toks=\toks34
 \pgfmath@stack@operand=\toks35
@@ -419,7 +412,7 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex)))
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count108
+\c@pgfmathroundto@lastzeros=\count107
 ))
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
@@ -453,7 +446,7 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box31
 \pgf@hbox=\box32
 \pgf@layerbox@main=\box33
-\pgf@picture@serial@count=\count109
+\pgf@picture@serial@count=\count108
 )
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
@@ -481,7 +474,7 @@ File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen150
-\pgf@sys@shading@range@num=\count110
+\pgf@sys@shading@range@num=\count109
 )
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -533,7 +526,7 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count111
+\pgf@plot@mark@count=\count110
 \pgfplotmarksize=\dimen155
 )
 \tikz@lastx=\dimen156
@@ -546,18 +539,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikz@figbox@bg=\box37
 \tikz@tempbox=\box38
 \tikz@tempbox@bg=\box39
-\tikztreelevel=\count112
-\tikznumberofchildren=\count113
-\tikznumberofcurrentchild=\count114
-\tikz@fig@count=\count115
+\tikztreelevel=\count111
+\tikznumberofchildren=\count112
+\tikznumberofcurrentchild=\count113
+\tikz@fig@count=\count114
 
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count116
-\pgfmatrixcurrentcolumn=\count117
-\pgf@matrix@numberofcolumns=\count118
+\pgfmatrixcurrentrow=\count115
+\pgfmatrixcurrentcolumn=\count116
+\pgf@matrix@numberofcolumns=\count117
 )
-\tikz@expandcount=\count119
+\tikz@expandcount=\count118
 
 (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
@@ -609,90 +602,90 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks41
 \verbatim@in@stream=\read2
 )
-\c@thm=\count120
+\c@thm=\count119
  (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 40.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 ABD: EveryShipout initializing macros (C:\Users\jahaley11\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
+\scratchcounter=\count120
 \scratchdimen=\dimen172
 \scratchbox=\box40
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\nofMPsegments=\count121
+\nofMParguments=\count122
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count124
+\MPscratchCnt=\count123
 \MPscratchDim=\dimen173
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
 \everyMPtoPDFconversion=\toks43
 )
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 [1{C:/Users/jahaley11/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 [2]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 93.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 93.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 92.
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
@@ -702,35 +695,35 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
 
-LaTeX Warning: Float too large for page by 17.63185pt on input line 887.
+LaTeX Warning: Float too large for page by 4.63185pt on input line 886.
 
 
-Overfull \hbox (85.73285pt too wide) in paragraph at lines 1031--1032
+Overfull \hbox (85.73285pt too wide) in paragraph at lines 1030--1031
 [][] 
  []
 
 
-Overfull \hbox (85.73285pt too wide) in paragraph at lines 1115--1116
+Overfull \hbox (85.73285pt too wide) in paragraph at lines 1114--1115
 [][] 
  []
 
 
-Overfull \hbox (85.73285pt too wide) in paragraph at lines 1195--1196
+Overfull \hbox (85.73285pt too wide) in paragraph at lines 1194--1195
 [][] 
  []
 
 [6] [7] [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1391
 
  []
 
 [11]
-Overfull \hbox (30.8151pt too wide) in paragraph at lines 1413--1413
+Overfull \hbox (30.8151pt too wide) in paragraph at lines 1412--1412
 [] 
  []
 
 [12] [13] [14] [15]
-Overfull \hbox (5.3807pt too wide) in paragraph at lines 1580--1581
+Overfull \hbox (5.3807pt too wide) in paragraph at lines 1579--1580
 \OT1/cmr/m/n/10.95 defined ho-mo-mor-phisms $\U/MnSymbolC/m/n/10.95  \OML/cmm/m/it/10.95 A[] \U/MnSymbolA/m/n/10.95   
 \OML/cmm/m/it/10.95 A[]$ \OT1/cmr/m/n/10.95 de-fined by $\OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 s[]\OMX/MnSymbol
 E/m/n/10.95 ç \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 q[]$ \OT1/cmr/m/n/10.95 and $[]\U/MnSymbolC/m/n/10.95  \OML
@@ -738,7 +731,7 @@ E/m/n/10.95 ç \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 q[]$ \OT1/cmr/m/n/10.
  []
 
 
-Overfull \hbox (61.33908pt too wide) detected at line 1586
+Overfull \hbox (61.33908pt too wide) detected at line 1585
 \OML/cmm/m/it/10.95   \U/MnSymbolC/m/n/10.95 X \OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 r[]\OM
 X/MnSymbolE/m/n/10.95 ç \U/MnSymbolD/m/n/10.95   \OT1/cmr/m/n/10.95 []\OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 '[]
 \OMX/MnSymbolE/m/n/10.95 à\OT1/cmr/m/n/10.95 \OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 à\
@@ -751,7 +744,7 @@ m/it/10.95 '[]\OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 q[]q[]q[]\OMX/MnSymb
  []
 
 
-Overfull \hbox (10.98808pt too wide) detected at line 1590
+Overfull \hbox (10.98808pt too wide) detected at line 1589
 \OML/cmm/m/it/10.95   \U/MnSymbolC/m/n/10.95 X \OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 r[]\OM
 X/MnSymbolE/m/n/10.95 ç \U/MnSymbolD/m/n/10.95   \OT1/cmr/m/n/10.95 []\OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 '[]
 \OMX/MnSymbolE/m/n/10.95 à\OT1/cmr/m/n/10.95 \OMX/MnSymbolE/m/n/10.95 à\OML/cmm/m/it/10.95 '\OMX/MnSymbolE/m/n/10.95 à\
@@ -764,7 +757,7 @@ m/m/it/10.95 r[]
  []
 
 [16]
-Overfull \hbox (16.65019pt too wide) detected at line 1653
+Overfull \hbox (16.65019pt too wide) detected at line 1652
 \OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/
 10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   
 \OML/cmm/m/it/10.95 s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/
@@ -772,7 +765,7 @@ Overfull \hbox (16.65019pt too wide) detected at line 1653
  []
 
 
-Overfull \hbox (50.5988pt too wide) detected at line 1680
+Overfull \hbox (50.5988pt too wide) detected at line 1679
 \OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/
 10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   
 \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbol
@@ -780,7 +773,7 @@ D/m/n/10.95   \OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE
  []
 
 
-Overfull \hbox (32.06113pt too wide) detected at line 1686
+Overfull \hbox (32.06113pt too wide) detected at line 1685
 \OMX/MnSymbolE/m/n/10.95 `\OML/cmm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/
 10.95 s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSy
 mbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OMX/MnSymbolE/m/n/10.95 `\OML/c
@@ -788,7 +781,7 @@ mm/m/it/10.95 t[]t[]\OMX/MnSymbolE/m/n/10.95 e[]
  []
 
 [17]
-Overfull \hbox (60.90555pt too wide) detected at line 1699
+Overfull \hbox (60.90555pt too wide) detected at line 1698
 \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolA/m/n/10.95  \OML/cmm/m
 /it/10.95 s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolA/m/n/10.95  \OML/cmm/m/it/10.95 
 s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[] \U/MnSymbolA/m/n/10.95  \OML/cmm/m/it/10.95 s[]s[]s[] 
@@ -805,37 +798,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-Overfull \hbox (71.54442pt too wide) in paragraph at lines 1873--1873
+Overfull \hbox (71.54442pt too wide) in paragraph at lines 1872--1872
 [] 
  []
 
 [22] <Diagram1.pdf, id=98, 158.64069pt x 176.86075pt>
 File: Diagram1.pdf Graphic file (type pdf)
  <use Diagram1.pdf>
-Package pdftex.def Info: Diagram1.pdf used on input line 1938.
+Package pdftex.def Info: Diagram1.pdf used on input line 1937.
 (pdftex.def)             Requested size: 47.59256pt x 53.05862pt.
 
 <Diagram2.pdf, id=99, 303.96361pt x 266.44043pt>
 File: Diagram2.pdf Graphic file (type pdf)
  <use Diagram2.pdf>
-Package pdftex.def Info: Diagram2.pdf used on input line 1940.
+Package pdftex.def Info: Diagram2.pdf used on input line 1939.
 (pdftex.def)             Requested size: 91.18977pt x 79.93274pt.
  <Diagram3.pdf, id=100, 167.65034pt x 169.87967pt>
 File: Diagram3.pdf Graphic file (type pdf)
 
 <use Diagram3.pdf>
-Package pdftex.def Info: Diagram3.pdf used on input line 1943.
+Package pdftex.def Info: Diagram3.pdf used on input line 1942.
 (pdftex.def)             Requested size: 50.29549pt x 50.96428pt.
  <Diagram4.pdf, id=101, 325.1136pt x 266.44643pt>
 File: Diagram4.pdf Graphic file (type pdf)
  <use Diagram4.pdf>
-Package pdftex.def Info: Diagram4.pdf used on input line 1945.
+Package pdftex.def Info: Diagram4.pdf used on input line 1944.
 (pdftex.def)             Requested size: 97.53482pt x 79.93454pt.
 
 <Diagram5.pdf, id=102, 174.70068pt x 169.87967pt>
 File: Diagram5.pdf Graphic file (type pdf)
  <use Diagram5.pdf>
-Package pdftex.def Info: Diagram5.pdf used on input line 1947.
+Package pdftex.def Info: Diagram5.pdf used on input line 1946.
 (pdftex.def)             Requested size: 52.4106pt x 50.96428pt.
 
 
@@ -850,38 +843,38 @@ jahaley11/Documents/GitHub/Minnesota-REU-Problem-6/Diagram4.pdf> <C:/Users/jahal
 lem-6/Diagram5.pdf>]
 File: Diagram1.pdf Graphic file (type pdf)
  <use Diagram1.pdf>
-Package pdftex.def Info: Diagram1.pdf used on input line 1990.
+Package pdftex.def Info: Diagram1.pdf used on input line 1989.
 (pdftex.def)             Requested size: 47.59256pt x 53.05862pt.
 File: Diagram2.pdf Graphic file (type pdf)
 
 <use Diagram2.pdf>
-Package pdftex.def Info: Diagram2.pdf used on input line 1992.
+Package pdftex.def Info: Diagram2.pdf used on input line 1991.
 (pdftex.def)             Requested size: 91.18977pt x 79.93274pt.
 File: Diagram3.pdf Graphic file (type pdf)
  <use Diagram3.pdf>
-Package pdftex.def Info: Diagram3.pdf used on input line 1996.
+Package pdftex.def Info: Diagram3.pdf used on input line 1995.
 (pdftex.def)             Requested size: 50.29549pt x 50.96428pt.
 
-Underfull \hbox (badness 5578) in paragraph at lines 1996--1997
+Underfull \hbox (badness 5578) in paragraph at lines 1995--1996
 []$\OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]$ \OT1/cmr/m/n/
 10.95 and
  []
 
 File: Diagram4.pdf Graphic file (type pdf)
 <use Diagram4.pdf>
-Package pdftex.def Info: Diagram4.pdf used on input line 1999.
+Package pdftex.def Info: Diagram4.pdf used on input line 1998.
 (pdftex.def)             Requested size: 97.53482pt x 79.93454pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1999--1999
+Underfull \hbox (badness 10000) in paragraph at lines 1998--1998
 []$\OML/cmm/m/it/10.95 s[]s[] [] s[]s[]s[]s[]s[] [] s[] \U/MnSymbolD/m/n/10.95  
  []
 
 File: Diagram5.pdf Graphic file (type pdf)
 <use Diagram5.pdf>
-Package pdftex.def Info: Diagram5.pdf used on input line 2001.
+Package pdftex.def Info: Diagram5.pdf used on input line 2000.
 (pdftex.def)             Requested size: 52.4106pt x 50.96428pt.
 
-Underfull \hbox (badness 5578) in paragraph at lines 2001--2001
+Underfull \hbox (badness 5578) in paragraph at lines 2000--2000
 []$\OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[] \U/MnSymbolD/m/n/10.95   \OML/cmm/m/it/10.95 s[]s[]s[]s[]s[]s[]$ \OT1/cmr/m/n/
 10.95 and
  []
@@ -889,42 +882,49 @@ Underfull \hbox (badness 5578) in paragraph at lines 2001--2001
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.bbl)
-Overfull \hbox (81.5222pt too wide) in paragraph at lines 2013--2013
+
+Underfull \hbox (badness 10000) in paragraph at lines 2016--2019
+[]\OT1/cmr/m/n/9 Ruth Char-ney, ``An In-tro-duc-tion to Right-Angled Artin Groups,''
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 2042--2045
+[]\OT1/cmr/m/n/9 Joseph Grant and Robert J. Marsh ``Braid groups and quiver mu-ta-tion,''
+ []
+
+
+Overfull \hbox (81.5222pt too wide) in paragraph at lines 2057--2057
 []\OT1/cmr/m/it/9 E-mail ad-dress\OT1/cmr/m/n/9 : \OT1/cmtt/m/n/9 jhaley3@nd.edu, david.hemminger@duke.edu, aaronlandesm
 an@college.harvard.com,
  []
 
-[25] [26] (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[25] [26] (C:\Users\jahaley11\Documents\GitHub\Minnesota-REU-Problem-6\Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 16600 strings out of 494045
- 327550 string characters out of 3148374
- 503205 words of memory out of 3000000
- 19400 multiletter control sequences out of 15000+200000
+ 16249 strings out of 494045
+ 323197 string characters out of 3148374
+ 495540 words of memory out of 3000000
+ 19056 multiletter control sequences out of 15000+200000
  27559 words of font info for 98 fonts, out of 3000000 for 9000
  876 hyphenation exceptions out of 8191
  56i,18n,82p,1389b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{C:/Users/jahaley11/AppData/Roam
-ing/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mns
-ymbol/MnSymbolD.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{C:/Users/jaha
-ley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}<C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/f
-onts/type1/public/mnsymbol/MnSymbol10.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnS
-ymbol6.pfb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Paper.pdf (26 pages, 394200 bytes).
+{C:/Users/jahaley11/AppData/Roaming/M
+iKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol
+/MnSymbolE.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{C:/Users/jahaley11
+/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/
+enc/dvips/mnsymbol/MnSymbolC.enc}<C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol10.p
+fb><C:/Users/jahaley11/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol6.pfb><C:/Users/jahaley11/AppData/
+Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Paper.pdf (26 pages, 395606 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
