@@ -1,0 +1,61 @@
+@unpublished {BM13,
+	author = {Michael Barot and Robert J. Marsh},
+	title = {Reflection Group Presentations Arising from Cluster Algebras},
+	year = {2013},
+	note = {arXiv: 1112.2300v2},
+}
+
+@unpublished{GM14,
+	author			={Joseph Grant and Robert J. Marsh},
+	title				={Braid groups and quiver mutation},
+	year				={2014},
+	note			={arXiv:1408.5267},
+}
+
+@unpublished{Q14,
+	author			={Y. Qiu},
+	title				={On the spherical twists on 3-Calabi-Yau categories from marked surfaces},
+	year				={2014},
+	note			={arXiv:1407.0806},
+}
+
+@unpublished {FT13,
+	author			={Felikson, A. and Tumarkin, P.},
+	title				={Coxeter groups and their quotients arising from cluster algebras},
+	year				={2013},
+	note				={arXiv:1307.0672v2},
+}
+
+@article{FZ02,
+	author			={Sergey Fomin and Andrei Zelevinsky},
+	title				={Cluster Algebras I: Foundations},
+	journal			={J. Amer. Math. Soc.},
+	volume			={15},
+	pages			={497-529},
+	year				={2002},
+}
+
+@article{FZ03,
+	author			={Sergey Fomin and Andrei Zelevinsky},
+	title				={Cluster Algebras II: Finite type classification},
+	journal			={Invent. Math.},
+	volume			={154},
+	pages			={63-121},
+	year				={2003},
+}
+
+@article{FN61,
+	author			={Fox, R. and Neuwirth, L.},
+	title				={The Braid Groups},
+	journal			={Mathematica Scandinavica},
+	pages			={119-126},
+	year				={1961},
+}
+
+@unpublished{C06,
+	author			={Ruth Charney},
+	title				={An Introduction to Right-Angled Artin Groups},
+	year				={2006},
+	note 			= {arXiv:math/0610668},
+}
+
